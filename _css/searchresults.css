@@ -1,0 +1,126 @@
+/* --------------------------------------- Layout Styles --------------------------- */
+.contentinfo{
+    padding:0px !important;
+}
+
+#paginationUpperRow{
+    border-left: 1px solid #fff;
+    margin-top: -10px !important;
+    padding-top: 15px !important;
+}
+.mobileBanner{
+    display: none;
+    width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+.resultsCount {
+    color: #555;
+    font-family: "open-sans-condensed-bold";
+    font-size: 16px;
+    padding: 10px 0 7px 10px;
+}
+
+
+
+body #layout {
+    overflow: auto;
+}
+
+#content {
+    max-width: 890px;    
+}
+
+#layout #title-area #page-title {
+    float: left;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 850px;
+    border: none !important;
+}
+
+#layout #title-area {
+    margin-top: 10px;
+}
+
+#contentLeftColumn {
+    float: left;
+    width: 205px;
+    overflow: auto;
+    margin-right: -1px;
+    border-right: 1px solid #ddd;
+}
+
+#contentRightColumn {
+    margin-top: 10px;
+    float: right;
+    width: 685px;
+    border-left: 1px solid #ddd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------------- Begin Media Queries -------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {    
+    .mainBanner{        
+        width:100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding:0 10px;
+    }
+    
+
+    #contentRightColumn {
+        width: 100%;
+        background-color: #ededed;
+    }
+    .content_bottom_brdr {
+        border-bottom: none !important;
+    }
+
+
+    #contentRightColumn {
+        border: none;
+        padding-left: 0px;
+        background-color: #fff;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    #layout #title-area{
+        margin-top: 0px;
+    }
+    .mainBanner{
+        display: none;
+    }
+    .mobileBanner{
+        display: block;
+    }
+    
+    #contentRightColumn {
+        width: 100%;
+        background-color: #ededed;
+    }
+    .content_bottom_brdr {
+        border-bottom: none !important;
+    }
+
+    #contentRightColumn {
+        border: none;
+        padding-left: 0px;
+        background-color: #fff;
+        margin-top: 0px;
+    }
+}
+

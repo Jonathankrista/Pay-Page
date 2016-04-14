@@ -1,0 +1,204 @@
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+}
+
+@media only screen and (max-width: 640px)  {
+	body #layout #page-title {margin-bottom:0px !important;}
+	body #layout #page-title table h1 {float:none !important; margin:0px !important;}
+	body #layout #page-title table h3 {float: none !important; padding: 0px !important; margin: 0px !important; margin-left:20px !important;}
+	body #layout #myaccount-info {padding-left:20px !important; padding-right:20px !important;}
+
+	body .tableswitch table {display: block !important;}
+	body .tableswitch table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	body .tableswitch table tbody {display: block !important;}
+	body .tableswitch table thead {display: block !important;}
+	body .tableswitch table tr {display: block !important; border-bottom:#d1cbb9 1px solid !important; width:100% !important;}
+	body .tableswitch table td {display: block !important; text-align:left !important; height:auto !important;  border: 1px solid #d1cbb9 !important; border-bottom: none !important; position: relative !important; padding:10px !important; padding-left: 110px !important; font-size:12px !important;}
+
+	body .tableswitch table td:nth-of-type(1):before { content: "Description"; }
+	body .tableswitch table td:nth-of-type(2):before { content: "First Name"; }
+	body .tableswitch table td:nth-of-type(3):before { content: "Last Name"; }
+	body .tableswitch table td:nth-of-type(4):before { content: "Address"; }
+	body .tableswitch table td:nth-of-type(5):before { content: "City"; }
+	body .tableswitch table td:nth-of-type(6):before { content: "Province"; }
+	body .tableswitch table td:nth-of-type(7):before { content: "Postal Code"; }
+	body .tableswitch table td:nth-of-type(8):before { content: "Country"; }
+	body .tableswitch table td:nth-of-type(9):before { content: "Phone"; }
+	body .tableswitch table td:nth-of-type(10):before { content: "Edit"; }
+	body .tableswitch table td:nth-of-type(11):before { content: "Delete"; }
+
+	body .tableswitch table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 70px !important; padding: 10px !important; white-space: nowrap !important; background-color:#f5f2ea; font-weight:bold; font-size:12px; border-right:1px solid #d1cbb9;}
+	body .tableswitch a .fa {font-size:15px !important;}
+	.editForm select, .editForm input[type=text], #profile-info select, #profile-info input[type=text]{width:100% !important; }
+	#myaccount-info #profile-info table td { overflow: hidden; max-width: 140px; text-overflow: ellipsis; }
+}
+
+@media only screen and (max-width: 479px) {
+}
+
+.editForm{
+	width:100%;
+}
+.editForm select, #profile-info select{
+	font-size: 12px !important;
+	width: 50%;
+}
+.editForm input[type=text], #profile-info input[type=text]{
+	border: 1px solid #ccc;
+	padding: 4px;
+	font-size: 12px;
+	width: 75%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.editForm .add, .editForm .cancel, #profile-info .add, #profile-info .cancel{
+	border: none;
+    border-radius: 3px;
+    background-color: #069;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+	padding: 7px 15px;
+}
+.editForm .cancel, #profile-info .cancel{
+	background-color:#f00;
+}
+
+.editForm{
+	width:100%;
+}
+.editForm td, .editForm th{
+	border: 1px solid #d1cbb9;
+	padding: 5px;
+}
+.editForm th{
+	text-align: left;
+	color: #000;
+	background-color: #f5f2ea;
+	padding:5px;
+	width:100px;
+	padding-top: 0px !important;
+}
+#myaccount-info #profile-info  {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#myaccount-info #profile-info table {
+	border-collapse: collapse;
+}
+
+#myaccount-info #profile-info table:first-child th{
+	background-color:#fff;
+	border:none !important;
+	padding:0px;
+}
+
+#myaccount-info #profile-info th{
+	text-align: left;
+	color: #000;
+	background-color: #f5f2ea;
+	padding:5px;
+	width:100px;
+}
+
+#myaccount-info #profile-info th a{
+	display: block;
+	float: right;
+	color: #000;
+	text-decoration: none;
+	line-height: 12px;
+	font-size: 12px;
+	margin: 0px;
+	margin-top: 3px;
+	padding-top: 5px;
+}
+
+#myaccount-info #profile-info th h3 {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+	line-height: 25px;
+	color: #069;
+}
+
+#myaccount-info #profile-info table td, #myaccount-info #profile-info table th{
+	border: 1px solid #d1cbb9;
+	padding: 5px;
+}
+
+#myaccount-info #billing-info, #myaccount-info #shipping-info{
+	margin-bottom: 10px;
+}
+
+#myaccount-info #billing-info table , #myaccount-info #shipping-info table{
+	border-collapse: collapse;
+}
+
+#myaccount-info #billing-info th, #myaccount-info #shipping-info th{
+	text-align: left;
+	color: #000;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
+#myaccount-info #billing-info th a, #myaccount-info #shipping-info th a{
+	display: block;
+	float: right;
+	color: #000;
+	text-decoration: none;
+	line-height: 12px;
+	font-size: 12px;
+	margin: 0px;
+	padding-top: 5px;
+}
+
+#myaccount-info #billing-info th h3 , #myaccount-info #shipping-info h3{
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+	line-height: 25px;
+	color: #069;
+}
+
+#myaccount-info #billing-info table #billing-head2 th, #myaccount-info #shipping-info table #shipping-head2 th{
+	text-align: left;
+	color: #000;
+	padding: 4px;
+	font-size: 10px;
+	background-color: #f5f2ea;
+	border: 1px solid #d1cbb9;
+	margin: 0px;
+}
+
+#myaccount-info #billing-info table td,  #myaccount-info #shipping-info table td{
+	border: 1px solid #d1cbb9;
+	padding: 5px;
+	font-size: 10px;
+	text-align: left;
+}
+
+.tableswitch a .fa {
+	color:#000;
+	font-size:12px;
+}
+
+#myaccount-info #update {
+	float:right;
+	padding:5px;
+	padding-left:8px;
+	padding-right:8px;
+	margin-top:5px;
+	display:block;
+	background-color:#069;
+	color:#fff;
+	border-radius:3px;
+	font-size:12px;
+	font-family: 'open-sans-regular', Helvetica, Arial, sans-serif;
+	display: none;
+}

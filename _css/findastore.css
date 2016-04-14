@@ -1,0 +1,257 @@
+#responsiveTell{
+    display: none;
+    line-height: 0px;
+    font-size: 0px;
+    height: 0px;
+    visibility: none;
+}
+#findItemForm input{
+	padding-left: 5px !important;
+}
+#content h1{
+	margin-top: 20px;
+}
+.priceTitle{
+	font-size: 16px !important;
+	font-weight: normal;
+	margin-bottom: 10px !important;
+	line-height: 16px !important;
+}
+.salePriceWrapper{
+    color: #cc0000;
+    font-weight: 700;
+    font-family: "open-sans-condensed-bold", Arial, sans-serif;
+}
+.regPrice{
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration: line-through;
+}
+.findStoreLeftColumn{
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 70%;
+	border-right: 1px solid #ddd;
+	padding-right: 20px;
+	min-height: 600px;
+}
+.findStoreRightColumn{
+	float: right;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 30%;
+	padding-left: 30px;
+}
+#itemImg img{
+	width: 190px;
+	height: auto;	
+}
+#itemImg{
+	float: left;
+	width: 45%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#findItemForm{
+	float: left;
+	width: 55%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#findItemForm label{
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+#findItemForm input{
+	border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 8px;
+    width: 220px;
+}
+#findItemForm input, #findItemForm select{
+	margin-bottom: 10px;
+	padding: 5px 0;
+    width: 250px;
+}
+
+.resultDivider{
+	border-top: 1px solid #ddd;
+    content: "";
+    display: block;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.sizeChart{
+	display: block;
+	width: 250px;
+	margin-top: -5px;
+	text-align: right;
+}
+
+.fa-check-square-o{
+	color: #f00;
+}
+#Result{
+	margin-top: 20px;
+} 
+.resultsList li{
+	margin-bottom: 20px;
+}
+
+.productDesc{
+	margin-bottom: 10px;
+}
+.productPrice{
+    color: #444;
+    font-family: "open-sans-condensed-bold",Arial,sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.addToCartButton a{
+	background-color: #ff6e00;
+    border-radius: 4px;
+    clear: left;
+    color: #fff !important;
+    display: block;
+    font-family: "open-sans-regular",Arial,sans-serif;
+    font-size: 15px;
+    margin: 15px auto;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+.addToFavoritesButton a{
+	background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    clear: left;
+    color: #333 !important;
+    display: block;
+    font-family: "open-sans-regular",Arial,sans-serif;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.shippingDesc{
+	line-height: 20px;
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+	#responsiveTell{
+    	display: block;
+    	visibility: visible;
+	}
+	.findStoreLeftColumn{
+		float: none;
+		width: 70%;
+		border-right: none;
+		padding-right: 0px;
+		min-height: 0px;
+		margin: 0 auto;
+	}
+	.findStoreRightColumn{
+		float: none;		
+		width: 70%;
+		padding-left: 0px;
+		margin: 0 auto;
+	}
+	#itemImg{
+		float: none;
+		width: 100%;
+	}
+	#itemImg img{
+		width: 100%;
+		height: auto;	
+	}
+	#findItemForm{
+		float: none;
+		width: 100%;
+	}
+	#findItemForm input{
+	    width: 100%;
+	}
+	.selectboxit-options, .selectboxit-container, .selectboxit-container .selectboxit {
+    	width: 100% !important;
+	}
+	.sizeChart{
+		display: block;
+		width: 100%;
+		margin-top: -5px;
+		text-align: right;
+	}
+	.priceTitle{		
+		padding-top: 10px;
+		text-align: center;
+	}
+	.productPrice{
+		text-align: center;
+	}
+}
+
+@media (max-width: 640px){	
+	#responsiveTell{
+	    display: block;
+	    visibility: visible;
+	}	
+	.findStoreLeftColumn{
+		float: none;
+		width: 100%;
+		border-right: none;
+		padding-right: 0px;
+		min-height: 0px;
+	}
+	.findStoreRightColumn{
+		float: none;		
+		width: 100%;
+		padding-left: 0px;
+	}
+	#itemImg{
+		float: none;
+		width: 100%;
+	}
+	#itemImg img{
+		width: 100%;
+		height: auto;	
+	}
+	#findItemForm{
+		float: none;
+		width: 100%;
+	}
+	#findItemForm input{
+	    width: 100%;
+	}
+	.selectboxit-options, .selectboxit-container, .selectboxit-container .selectboxit {
+    	width: 100% !important;
+	}
+	.sizeChart{
+		display: block;
+		width: 100%;
+		margin-top: -5px;
+		text-align: right;
+	}
+	.priceTitle{
+		padding-top: 10px;
+		text-align: center;
+	}
+	.productPrice{
+		text-align: center;
+	}
+}

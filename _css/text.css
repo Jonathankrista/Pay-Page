@@ -1,0 +1,388 @@
+@charset "iso-8859-1”;
+
+p {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+strong {
+	color: #000;
+}
+
+h1, h2, h3 {
+	font-family: 'open-sans-condensed-bold', sans-serif;
+	margin:0px;
+	padding:0px;
+	font-weight:normal;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+ h4, h5, h6 {
+	font-family:  'open-sans-regular', Helvetica, Arial, sans-serif;
+	margin:0px;
+	padding:0px;
+	font-weight:normal;
+}
+
+#content h1   {
+ 	font-size: 24px;
+}
+
+#content h1:first-child {
+	margin-top:15px;
+	margin-bottom: 10px;
+}
+
+#title-area #other h4 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Helvetica,  Arial, sans-serif;
+	margin: 0px;
+	text-transform: uppercase;
+	line-height: 18px;
+}
+
+#title-area2 #other h4 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Helvetica,  Arial, sans-serif;
+	margin: 0px;
+	text-transform: uppercase;
+	line-height: 18px;
+}
+#content h4 {
+	font-size: 13px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+#content h3 {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+#content h2 {
+	font-size: 21px;
+	margin-bottom: 15px;
+}
+.contentinfo {
+	padding-left: 20px;
+	padding-right: 20px;
+	/* [disabled]padding-bottom: 5px; */
+}
+.contentinfo li {
+	margin-bottom: 5px;
+	text-align: left;
+}
+#content .redtext{
+	color: #F33;
+}
+
+#content .bluetext{
+	color: #043f7b;
+}
+
+#collection-links   .newarrivals{
+	color: #0066a7;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+.redtext     {
+	color: #F33;
+}
+.underlined_text   {
+	text-decoration: underline;
+}
+
+#footer h4 {
+	font-size: 12px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	text-transform: uppercase;
+	font-family: Helvetica,  Arial, sans-serif;
+}
+#footer #phone-number {
+	font-size: 28px;
+	display: block;
+	font-family: Helvetica,  Arial, sans-serif;
+}
+
+#collection-links h3 {
+	padding: 0px;
+	display: block;
+	margin-top: 8px;
+	margin-right: 0px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+	font-size: 13px;
+}
+#collection-links #browse-collections {
+	font-family: 'open-sans-regular', Helvetica,  Arial, sans-serif;
+	color: #333;
+	font-size: 16px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	/* [disabled]font-style: italic; */
+}
+#free-shipping {
+	text-transform: uppercase;
+	font-family: Helvetica,  Arial, sans-serif;
+	font-size: 17px;
+}
+#collection-links ul {
+	padding: 0px;
+	list-style-type: none;
+	margin: 0px;
+}
+#collection-links ul li {
+	margin-bottom: 4px;
+}
+#softmoc-shopping h1 {
+	display: block;
+	font-family: Helvetica,  Arial, sans-serif;
+	font-size: 31px;
+	color: #F33;
+	margin: 0px;
+	padding: 0px;
+}
+#softmoc-shopping h2 {
+	padding: 0px;
+	display: block;
+	font-family: Helvetica,  Arial, sans-serif;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#softmoc-shopping {
+	text-align: left;
+	font-size: 12px;
+}
+.title-divider {
+	font-family: Helvetica,  Arial, sans-serif;
+	color: #4d4d4d;
+}
+#department-links ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+#department-links ul li {
+	margin-bottom: 3px;
+}
+
+#department-links ul li ul li {
+	font-weight: normal;
+}
+
+#collection-gender-links ul {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#collection-gender-links ul li {
+	margin-bottom: 3px;
+}
+#shop-right-col .product_title h2{
+	margin: 0px;
+	color: #666;
+}
+#landing-products h4 {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+}
+#product-relateditems .related-item-product h4{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+}
+.saleprice {
+	font-size: 16px;
+	color: #F00;
+}
+#layout #content #shop-specials h2 {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	color: #F00;
+	font-family: 'open-sans-regular', Helvetica,  Arial, sans-serif;
+}
+
+#product-image-zoom em {
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	float: left;
+	width: 200px;
+}
+#product-info h1 {
+	margin: 0px;
+	font-family: Helvetica,  Arial, sans-serif;
+	font-size: 22px;
+	color: #000;
+	font-weight: normal;
+}
+#product-info h2 {
+	font-family: Helvetica,  Arial, sans-serif;
+	font-size: 16px;
+	color: #000;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#product-relateditems h2 {
+	font-family: Helvetica,  Arial, sans-serif;
+	font-size: 21px;
+	color: #4a4a4a;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+#content #jobs h3 {
+	margin: 0px;
+}
+#content #jobs h2 {
+	font-size: 26px;
+	color: #C30;
+	padding: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#content #jobs ul {
+	margin-top: 0px;
+	margin-left: 15px;
+	padding: 0px;
+	margin-bottom: 20px;
+}
+#content #postions-title {
+	display: block;
+	float: right;
+	font-weight: normal;
+	background-color: #369;
+	color: #FFF;
+	width: 230px;
+	padding: 10px;
+	font-size: 21px;
+	border: 1px solid #369;
+	clear: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+}
+#content #my-account-signin h2{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-weight: normal;
+	text-transform: none;
+	font-size: 17px;
+	font-family: rocksalt, "Comic Sans MS", cursive;
+	color: #C00;
+}
+#register-benefits h2 {
+	margin-top: 5px;
+	margin-left: 40px;
+	color: #000000;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#product-info .alt_color h3 {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+}
+#addcart-column-right h3.product-reg-price {
+	padding: 0px;
+	font-family: Helvetica,  Arial, sans-serif;
+	font-size: 24px;
+	margin: 0px;
+	font-weight: normal;
+}
+#addcart-column-right h2.product-sale-price{
+	padding: 0px;
+	color: #F00;
+	font-size: 36px;
+	font-family: Helvetica,  Arial, sans-serif;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+#addcart-column-right #CartForm1 h4{
+	padding: 0px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	color: #333;
+	text-transform: uppercase;
+	/* [disabled]display: block; */
+	font-family: Helvetica,  Arial, sans-serif;
+}
+#layout #addcart-column-right .aslo-recommend{
+	color: #006699;
+	font-family: Helvetica,  Arial, sans-serif;
+	font-size: 21px;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.note {
+	font-size: 12px;
+	font-style: italic;
+	color: #666;
+}
+.wordwrap {
+   white-space: pre-wrap;      /* CSS3 */
+   white-space: -moz-pre-wrap; /* Firefox */
+   white-space: -o-pre-wrap;   /* Opera 7 */
+   word-wrap: break-word;      /* IE */
+}
+#free-shipping-exchanges-returns strong {
+	color: #369;
+}
+#search #restrictions em {
+	font-style: normal;
+}
+#layout #header #search .french-txt{
+	font-size: 13px;
+}
+
+
+.error-notice {
+	padding:10px;
+	margin-top:10px;
+	background-color:#f5f5f5;
+	color:#F00;
+	font-weight:bold;
+}

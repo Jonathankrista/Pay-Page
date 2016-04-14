@@ -1,0 +1,158 @@
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body #layout #page-title {margin-bottom:0px !important;}
+	body #layout #page-title table h1 {float:none !important; margin:0px !important;}
+	body #layout #page-title table h3 {float: none !important; padding: 0px !important; margin: 0px !important; margin-left:20px !important;}
+	body #layout #myaccount-info {padding-left:20px !important; padding-right:20px !important;}
+	
+	body #alerts table {display: block !important;}
+	body #alerts table tbody {display: block !important;}
+	body #alerts table thead {display: block !important;}
+	body #alerts table tr {display: block !important; border-bottom:#d1cbb9 1px solid !important; width:100% !important;}
+	body #alerts table td {display: block !important; text-align:left !important; height:auto !important;  border: 1px solid #d1cbb9 !important; border-bottom: none !important; position: relative !important; padding:10px !important; padding-left: 130px !important; font-size:12px !important;}
+	
+	body #alerts table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	
+	body #alerts table td:nth-of-type(1):before { content: "Create Date"; }
+	body #alerts table td:nth-of-type(2):before { content: "Description"; }
+	body #alerts table td:nth-of-type(3):before { content: "Enabled"; }
+	body #alerts table td:nth-of-type(4):before { content: "View All Items"; }
+	body #alerts table td:nth-of-type(5):before { content: "View Sale Items"; }
+	body #alerts table td:nth-of-type(6):before { content: "Edit"; }
+	body #alerts table td:nth-of-type(7):before { content: "Delete"; }
+	
+	body #alerts table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 90px !important; padding: 10px !important; white-space: nowrap !important; background-color:#f5f2ea; font-weight:bold; font-size:12px; border-right:1px solid #d1cbb9;}
+	body #alerts table td a .fa {font-size:15px !important;}
+}
+
+@media only screen and (max-width: 640px)  {
+	body #layout #page-title {margin-bottom:0px !important;}
+	body #layout #page-title table h1 {float:none !important; margin:0px !important;}
+	body #layout #page-title table h3 {float: none !important; padding: 0px !important; margin: 0px !important; margin-left:20px !important;}
+	body #layout #myaccount-info {padding-left:20px !important; padding-right:20px !important;}
+	
+	body #alerts table {display: block !important;}
+	body #alerts table tbody {display: block !important;}
+	body #alerts table thead {display: block !important;}
+	body #alerts table tr {display: block !important; border-bottom:#d1cbb9 1px solid !important; width:100% !important;}
+	body #alerts table td {display: block !important; text-align:left !important; height:auto !important;  border: 1px solid #d1cbb9 !important; border-bottom: none !important; position: relative !important; padding:10px !important; padding-left: 130px !important; font-size:12px !important;}
+	
+	body #alerts table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	
+	body #alerts table td:nth-of-type(1):before { content: "Create Date"; }
+	body #alerts table td:nth-of-type(2):before { content: "Description"; }
+	body #alerts table td:nth-of-type(3):before { content: "Enabled"; }
+	body #alerts table td:nth-of-type(4):before { content: "View All Items"; }
+	body #alerts table td:nth-of-type(5):before { content: "View Sale Items"; }
+	body #alerts table td:nth-of-type(6):before { content: "Edit"; }
+	body #alerts table td:nth-of-type(7):before { content: "Delete"; }
+	
+	body #alerts table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 90px !important; padding: 10px !important; white-space: nowrap !important; background-color:#f5f2ea; font-weight:bold; font-size:12px; border-right:1px solid #d1cbb9;}
+	body #alerts table td a .fa {font-size:15px !important;}
+	.alertType th { width:80px !important;}
+}
+
+@media only screen and (max-width: 479px) {
+	
+}
+
+
+#records {
+	margin-top: 10px;
+	padding: 5px;
+}
+
+
+#records a {
+	display: block;
+	float: right;
+	color: #000;
+	text-decoration: none;
+	line-height: 12px;
+	font-size: 12px;
+	margin: 0px;
+	padding-top: 3px;
+}
+
+#alerts  input{
+	float: right;
+	clear: both;
+	font-size: 11px;
+	background-color: #069;
+	border: 0px none #999;
+	padding: 5px;
+	display: block;
+	color: #FFF;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#alerts table{
+	border-collapse: collapse;
+}
+
+#alerts th {
+	text-align: left;
+	padding: 8px;
+	background-color: #f5f2ea;
+	border: 1px solid #d1cbb9;
+}
+
+#alerts td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #CCC;
+}
+
+#alerts a .fa {
+	color:#000;
+	font-size:12px;
+}
+
+.alertType {
+	margin-top:10px;
+}
+
+.alertType table{
+	border-collapse: collapse;
+	width:350px;
+}
+
+.alertType th {
+	text-align: left;
+	padding: 8px;
+	background-color: #f5f2ea;
+	border: 1px solid #d1cbb9;
+	width:130px;
+}
+
+.alertType td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #CCC;
+}
+
+.alertType em{
+	font-size:11px;
+	color:#666;	
+}
+
+.alertType input[type=text] {
+	padding: 5px;
+	border: 1px solid #ccc;
+	display:block;
+	margin-top:3px;
+}
+
+.alertType input[type=button]{
+	background-color: #C30;
+	border: 0px none #999;
+	padding: 5px;
+	color: #FFF;
+	margin-right: 10px;
+	cursor: pointer;
+	width:70px;
+}
+
+.alertType #button1{
+	background-color: #069;
+}

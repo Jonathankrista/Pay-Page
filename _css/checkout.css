@@ -1,0 +1,644 @@
+/* TABLET LANDSCAPE */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body #main {margin-top:51px !important;}
+	body #main #content {margin-top:0px !important;}
+	body #page-title-mobile {padding:0px !important; margin:0px !important;}
+	body #page-title-mobile h1{color:#000 !important; font-weight:normal !important; font-size: 20px!important; text-decoration: none!important; margin: 0px!important; margin-top:10px !important; padding:0px !important; text-align:center !important;}
+	body #page-title-mobile span {text-align:center !important; display:block !important; margin-bottom:5px !important;}
+	body #checkout-form input {width:260px !important;}
+	body #checkout-form select {width:275px !important;}
+	body #checkout-form #shopping-cart select {width:100px !important; margin:0px !important;}
+	body #checkout-form label input {width:auto !important; float:left !important;}
+	body #checkout-form #StorePickup_Result label input {width:auto !important; float:left !important; margin-left:0px !important; margin-bottom:18px !important}
+	body #checkout-form #StorePickup_Result label {line-height:14px !important; margin-left:20px !important; margin-right:20px !important;}
+	body #checkout-form #check-join input {width:auto !important; float:left !important;}
+	body #checkout-form h3 {display:block !important;}
+	body #checkout-form span {display:block !important; float:left !important;}
+	body #ShippingInfoArea_ShipToStore p {width:auto !important; margin-right:20px !important; text-align:justify !important;}
+	body #shopping-cart .cartItems {padding-left:10px !important; padding-right:10px !important;}
+	body .hideItems {display:inline-table !important;}
+
+	body #shopping-cart table select {width:auto !important;}
+
+	body #shopping-cart table {display: block !important; width:95% !important; border-right:0px; !important;}
+	body #shopping-cart table th {display: block !important;}
+	body #shopping-cart table tbody {display: block !important;}
+	body #shopping-cart table thead {display: block !important;}
+	body #shopping-cart table tr {display: block !important;}
+	body #shopping-cart table td {display: block !important; text-align:left !important; height:auto !important;}
+
+	body #shopping-cart table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	body #shopping-cart table tr {border: 1px solid #ccc !important; border-bottom:1px !important; margin-bottom:15px !important; width:46% !important; float:left !important; margin-right:15px !important;}
+	body #shopping-cart table td {border: none !important; border-bottom: 1px solid #ccc !important; position: relative !important; padding:10px !important; padding-left: 150px !important;}
+
+/*	body #shopping-cart .description { min-height:100px !important;}*/
+	body #shopping-cart table td:nth-of-type(1):before { content: "Item"; }
+	body #shopping-cart table td:nth-of-type(2):before { content: "Description"; }
+	body #shopping-cart table td:nth-of-type(3):before { content: "Size"; }
+	body #shopping-cart table td:nth-of-type(4):before { content: "Qty"; }
+	body #shopping-cart table td:nth-of-type(5):before { content: "Price"; }
+	body #shopping-cart table td:nth-of-type(6):before { content: "Remove"; }
+
+	body #shopping-cart table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 70px !important; padding: 10px !important; white-space: nowrap !important;}
+	body .remove img {width:35px !important; height:auto !important; display:inline !important;}
+
+	body #header {height:0px !important;}
+
+	body .tabletWidth {width:260px !important;}
+
+	body #checkout-subtotal {clear:left !important; display:block !important;}
+
+	body #checkout-subtotal h2 {float:right !important;  width:390px !important; text-align:center !important; padding:0px !important; margin-top:0px !important;}
+
+	body #continue {padding-left:20px !important; padding-right:20px !important;}
+	body #continue p {float: left !important; margin:0px !important; font-size:12px !important; text-align:left !important; width:320px  !important;}
+	body #continue a {padding-top:10px !important; padding-bottom:10px !important; float:right !important;  margin-top:0px !important; width:350px !important; }
+	body #shopping-cart .size { height: 20px !important; }
+	body #shopping-cart .price { height: 30px !important; }
+	body #shopping-cart .description { height: 80px !important; }
+}
+
+/*MOBILE LANDSCAPE & TABLET PORTRAIT (BROWSER PREVIEW) */
+@media only screen and (max-width:640px)  {
+	body #logo-mobile {margin-left:auto !important; margin-right:auto !important;}
+	body #main {margin-top:51px !important;}
+	body #main #content {margin-top:0px !important;}
+	body #page-title-mobile {padding:0px !important; margin:0px !important;}
+	body #page-title-mobile h1{color:#000 !important; font-weight:normal !important; font-size: 20px!important; text-decoration: none!important; margin: 0px!important; margin-top:10px !important; padding:0px !important; text-align:center !important;}
+	body #page-title-mobile span {text-align:center !important; display:block !important; margin-bottom:5px !important;}
+	body #checkout-form {margin-bottom:15px !important;}
+	body #checkout-form input {width:260px !important;}
+	body #checkout-form select {width:275px !important;}
+	body #checkout-form #shopping-cart select {width:100px !important; margin:0px !important; overflow:hidden !important; text-overflow:ellipsis;}
+	body #checkout-form label input {width:auto !important; float:left !important;}
+	body #checkout-form #StorePickup_Result label input {width:auto !important; float:left !important; margin-left:0px !important; margin-bottom:15px !important}
+	body #checkout-form #StorePickup_Result label {line-height:14px !important; margin-left:20px !important; margin-right:20px !important;}
+	body #checkout-form #check-join input {width:auto !important; float:left !important;}
+	body #checkout-form h3 {display:block !important;}
+	body #checkout-form span {display:block !important; float:left !important;}
+	body #ShippingInfoArea_ShipToStore p {width:auto !important; margin-right:20px !important; text-align:justify !important;}
+	body #shopping-cart .cartItems {padding-left:10px !important; padding-right:10px !important;}
+	body .hideItems {display:inline-table !important;}
+
+	body #shopping-cart table select {width:auto !important;}
+
+	body #shopping-cart table {display: block !important; width:90% !important; border-right:0px; !important;}
+	body #shopping-cart table th {display: block !important;}
+	body #shopping-cart table tbody {display: block !important;}
+	body #shopping-cart table thead {display: block !important;}
+	body #shopping-cart table tr {display: block !important;}
+	body #shopping-cart table td {display: block !important; text-align:left !important; height:auto !important; min-height: 18px !important; }
+
+	body #shopping-cart table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	body #shopping-cart table tr {border: 1px solid #ccc !important; border-bottom:1px !important; margin-bottom:15px !important; width:100% !important;}
+	body #shopping-cart table td {border: none !important; border-bottom: 1px solid #ccc !important; position: relative !important; padding:10px !important; padding-left: 150px !important;}
+
+	body #shopping-cart table td:nth-of-type(1):before { content: "Item"; }
+	body #shopping-cart table td:nth-of-type(2):before { content: "Description"; }
+	body #shopping-cart table td:nth-of-type(3):before { content: "Size"; }
+	body #shopping-cart table td:nth-of-type(4):before { content: "Qty"; }
+	body #shopping-cart table td:nth-of-type(5):before { content: "Price"; }
+	body #shopping-cart table td:nth-of-type(6):before { content: "Remove"; }
+
+	body #shopping-cart table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 70px !important; padding: 10px !important; white-space: nowrap !important;}
+	body .remove img {width:35px !important; height:auto !important; display:inline !important;}
+
+	body #header {height:0px !important;}
+
+	body .tabletWidth {width:260px !important;}
+
+	body #checkout-subtotal h2 {text-align:center !important; padding:0px !important;}
+
+	body #continue {padding-left:20px !important; padding-right:20px !important;}
+	body #continue p {float: none !important; margin:0px !important; font-size:12px !important; text-align:left !important;}
+	body #continue a {padding:10px !important;float:left !important; display:block !important; margin-top:5px !important; width:auto !important;}
+	body #copyright br {display:none!important;}
+}
+
+/*MOBILE PORTRAIT*/
+@media only screen and (max-width:479px) {
+	body #page-title-mobile {padding:0px !important; margin:0px !important;}
+	body #page-title-mobile h1{color:#000 !important; font-weight:normal !important; font-size: 20px!important; text-decoration: none!important; margin: 0px!important; margin-top:10px !important; padding:0px !important; text-align:center !important;}
+	body #page-title-mobile span {text-align:center !important; display:block !important; margin-bottom:5px !important;}
+	body #checkout-form input {width:260px !important;}
+	body #checkout-form select {width:275px !important;}
+	body #checkout-form .mobileRemove select {width:auto !important;}
+	body #checkout-form label input {width:auto !important; float:left !important;}
+	body #checkout-form #StorePickup_Result label input {width:auto !important; float:left !important; margin-left:0px !important; margin-bottom:15px !important}
+	body #checkout-form #StorePickup_Result label {line-height:14px !important; margin-left:20px !important; margin-right:20px !important;}
+	body #checkout-form #check-join input {width:auto !important; float:left !important;}
+	body #checkout-form h3 {display:block !important; margin-bottom:5px !important;}
+	body #checkout-form span {display:block !important; float:left !important;}
+	body #ShippingInfoArea_ShipToStore p {width:auto !important; margin-right:20px !important; text-align:justify !important;}
+	body #shopping-cart .cartItems {padding-left:10px !important; padding-right:10px !important;}
+	body .hideItems {display:inline-table !important;}
+
+	body #shopping-cart table select {width:auto !important;}
+
+	body #shopping-cart table {display: block !important; width:90% !important;}
+	body #shopping-cart table th {display: block !important;}
+	body #shopping-cart table tbody {display: block !important;}
+	body #shopping-cart table thead {display: block !important;}
+	body #shopping-cart table tr {display: block !important;}
+	body #shopping-cart table td {display: block !important; text-align:left !important; height:auto !important; min-height: 18px !important;}
+
+	body #shopping-cart table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	body #shopping-cart table tr {border: 1px solid #ccc !important; border-bottom:1px !important; margin-bottom:15px !important; width:100% !important;}
+	body #shopping-cart table td {border: none !important; border-bottom: 1px solid #ccc !important; position: relative !important; padding:10px !important; padding-left: 150px !important;}
+
+	body #shopping-cart table td:nth-of-type(1):before { content: "Item:"; font-weight:bold; }
+	body #shopping-cart table td:nth-of-type(2):before { content: "Description:"; font-weight:bold; }
+	body #shopping-cart table td:nth-of-type(3):before { content: "Size:"; font-weight:bold; }
+	body #shopping-cart table td:nth-of-type(4):before { content: "Qty:"; font-weight:bold; }
+	body #shopping-cart table td:nth-of-type(5):before { content: "Price:"; font-weight:bold; }
+	body #shopping-cart table td:nth-of-type(6):before { content: "Remove:"; font-weight:bold; }
+
+	body #shopping-cart table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 70px !important; padding: 10px !important; white-space: nowrap !important;}
+	body .remove img {width:35px !important; height:auto !important; display:inline !important;}
+
+	body #header {height:0px !important;}
+
+	body .tabletWidth {width:260px !important;}
+
+	body #checkout-subtotal h2 {text-align:center !important; padding:0px !important;}
+
+	body #continue {padding-left:20px !important; padding-right:20px !important;}
+	body #continue p {float: none !important; margin:0px !important; font-size:11px !important; text-align:center !important;}
+	body #continue a {padding-top:10px !important; padding-bottom:10px !important; float:none !important; display:block !important; margin-top:5px !important;}
+	body #copyright br {display:inline !important;}
+
+	body #Result span input[type=radio] {width:auto !important; margin-top: 5px !important; margin-bottom:15px !important; float:left !important;}
+	body #pickupLocation select {width:auto !important;}
+}
+
+#PopUpD {
+	visibility:hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:490px;
+	height:220px;
+}
+
+#BackgroundD {
+	visibility:hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:0px;
+	height:0px;
+}
+
+#layout #header #my-account-rewards {
+	width: 225px;
+	float: right;
+	text-align: center;
+	height: 90px;
+	margin: 0px;
+}
+#layout #header #checkout-step {
+	float: left;
+	height: 40px;
+	width: 385px;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 30px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+#checkout-step em {
+	color: #666;
+}
+#checkout-step h1 {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #000;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 24px;
+}
+#checkout-title em {
+	font-size: 21px;
+	color: #999;
+}
+#checkout-form h3 {
+	padding: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #069;
+	font-size: 13px;
+	margin-left: 20px;
+	margin-right: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#checkout-form h4 {
+	padding: 0px;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	color: #333;
+}
+#checkout-form input {
+	border: 1px solid #CCC;
+	background-color: #eee;
+	margin-bottom: 10px;
+	padding-top: 7px;
+	padding-right: 10px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	margin-left: 20px;
+	width: 230px;
+}
+#checkout-form select {
+	margin-left: 20px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+
+#checkout-form .size select {
+	width:50px;
+}
+
+#checkout-form option {
+	padding: 5px;
+}
+
+
+#checkout, #shipping-info, #shopping-cart, #shipping-selection {
+	border-top-width: 15px;
+	border-top-style: solid;
+	border-top-color: #EEE;
+	padding-bottom:10px;
+}
+#checkout h3 em {
+	font-style: normal;
+	font-weight: normal;
+	text-transform: capitalize;
+	font-variant: normal;
+	font-size: 12px;
+	color: #C00;
+}
+#checkout #check-join input{
+	/* [disabled]float: left; */
+	padding: 0px;
+	height: auto;
+	width: auto;
+	background-color: #FFF;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#checkout #check-join h3 {
+	color: #093;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	/* [disabled]float: left; */
+}
+#check-join {
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+#checkout2 #check-join h4 {
+	margin-top: 2px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+}
+#CusCountry, #Province_CB , #ShipProvince_CB , #ShipCusCountry , #StorePickup_I_State , #StorePickup_I_City  {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+#checkout #Address, #shipping-info #ShipAddress{
+	width: 520px;
+}
+
+#shipping-options input {
+	padding: 0px;
+	height: auto;
+	width: auto;
+	background-color: #FFF;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#shipping-options label   {
+	margin-bottom: 20px;
+	display: block;
+	float: left;
+	margin-left: 20px;
+}
+#StorePickup_Result label   {
+	margin-bottom: 10px;
+	display: block;
+	float: left;
+	clear: left;
+	font-size: 12px;
+	line-height: 12px;
+}
+#StorePickup_Result label input {
+	height: auto;
+	width: auto;
+	background-color: #FFF;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	line-height: 12px;
+}
+#ShippingInfoArea_ShipToStore p {
+	margin-right: 0px;
+	margin-left: 20px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	display: block;
+}
+#ShippingInfoArea_ShipToStore h3 {
+	margin-bottom: 5px;
+	color: #C00;
+}
+
+#shopping-cart table {
+	border-collapse:collapse;
+}
+
+#shopping-cart th {
+	text-align: left;
+	padding: 5px;
+	border: 1px solid #CCC;
+}
+#shopping-cart td {
+	padding: 5px;
+	border: 1px solid #CCC;
+}
+
+#shopping-cart .description ,#shopping-cart .size, #shopping-cart .qty ,#shopping-cart .price, #shopping-cart .remove{
+	padding: 10px;
+}
+
+#shopping-cart .remove a i.fa {
+	color:#000;
+	font-size:26px;
+}
+.price span {
+	text-decoration: line-through;
+}
+.rightBorder {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+}
+#checkout-form #continue {
+	padding-bottom: 10px;
+}
+#checkout-form #continue #checkoutbtn{
+	text-decoration: none;
+	color: #FFF;
+	background-color: #F60;
+	text-align: center;
+	font-size: 15px;
+	float: right;
+	margin: 0px;
+	border-radius:3px;
+	padding-top: 7px;
+	padding-right: 10px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+}
+#continue p {
+	float: left;
+	padding: 0px;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#shopping-cart .cartItems th{
+	text-align: left;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+#shopping-cart .cartItems td{
+	padding: 5px;
+	vertical-align: middle;
+	margin: 0px;
+	border: 1px solid #CCC;
+}
+#shopping-cart .cartItems .mobileItems{
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#shopping-cart .cartItems .mobileItems .mobileImage{
+	width: 80px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#shopping-cart .cartItems .mobileItems .mobileImage a{
+	margin: 0px;
+	padding: 0px;
+}
+#shopping-cart .cartItems .mobileItems .mobileImage img{
+	height: 60px;
+	width: 60px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#shopping-cart .cartItems .mobileItems .mobileDescription{
+	font-size: 12px;
+	text-align: left;
+	margin: 0px;
+	/* [disabled]padding-right: 0px; */
+	/* [disabled]padding-bottom: 0px; */
+	/* [disabled]padding-left: 0px; */
+}
+#shopping-cart .cartItems .mobileItems .mobileDescription p{
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#shopping-cart .cartItems .mobileItems .mobileRemove{
+	width: 80px;
+	margin: 0px;
+}
+#shopping-cart .cartItems .mobileItems .mobileRemove a{
+	clear: left;
+	float: left;
+	text-align: left;
+	text-decoration: none;
+	margin-top: 10px;
+}
+#shopping-cart .cartItems .mobileItems .mobileRemove a img{
+	height: 14px;
+	width: 14px;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	margin-top: 2px;
+}
+#shopping-cart .cartItems .mobileItems .mobileRemove strong{
+	display: block;
+	margin-top: 5px;
+}
+#shopping-cart .cartItems .mobileItems .mobileRemove span{
+	text-decoration: line-through;
+	display: block;
+}
+#shopping-cart .cartItems .mobileItems .mobileRemove strong.redtext{
+	margin: 0px;
+	display: block;
+	clear: left;
+}
+#shipping-options input {
+	/* [disabled]background-color: #F00; */
+	/* [disabled]height: 20px; */
+	/* [disabled]width: 20px; */
+}
+#ShippingInfoArea_ShipToStore .pickup-title {
+	color:#069;
+}
+
+
+#checkout-form #checkout-subtotal h2{
+	text-align:right;
+	padding-right:25px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+
+#paypal-productinfo table {
+	border-collapse:collapse;
+}
+
+#paypal-productinfo td {
+	border:1px #ccc solid;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+#paypal-productinfo .product-img {
+	width:100px;
+}
+
+
+#pickupLocation {
+	border-top:#ddd solid 1px;
+	margin-top:15px;
+}
+
+#pickupLocation h4 {
+	margin:0px;
+	padding:15px 20px 15px 20px;
+	box-sizing:border-box;
+	display:block;
+}
+
+#pickupLocation th {
+	padding:5px 20px 5px 20px;
+	box-sizing:border-box;
+}
+
+#pickupLocation td {
+	padding:5px 20px 5px 0px;
+	box-sizing:border-box;
+}
+
+#pickupLocation select {
+	margin:0px;
+}
+
+#Result {
+	margin-top:15px;
+	margin-bottom:15px;
+	padding:0px 20px 0px 20px;
+	min-height: 200px;
+}
+
+#Result h3 {
+	padding:0px;
+	margin:0px;
+	margin-bottom:10px;
+}
+
+#Result h3 em{
+	text-transform:capitalize !important;
+	font-size:11px !important;
+	color:#666 !important;
+}
+
+#Result span{
+	display:block;
+	padding:8px;
+	border-bottom:1px solid #ddd;
+	text-align:left;
+}
+
+#Result span:last-child {
+	border:none;
+	margin-bottom:10px;
+}
+
+#Result span input[type=radio] {
+	padding:0px;
+	width:auto;
+	height:auto;
+	margin:0px;
+	margin-right:10px;
+}
+
+#Result  label {
+	cursor:pointer;
+}
+
+#discount #discountaddbtn {
+  height: auto;
+  width: auto !important;
+  background-color: #099;
+  color: #FFF;
+  font-size: 12px;
+  padding: 8px 8px;
+  border: 1px solid #099;
+  cursor: pointer;
+  float: right;
+  border-radius: 3px;
+	margin-right: 20px;
+}

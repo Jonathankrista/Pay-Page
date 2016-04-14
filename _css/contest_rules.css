@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+#contest-hero {
+	margin-top: 10px;
+}
+#content    {
+	min-height:inherit !important;
+}
+#content button   {
+	background-color: #333333;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 8px;
+	border: 0px none #174178;
+	cursor: pointer !important;
+}
+#content #terms-conditions {
+	display: none;
+}
+#terms-conditions {
+	font-size: 12px;
+	margin-top: 10px;
+}

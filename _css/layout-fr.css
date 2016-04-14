@@ -1,0 +1,138 @@
+/********** Layout CSS **********/
+#layout #header #free-shipping-exchanges-returns {
+	font-size: 14px;
+}
+#nav #my-account {
+	font-size: 12px;
+	line-height: 20px;
+}
+#footer #find-a-store, #footer #join-club-softmoc {
+	width: 325px;
+}
+#incentive {
+	width: 845px;
+}
+#incentive div {
+	margin-right: 20px;
+}
+#incentive div h4 {
+	font-size: 16px;
+	font-weight: normal;
+}
+#sub-footer .footerlinks {
+	margin-right: 70px;
+}
+#joinclubform #email {
+	width: 200px;
+}
+#myAccountArea a {
+	padding-bottom: 5px;
+}
+#always-in-stock {
+	padding-top: 10px;
+}
+/********* End Layout CSS *********/
+
+/********* French Tweaks **********/
+#shipping-details #shipment-details {
+	font-size: 12px;
+}
+#secure-order form #orderbtn {
+	font-size: 16px;
+}
+#shipping-details #StorePickupInfo_Area strong {
+	font-size: 14px;
+}
+.vaultLogo img {
+	height: 50px;
+}
+.vaultCopy h3 {
+	font-size: 17px;
+}
+#vault-info img {
+	width: 135px;
+}
+#itemDetailSizeChart {
+	margin-left: -7px;
+}
+#itemDetailFindInStore a, #itemDetailAddFavorites a, #itemDetailAddAlert a {
+	text-align: left;
+	padding-left: 10px;
+}
+#itemDetailShipping {
+	text-align: left;
+}
+#itemDetailOnlineOnly i.fa.fa-laptop, #itemDetailShipping i.fa.fa-truck {
+	float: left;
+	margin-top: 3px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+#softmoc_vault #softmoc-vault-logo {
+	margin-top: 10px;
+}
+#softmoc_vault h3 {
+	width: 390px;
+}
+#instore-purchases th {
+	padding: 4px;
+}
+#myaccount-menu li {
+	text-transform:capitalize;
+}
+#mobilePrev a {
+	min-width: 75px;
+}
+@media only screen and (max-device-width: 1024px) and (min-device-width: 481px) and (orientation: portrait) {
+	#layout .titleDivider #title-popularstyles {
+		width: 300px !important;
+	}
+	#layout .titleDivider #title-collections {
+		width: 150px !important;
+	}
+}
+/******* TABLET MOBILE ********/
+@media only screen and (max-width: 768px) {
+	body #instagramm {
+		margin-right: 0px!important;
+	}
+	#vault-info img {
+		width: 180px;
+		float: none;
+		display: block;
+	}
+	.clearAllButton a {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	#itemDetailSizeChart {
+		margin-left: 0px !important;
+	}
+	#itemDetailOnlineOnly i.fa.fa-laptop, #itemDetailShipping i.fa.fa-truck {
+		float: none;
+	}
+	#continueShop i.fa.fa-envelope-o {
+		float: left;
+		margin-right: 4px;
+		margin-bottom: 10px;
+	}
+	#layout .titleDivider #title-popularstyles {
+		width: 280px !important;
+	}
+  #itemDetailShipping i.fa.fa-truck {
+    float:none;
+	}
+
+}
+/******* PHONE MOBILE ********/
+@media only screen and (max-width: 480px) {
+	.myaccount-email-preferences input[type=radio] {
+		margin-bottom: 15px;
+	}
+	.myaccount-email-preferences input[type=button] {
+		margin-top: -10px !important;
+	}
+	#myaccount-info #profile-info th h3, #myaccount-info #billing-info th h3, #myaccount-info #shipping-info h3 {
+		font-size: 14px !important;
+	}
+}

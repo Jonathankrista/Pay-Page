@@ -1,0 +1,54 @@
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+}
+
+@media only screen and (max-width: 640px)  {
+}
+
+@media only screen and (max-width: 479px) {
+	#F1 th, #F1 td {font-size:12px !important;}
+}
+
+
+#myaccount-info h4 {
+	margin-top:10px;
+	margin-bottom:10px;
+	font-weight:normal;
+}
+
+#F1 {
+	margin-bottom:15px;
+	margin-top:15px;
+}
+
+#F1 table {
+	border-collapse: collapse;
+}
+
+#F1 th {
+	text-align: left;
+	color: #000;
+	padding: 4px;
+	background-color: #f5f2ea;
+	border: 1px solid #d1cbb9;
+	margin: 0px;
+	width:120px;
+}
+
+#F1 td {
+	border: 1px solid #d1cbb9;
+	padding: 5px;
+	text-align: left;
+}
+
+
+#F1 td i {
+	font-size:16px !important;
+}
+
+#F1 a {
+	color:#333;
+}
+
+#F1 td .fa-times {
+	color:#C30;
+}

@@ -1,0 +1,43 @@
+#register-benefits {
+	background-image: url(../img/register-my-account-img.jpg);
+	background-position: 0px 35px;
+	background-repeat: no-repeat;
+}
+#benefits-slide  {
+	height: 296px;
+	width: 354px;
+	margin-top: 25px;
+	margin-left: 45px;
+	/* [disabled]background-color: #FFF; */
+	/* [disabled]border: 1px solid #666; */
+}
+.register-benefit img {
+	display: block;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.register-benefit {
+	text-align: center;
+	font-size: 26px;
+	font-family: "OpenSansCondensedLight", Helvetica, "Helvetica Neue", Arial, sans-serif;
+	padding-top: 20px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{
+	position:absolute;
+}
+ul.bjqs-controls.v-centered li.bjqs-next a{
+	right:0;
+}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}

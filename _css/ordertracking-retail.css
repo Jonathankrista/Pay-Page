@@ -1,0 +1,57 @@
+.retailInfo{
+    margin-bottom: 10px;    
+}
+.retailInfoHeading{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.retailInfoContent{
+    margin-bottom: 10px;
+}
+.retailInfoLeft{
+    width:50%;
+    float: left;
+}
+.retailInfoRight{
+    width: 50%;
+    float: right;
+}
+
+#rateExperienceButton{    
+    padding: 10px;
+    background-color: #f00;
+    color: #fff !important;        
+    display: block;
+    width:250px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.retailItem{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+}
+.retailItem:last-child{
+    border-bottom: none;
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+
+}
+
+@media (max-width: 640px){
+    .retailInfoLeft{
+        width:100%;
+        float: none;
+    }
+    .retailInfoRight{
+        width: 100%;
+        float: none;
+    }
+    .retailInfoRight h2{
+        margin-bottom: 3px !important;
+        margin-top: 5px;
+    }
+}

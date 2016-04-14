@@ -1,0 +1,104 @@
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body .tableswitch table {display: block !important;}
+	body .tableswitch table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	body .tableswitch table tbody {display: block !important;}
+	body .tableswitch table thead {display: block !important;}
+	body .tableswitch table tr {display: block !important; width:100% !important; margin-bottom:20px !important; border-bottom:1px solid #3f6184 !important;}
+	body .tableswitch table td {display: block !important; text-align:left !important; height:auto !important; border: 1px solid #3f6184 !important; border-bottom:none !important; position: relative !important; padding:10px !important; padding-left: 150px !important;}
+	
+	body .tableswitch table td:nth-of-type(2):before { content: "Order Date"; }
+	body .tableswitch table td:nth-of-type(3):before { content: "Order Number"; }
+	body .tableswitch table td:nth-of-type(4):before { content: "Amount"; }
+	body .tableswitch table td:nth-of-type(5):before { content: "Status"; color:#000;}
+	body .tableswitch table td:nth-of-type(6):before { content: "Order Details"; }
+	body .tableswitch table td:nth-of-type(7):before { content: "Resend Invoice"; }
+	
+	body .tableswitch table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 110px !important; padding: 10px !important; white-space: nowrap !important; background-color:#69C !important; color:#FFF !important;}
+	body .tableswitch table .hideMobile {display:none !important;}
+	
+	#online-purchases td { width:auto !important;}
+}
+
+@media only screen and (max-width: 640px)  {
+	body .tableswitch table {display: block !important;}
+	body .tableswitch table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	body .tableswitch table tbody {display: block !important;}
+	body .tableswitch table thead {display: block !important;}
+	body .tableswitch table tr {display: block !important; width:100% !important;  margin-bottom:20px !important; border-bottom:1px solid #3f6184 !important;}
+	body .tableswitch table td {display: block !important; text-align:left !important; height:auto !important; border: 1px solid #3f6184 !important; border-bottom:none !important; position: relative !important; padding:10px !important; padding-left: 150px !important;}
+	
+	body .tableswitch table td:nth-of-type(2):before { content: "Order Date"; }
+	body .tableswitch table td:nth-of-type(3):before { content: "Order Number"; }
+	body .tableswitch table td:nth-of-type(4):before { content: "Amount"; }
+	body .tableswitch table td:nth-of-type(5):before { content: "Status"; color:#000;}
+	body .tableswitch table td:nth-of-type(6):before { content: "Order Details"; }
+	body .tableswitch table td:nth-of-type(7):before { content: "Resend Invoice";}
+	
+	body .tableswitch table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 110px !important; padding: 10px !important; white-space: nowrap !important; background-color:#69C !important; color:#FFF !important;}
+	body .tableswitch table .hideMobile {display:none !important;}
+	
+	#online-purchases td { width:auto !important;}
+}
+
+@media only screen and (max-width: 479px) {
+	
+}
+
+#online-purchases {
+	margin-top:10px;
+	margin-bottom: 15px;
+}
+
+#online-purchases table {
+	border-collapse:collapse;
+}
+
+#online-purchases #current {
+	text-align: left;
+	color: #FFF;
+	background-color: #69C;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+#online-purchases th {
+	padding: 5px;
+	text-align: left;
+	border: 1px solid #3f6184;
+	background-color: #69C;
+	color:#FFF;
+	font-weight:normal;
+ 
+}
+
+#online-purchases td {
+	padding: 5px;
+	text-align: left;
+	border: 1px solid #69C;
+}
+
+#online-purchases td.status {
+	color: #F00;
+}
+
+#online-purchases td {
+	width:60px;
+}
+
+#online-purchases .no {
+	width:8px;
+}
+
+#online-purchases .feedback {
+	width:auto;
+}
+
+#online-purchases a i {
+	color:#333;
+}
+
+#online-purchases .details i {
+	font-size:16px;
+}

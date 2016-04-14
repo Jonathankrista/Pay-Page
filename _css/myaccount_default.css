@@ -1,0 +1,104 @@
+@media only screen and (max-width: 640px)  {
+	body #layout #page-title {margin-bottom:0px !important;}
+	body #layout #page-title table h1 {float:none !important; margin:0px !important;}
+	body #layout #page-title table h3 {float: none !important; padding: 0px !important; margin: 0px !important; margin-left:20px !important;}
+	body #layout #myaccount-info {padding-left:20px !important; padding-right:20px !important;}
+}
+
+@media only screen and (max-width: 479px) {
+	body #layout #page-title {margin-bottom:0px !important;}
+	body #layout #page-title table h1 {float:none !important; margin:0px !important;}
+	body #layout #myaccount-info {padding-left:20px !important; padding-right:20px !important; padding-top:10px !important;}
+}
+
+#layout #page-title   {
+	margin-bottom: 0px;
+	width: 100%;
+}
+#layout #page-title table h1 {
+	float: left;
+	margin-left: 45px;
+	margin-top: 0px;
+	margin-right: 25px;
+	margin-bottom: 0px;
+	font-size: 24px;
+	padding: 0px;
+}
+#layout #page-title table h3 {
+	float: left;
+	font-weight: normal;
+	margin-top: 6px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color: #000;
+	font-size: 15px;
+	padding: 0px;
+	margin-left: 0px;
+}
+#layout #content {
+	padding: 0px;
+	clear: both;
+}
+.selected-tab {
+	background-color: #eee;
+	font-weight: bold;
+	color: #000;
+}
+#myaccount-tabs {
+	width: 210px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+#myaccount-tabs li {
+	text-align: right;
+	list-style-type: none;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	font-size: 12px;
+}
+#content #myaccount-tabs li a {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	color: #333;
+}
+#content #myaccount-tabs li a:hover {
+	color: #F00;
+}
+#content #myaccount-tabs .selected-tab a:hover {
+	color: #000;
+}
+#myaccount-area #myaccount-info {
+	padding: 10px;
+	padding-top: 20px;
+}
+#myaccount-area #myaccount-info p {
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#myaccount-area #myaccount-info h3 {
+	padding: 0px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 16px;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}

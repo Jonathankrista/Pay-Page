@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+body select {
+	outline:none;
+	-moz-outline-style:none;
+}
+#main #layout #content h2 {
+	font-weight: normal;
+	font-variant: normal;
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+#advsearchpanels select option {
+	padding: 5px;
+	margin-bottom: 1px;
+}
+#advsearchpanels select option selected{
+	padding: 5px;
+	margin-bottom: 1px;
+	color: #FFF;
+	background-color: #F00;
+}
+#advsearchpanels select {
+	width: 350px;
+	margin: 10px;
+	overflow: scroll;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#main #layout #content #advsearch #button {
+	background-color: #F00;
+	color: #FFF;
+	display: block;
+	border: 1px solid #C00;
+	font-size: 16px;
+	height: 40px;
+	width: 100px;
+	cursor: default;
+	margin: 0px;
+}
+
+#main #layout #content #advsearch #button:hover {
+	background-color: #000;
+	color: #FFF;
+	border: 1px solid #000;
+	cursor: pointer;
+}

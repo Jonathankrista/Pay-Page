@@ -1,0 +1,159 @@
+@media only screen and (max-width: 640px)  {
+	body #layout #page-title {margin-bottom:0px !important;}
+	body #layout #page-title table h1 {float:none !important; margin:0px !important;}
+	body #layout #page-title table h3 {float: none !important; padding: 0px !important; margin: 0px !important; margin-left:20px !important;}
+	body #layout #myaccount-info {padding-left:20px !important; padding-right:20px !important;}
+	
+	body #alerts table {display: block !important;}
+	body #alerts table tbody {display: block !important;}
+	body #alerts table thead {display: block !important;}
+	body #alerts table tr {display: block !important;}
+	body #alerts table td {display: block !important; text-align:left !important; height:auto !important;}
+	
+	body #alerts table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	body #alerts table tr {border: 1px solid #ccc !important; border-bottom:#C96 2px solid !important; width:100% !important;}
+	body #alerts table td {border: none !important; border-bottom: 1px solid #ccc !important; position: relative !important; padding:10px !important; padding-left: 150px !important;}
+	
+	body #alerts table td:nth-of-type(1):before { content: "Create Date"; }
+	body #alerts table td:nth-of-type(2):before { content: "Description"; }
+	body #alerts table td:nth-of-type(3):before { content: "Enabled"; }
+	body #alerts table td:nth-of-type(4):before { content: "View All Items"; }
+	body #alerts table td:nth-of-type(5):before { content: "View Sale Items"; }
+	body #alerts table td:nth-of-type(6):before { content: "Edit"; }
+	body #alerts table td:nth-of-type(7):before { content: "Delete"; }
+	
+	body #alerts table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 70px !important; padding: 10px !important; white-space: nowrap !important;}
+}
+
+@media only screen and (max-width: 479px) {
+	body #layout #page-title {margin-bottom:0px !important;}
+	body #layout #page-title table h1 {float:none !important; margin:0px !important;}
+	body #layout #myaccount-info {padding-left:20px !important; padding-right:20px !important; padding-top:10px !important;}
+}
+
+#layout #page-title   {
+	margin-bottom: 0px;
+	width: 100%;
+}
+#layout #page-title table h1 {
+	float: left;
+	margin-left: 45px;
+	margin-top: 0px;
+	margin-right: 25px;
+	margin-bottom: 0px;
+	font-size: 24px;
+	padding: 0px;
+}
+#layout #page-title table h3 {
+	float: left;
+	font-weight: normal;
+	margin-top: 6px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color: #000;
+	font-size: 15px;
+	padding: 0px;
+	margin-left: 0px;
+}
+#layout #content {
+	padding: 0px;
+	clear: both;
+}
+.selected-tab {
+	background-color: #eee;
+	font-weight: bold;
+	color: #000;
+}
+#myaccount-tabs {
+	width: 210px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+#myaccount-tabs li {
+	text-align: right;
+	list-style-type: none;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	font-size: 12px;
+}
+#content #myaccount-tabs li a {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	color: #333;
+}
+#content #myaccount-tabs li a:hover {
+	color: #F00;
+}
+#content #myaccount-tabs .selected-tab a:hover {
+	color: #000;
+}
+#myaccount-area #myaccount-info {
+	padding: 10px;
+	padding-top: 20px;
+}
+#myaccount-area #myaccount-info p {
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#myaccount-area #myaccount-info h3 {
+	padding: 0px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 16px;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}#myaccount-area td  {
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+#myaccount-area #myaccount-info #records {
+	margin-top: 10px;
+	padding: 5px;
+}
+#myaccount-info #alerts  input{
+	float: right;
+	clear: both;
+	font-size: 11px;
+	background-color: #069;
+	border: 0px none #999;
+	padding: 5px;
+	display: block;
+	color: #FFF;
+	margin-top: 5px;
+	cursor: pointer;
+}
+#myaccount-info #alerts table{
+	border-collapse: collapse;
+}
+#myaccount-info #alerts th {
+	text-align: left;
+	padding: 8px;
+	background-color: #DECCAF;
+	border: 1px solid #666;
+}
+#myaccount-info #alerts td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #CCC;
+}

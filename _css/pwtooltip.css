@@ -1,0 +1,125 @@
+.pwToolTip{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	padding:10px;
+	margin:5px 10px 15px 0px;
+	position: relative;
+	border:1px solid #ccc;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 10px;
+	display: none;
+	z-index: 999;
+	max-width: 415px;
+}
+.confirmedAlert, .strengthAlert{
+	color:#cc0000;
+	margin-bottom: 5px;
+	display: none;
+}
+
+#strengthAlertmargin{
+margin-top:15px
+}
+
+#strengthAlertM{
+margin-top:7px;
+}
+
+.pwToolTip:after{
+    top: -10px;
+    content: "";
+    left: 12px;
+    position: absolute;
+    z-index: 99;
+    width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+	margin-bottom: 200px;
+
+}
+
+.pwToolTip:before{
+    top: -12px;
+    content: "";
+    left: 10px;
+    position: absolute;
+    z-index: 99;
+    width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid #ccc;
+
+}
+
+.pwToolTip h4{
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 5px !important;
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: bold !important;
+}
+.pwToolTip ul{
+	padding-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.pwToolTip ul li{
+	width: 160px;
+    min-height: 10px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    zoom: 1;
+    *display: inline;
+    _height: 10px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.pwToolTip ul li.invalid{
+	background:url(../img/invalid.gif) no-repeat 0 50%;
+	padding-left: 22px;
+	line-height: 15px;
+	color: #ec3f41 !important;
+}
+.pwToolTip ul li.invalid strong{
+	color: #ec3f41 !important;
+}
+
+.pwToolTip ul li.valid{
+	background:url(../img/valid.gif) no-repeat 0 50%;
+	padding-left: 22px;
+	line-height: 24px;
+	color: #3a7d34;
+}
+
+.pwToolTip ul li.valid strong{
+	color: #3a7d34;
+}
+.pwWeak{
+	color: #ec3f41 !important;
+	text-transform: uppercase;
+}
+.pwStrong{
+	color: #3a7d34 !important;
+	text-transform: uppercase;
+	display: none;
+}
+.passwordCorrect{
+	border:1px solid #009900 !important;
+	box-shadow: 0 0 5px #009900;
+}
+.passwordIncorrect{
+	border:1px solid #cc0000 !important;
+	box-shadow: 0 0 5px #cc0000;
+}
+.greenButton{
+	background-color: #009900 !important;
+}

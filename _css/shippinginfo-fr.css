@@ -1,0 +1,147 @@
+/* Shipping Info CSS */
+
+.content-table {
+	background-color: #eee;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+.content-table-last {
+	margin-right: 0;
+}
+.content-table img {
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.content-table-description {
+	padding-top: 0;
+	padding: 0 30px;
+	text-align: left;
+	font-size: 12px;
+	height: 90px;
+}
+.content-table-title {
+	font-size: 11px;
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.content-table-title a {
+	padding: 10px 15px;
+	background-image: url(https://www.softmoc.com/img/blue-bkg.gif);
+	background-position: center center;
+}
+.content-table-title a:hover {
+	background-image: url(https://www.softmoc.com/img/addcart-button-bg-o.png);
+	background-position: center center;
+}
+#content .content-table-title a {
+	color: #fff!important;
+	text-decoration: none;
+}
+.order-status {
+	margin-top: 20px;
+}
+.order-status span {
+	font-weight: bold;
+	font-size: 16px;
+}
+#shippingText, #pickupText, #exchangesText, #shippingText-mobile, #pickupText-mobile {
+	display: none;
+	background-color: #eee;
+	clear: both;
+	padding: 20px;
+}
+#shippingTextPop {
+	display: none;
+	border:3px solid black; 
+	background-color:#9999ff;
+	font-size:150%; 
+	text-align:center;
+}
+.content-table .arrow-img {
+	/*background-color: transparent;
+	width:25px;
+	height:25px;*/
+	vertical-align:middle;
+	padding:0;
+	margin-left: 5px;
+	margin-bottom: 2px;
+	font-size: 25px;
+}
+.content-table .before-arrow {
+	line-height: 20px;
+}
+#shippingText p {
+	padding-top: 20px;
+}
+.shippingTextLeft {
+	padding-right:30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-right: 1px dashed #000;
+}
+.shippingTextRight {
+	padding-left:30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.content-table-img {
+	font-size: 70px;
+}
+.content-table-img .fa-truck {
+	background: #fff;
+  padding: 10px 15px 10px 10px;
+  border-radius: 50%;
+}
+
+/*MOBILE PORTRAIT*/
+@media only screen and (max-width:479px) {
+	.content-table {
+		margin-bottom: 20px;
+	}
+	.content-table-img {
+		padding-top: 20px;
+	}
+	.content-table-description {
+		text-align: center;
+	}
+	.order-status {
+		text-align: center;
+	}
+}
+
+/* MOBILE LANDSCAPE + TABLET PORTRAIT (BROWSER PREVIEW) */
+@media only screen and (max-width:640px)  {
+	.content-table {
+		margin-bottom: 20px;
+	}
+	.content-table-img {
+		padding-top: 20px;
+	}
+	.content-table-description {
+		text-align: center;
+		height: 80px;
+	}
+	.order-status {
+		text-align: center;
+	}
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	.content-table {
+		margin-bottom: 20px;
+	}
+	.content-table-img {
+		padding-top: 20px;
+	}
+	.content-table-description {
+		text-align: center;
+	}
+	.order-status {
+		text-align: center;
+	}
+}

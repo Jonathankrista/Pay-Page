@@ -1,0 +1,127 @@
+/* TABLET LANDSCAPE */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body #layout #page-title {margin-top:15px !important;}
+
+	body .checkout-opt-buttons {padding-bottom:20px !important;}
+	body #checkout-options div td {height:auto !important;}
+	body #checkout-options .checkout-opt-buttons {padding-bottom:30px !important;}
+	/*body #header {display:none !important;}*/
+	body #footerSocial {display:none !important;}
+	body #footerBtns {display:none !important;}
+	body #orderPhone {display:none !important;}
+}
+
+/* TABLET PORTRAIT (BROWSER PREVIEW) */
+@media only screen and (max-width:640px)  {
+	body .checkout-opt-buttons {padding-bottom:20px !important;}
+	body #checkout-options div td {height:auto !important;}
+	body #checkout-options .checkout-opt-buttons {padding-bottom:30px !important;}
+	/*body #header {display:none !important;}*/
+	body #footerSocial {display:none !important;}
+	body #footerBtns {display:none !important;}
+	body #orderPhone {display:none !important;}
+}
+
+/*MOBILE LANDSCAPE AND PORTRAIT*/
+@media only screen and (max-width:479px) {
+	body .checkout-opt-buttons {padding-bottom:20px !important;}
+	body #checkout-options div td {height:auto !important;}
+	body #checkout-options .checkout-opt-buttons {padding-bottom:30px !important;}
+	/*body #header {display:none !important;}*/
+	body #footerSocial {display:none !important;}
+	body #footerBtns {display:none !important;}
+	body #orderPhone {display:none !important;}
+}
+
+#RegisterFromPCOForm {
+	margin-top:15px;
+}
+#checkout-options th {
+	padding: 10px;
+	margin: 0px;
+	background-color: #f2f2f2;
+	color: #000;
+	font-weight: normal;
+	text-align: left;
+	font-size: 14px;
+}
+#checkout-options div td{
+	padding: 10px;
+	text-align: left;
+	font-size: 12px;
+	vertical-align: middle;
+}
+#checkout-options .checkout-opt-buttons input {
+	text-decoration: none;
+	float: left;
+	padding: 8px;
+	font-size: 12px;
+	margin: 0px;
+	cursor: pointer;
+	color: #FFF;
+	border:none;
+	border-radius:3px;
+}
+#checkout-guest .checkout-opt-buttons input {
+	background-color: #069;
+}
+#checkout-myaccount .checkout-opt-buttons input {
+	background-color: #093;
+}
+#checkout-register .checkout-opt-buttons input {
+	background-color: #F60;
+}
+#layout #content #checkout-options .checkout-opt-buttons{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#checkout-options .border-OR{
+	/* [disabled]border-left-width: 1px; */
+	/* [disabled]border-left-style: solid; */
+	/* [disabled]border-left-color: #CCC; */
+	background-image: url(../img/or.gif);
+	background-position: right 80px;
+	background-repeat: no-repeat;
+	width: 45px;
+	padding: 0px;
+}
+#checkout-options #checkout-myaccount #member-login{
+	/* [disabled]text-align: right; */
+}
+#checkout-myaccount #member-login input {
+	width: 200px;
+	padding: 8px;
+	border: 1px solid #CCC;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* [disabled]clear: left; */
+	/* [disabled]float: left; */
+}
+#checkout-myaccount #member-login label {
+	display: block;
+	margin-bottom: 10px;
+}
+#checkout-myaccount #member-login a {
+	text-decoration: none;
+}
+#checkout-guest th {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #09C;
+}
+#checkout-myaccount th {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #9C0;
+}
+#checkout-register th {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #F60;
+}

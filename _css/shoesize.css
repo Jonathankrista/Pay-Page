@@ -1,0 +1,90 @@
+.shoe-sizes th {
+	text-align: center;
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	background-color: #EEE;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+}
+.shoe-sizes td {
+	padding: 5px;
+	text-align: center;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+}
+.shoe-sizes .shoeGender{
+	color: #333;
+	background-color: #FD8;
+	font-weight: bold;
+	font-size: 16px;
+	border: 1px solid #999;
+}
+.shoe-sizes .leftbordernone {
+	border-left-width: 0px;
+	border-left-style: none;
+}
+.shoe-sizes table {
+	margin-bottom: 15px;
+}
+.highlight-column {
+	background-color:#CCC;
+}
+.highlight-column-header {
+	background-color:#CCC!important;
+}
+.row-link:hover {
+	background-color:#CCC;
+}
+.size-ages {
+	font-size: 12px;
+	font-weight: normal;
+}
+#footer {
+	clear: both;
+}
+
+a.button-reg {
+color:#FFF;
+display:block;
+text-decoration: none;
+text-transform: uppercase;
+border-radius: 2px;
+height: auto;
+padding: 0 2%;
+text-align: center;
+margin:0 auto;
+font: 400 14px 'Open Sans',regular, sans-serif;
+line-height: 35px;
+width:130px;
+}
+
+a.primary {
+background:#000;
+}
+
+th.shoeButton {
+background-color:transparent;
+border-right-style:none;
+border-left-style:none;
+border-bottom-style:none;
+}
+
+#layout #content a {
+color:#FFF;
+}

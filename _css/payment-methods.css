@@ -1,0 +1,232 @@
+@media only screen and (min-device-width:1024px) {
+	body #search { display: none !important; }
+}
+/* TABLET LANDSCAPE */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body #main #content {margin-top:0px !important;}
+	body #page-title-mobile {padding:0px !important; margin:0px !important;}
+	body #page-title-mobile h1{color:#000 !important; font-weight:normal !important; font-size: 20px!important; text-decoration: none !important; margin: 0px !important; margin-left:20px !important; margin-top:10px !important; padding:0px !important; }
+	body #page-title-mobile span {text-align:center !important; display:block !important; margin-bottom:5px !important;}
+	#col1, #col2 {width:100%!important; float:none!important; box-sizing:border-box !important;}
+	#col2 {margin-top:15px !important; display:table;}
+	#col2 input[type=text] {width:280px !important;}
+	#col2 label:last-child input {margin-bottom:25px !important; background-color:#0C6 !important;}
+	#addcard-area input[type=button] {margin-right:0px !important; margin-top:20px !important; float:none !important; display:block !important; clear:both !important;}
+}
+
+ /*MOBILE LANDSCAPE & TABLET PORTRAIT (BROWSER PREVIEW) */
+@media only screen and (max-width:640px)  {
+	body #logo-mobile {margin-left:auto !important; margin-right:auto !important;}
+	body #main #content {margin-top:0px !important;}
+	body #page-title-mobile {padding:0px !important; margin:0px !important;}
+	body #page-title-mobile h1{color:#000 !important; font-weight:normal !important; font-size: 20px!important; text-decoration: none!important; margin: 0px!important; margin-top:10px !important; margin-left:20px !important; padding:0px !important;}
+	body #page-title-mobile span {text-align:center !important; display:block !important; margin-bottom:5px !important;}
+	#col1, #col2 {width:100%!important; float:none!important; box-sizing:border-box !important;}
+	#col2 {margin-top:15px !important; display:table;}
+	#col2 input[type=text] {width:280px !important;}
+	#col2 label:last-child input {margin-bottom:25px !important; background-color:#0C6 !important;}
+	#addcard-area input[type=button] {margin-right:0px !important; margin-top:20px !important; float:none !important; display:block !important; clear:both !important;}
+	#AddNewPMButton {margin-top:20px;}
+	#AddNewPMButton button {margin-right:0px !important; padding:10px !important; padding-bottom:7px !important; padding-top:7px !important;}
+	#savedCardsArea td .fa {font-size:16px !important;}
+}
+
+/*MOBILE PORTRAIT*/
+@media only screen and (max-width:479px) {
+	#col1, #col2 {width:auto !important; float:none!important; box-sizing:border-box !important; padding:0px !important; margin:0px !important;}
+	#col1 {background-color:#fff !important;}
+	#col2 label {margin-right:0px !important; display:block !important; width:100% !important;}
+	#col2 input[type=text] {width:100% !important;  box-sizing:border-box !important;}
+}
+
+#layout #header #my-account-rewards {
+	width: 225px;
+	float: right;
+	text-align: center;
+	height: 90px;
+	margin: 0px;
+}
+
+#layout #header #page-title {
+	float: left;
+	height: 40px;
+	width: 385px;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 30px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border:none;
+	margin:0px;
+}
+
+#page-title h1 {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #000;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 24px;
+}
+
+#vault-info {
+	padding:15px;
+	background-color:#eaf2f7;
+}
+
+#vault-info img {
+	float:left;
+	margin-right:15px;
+	margin-bottom:5px;
+	width:120px;
+	height:auto;
+}
+
+#content em{
+	display:block;
+	margin-top:3px;
+	font-size:12px;
+}
+
+#addcard-area {
+	margin-top:25px;
+}
+
+#addcard-area  h3{
+	font-weight:normal;
+	margin-bottom:10px;
+}
+
+#addcard-area input {
+	border:1px solid #ccc;
+	padding:5px;
+	margin-top:3px;
+}
+
+#addcard-area select {
+	margin-top:3px;
+	margin-right:10px;
+}
+
+#col1 {
+	float:left;
+	width:140px;
+	background-color:#eaf2f7;
+	padding:10px;
+	margin-right:25px;
+}
+
+#col1 label{
+	display:block;
+	margin-bottom:10px;
+}
+
+/*#col1 input {
+	width:240px;
+}*/
+
+#col2{
+	float:left;
+	width:500px;
+}
+
+#col2 select{
+	display:block;
+	margin-bottom:10px;
+}
+
+#col2 input {
+	display:block;
+	width:220px;
+}
+
+#col2 label {
+	display:inline;
+	float:left;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+
+#col2 label:first-child{
+	display:block !important;
+	float:none;
+	clear:right;
+}
+
+#addcard-area input[type=button] {
+	background-color:#000;
+	color:#fff;
+	border:none;
+	border-radius:3px;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-right:20px;
+	margin-bottom:20px;
+	cursor:pointer;
+	float:right;
+	width:auto;
+}
+
+#trust-seals {
+	display:block;
+	clear:both;
+}
+
+#AddNewPMButton {
+	text-align:right;
+}
+
+#AddNewPMButton input[type='button'] {
+	background-color:#333;
+	color:#fff;
+	padding:3px;
+	border-radius:3px;
+	border:none;
+	margin-right:5px;
+	cursor:pointer;
+	font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+#savedCardsArea {
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+#savedCardsArea table{
+	border-collapse:collapse !important;
+}
+
+#savedCardsArea th{
+	text-align: left;
+	color: #000;
+	padding: 5px;
+	padding-left:10px;
+	background-color: #f5f2ea;
+	border: 1px solid #d1cbb9;
+	margin: 0px;
+}
+
+#savedCardsArea td {
+	border: 1px solid #D1CBB9;
+	padding: 10px;
+	font-size: 12px;
+	text-align: left;
+}
+
+#savedCardsArea td  img {
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+
+#savedCardsArea td .fa {
+	color:#000;
+	font-size:16px;
+}

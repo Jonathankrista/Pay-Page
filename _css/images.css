@@ -1,0 +1,109 @@
+/*#search_btn {
+	float: left;
+}
+*/
+#arrow_right {
+	margin-left: 5px;
+}
+#cart-status #cart_img {
+	/* [disabled]margin-right: 5px; */
+}
+#sub-header #my-acc-rewards img {
+	height: 46px;
+	width: 70px;
+}
+#header #logo-image img {
+	margin-top: 10px;
+}
+.customer_service_phone  {
+	background-image: url(/img/phone.png);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+}
+#footer img {
+	float: left;
+	/* [disabled]margin-right: 10px; */
+}
+#sub-footer #verisign {
+	float: right;
+}
+#social img {
+	margin-right: 5px;
+}
+#social-area img {
+	margin-left: 6px;
+}
+#left-showcase-column a img, #right-showcase-column a img {
+	display: block;
+	margin-bottom: 10px;
+}
+#social-links img {
+	margin-left: 5px;
+}
+#buyOnline {
+	margin-top: 20px;
+}
+
+#product-image-zoom .cloudzoom-gallery img {
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin-right: 4px;
+	border: 1px solid #CCC;
+	margin-left: 4px;
+}
+#product-image-zoom .cloudzoom-gallery img:hover {
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin-right: 4px;
+	border: 1px solid #666;
+	margin-left: 4px;
+}
+#productlogo {
+	margin-left: 20px;
+	margin-top: 40px;
+	display: block;
+	height: 145px;
+	width: 160px;
+	float: left;
+	margin-bottom: 10px;
+	border: 1px solid #CCC;
+}
+#product-info #product-social img {
+	margin-right: 8px;
+}
+.my-account-sign-in-img {
+	background-image: url(/img/my-account-login.jpg);
+	background-repeat: no-repeat;
+	background-position: 445px 130px;
+}
+.my-account-register-img {
+	background-image: url(/img/register-my-account-img.jpg);
+	background-repeat: no-repeat;
+	background-position: right 80px;
+}
+.alt_color img {
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #CCC;
+}
+#secure-column-right #safe {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.margin10-border-shadow {
+	/* [disabled]margin-top: 5px; */
+	margin-bottom: 10px;
+	border: 4px solid #fff;
+}
+.gray-bg {
+	background-image: url(/img/gray-bg.jpg);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+.shadow-table-head {
+	background-image: url(/img/shadow-table.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}

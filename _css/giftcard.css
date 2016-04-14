@@ -1,0 +1,229 @@
+.giftCardLarge{
+	width: 400px;
+}
+
+.giftCardColor{
+	display: none;
+}
+.hideButton{
+	display: none !important;
+}
+.popupFormFullColumn p{
+	margin-top: 20px;
+}
+/* ==========================================================================
+   Mobile Slide Down Form Element Styles
+   ========================================================================== */
+.mobileSlideDownFormWrapper{
+	display: none;
+}
+
+.mobileSlideDownFormInput{
+	border: 1px solid #ccc;
+	background-color: #f0f0f0;
+	padding: 10px;
+	width: 100%;
+	color: #666;
+	margin: 0 0 10px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+
+}
+
+
+
+h3.mobileSlideDownFormTitle{
+	text-align: center;
+	color: #00659b;
+	font-size: 18px;
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	text-transform: none;
+	margin-top: 20px;
+	margin-bottom: 0px !important;
+	padding: 0px !important;
+}
+p.mobileSlideDownSubtitle{
+	text-align: center;
+	color: #666;
+	font-size: 14px;
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	text-transform: none;
+	margin: 0px 0px 10px !important;
+}
+/* ==========================================================================
+   Magnific Popup Form Element Styles
+   ========================================================================== */
+
+#popupFormWrapper{
+	background-color: #fff;
+    border-radius: 3px;
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 30px;
+    position: relative;
+    width: auto;
+}
+.popupGiftCardDetailRow{
+	width: 525px;
+	padding: 10px 0px;
+	margin: 0 auto -20px;
+}
+.popupGiftCardPhoto{
+	float: left;
+	margin-top: -40px;
+}
+.popupGiftCardDetails{
+	float: left;
+	margin: 10px 0px 10px;
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	color: #666;
+}
+.popupGiftCardDetails p{
+	margin: 0px;
+	padding: 0px 0px 3px 0px;
+}
+
+h3.popupFormTitle{
+	text-align: center;
+	color: #00659b;
+	font-size: 18px;
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	text-transform: none;
+	padding: 30px 0px 20px;
+}
+.popupFormHalfColumn{
+	float: left;
+	width: 50%;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.popupFormHalfColumn:first-child{
+	padding-right: 20px;
+}
+.popupFormLabel{
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	margin: 10px 0px 5px;
+	color: #666;
+}
+.popupFormInput{
+	border: 1px solid #ccc;
+	background-color: #f0f0f0;
+	padding: 7px;
+	width: 100%;
+	color: #666;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.popupFormMax{
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	color: #666;
+}
+
+.popupFormFullColumn{
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	color: #666;
+}
+
+a.popupFormAddtoCart{
+	background-color: #ff6e00;
+	color: #fff;
+	padding: 10px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin: 10px 0px;
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+}
+a.popupFormCancel{
+	background-color: #999;
+	color: #fff;
+	padding: 10px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin: 10px 0px;
+	font-family: "open-sans-regular",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+}
+.popupFormButtons{
+	display: block;
+	margin: 42px 0px 0px;
+}
+/* ==========================================================================
+   Magnific Popup Form Modal Styles
+   ========================================================================== */
+.popupForm .mfp-inline-holder .mfp-content {
+max-width: 1050px;
+}
+.popupForm .mfp-close:before{
+  bottom: 0;
+    font-family:FontAwesome;
+    content:"\f00d";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-indent: 0;
+    top: 0;    
+}
+.popupForm .mfp-close, .qvBox .mfp-close:active{
+    background-color:#444;
+    border: 2px solid #fff;
+    border-radius: 100%;
+      -mox-border-radius:100%;
+    -webkit-border-radius: 100%;
+     -webkit-box-shadow: 0 5px 2px -3px #333333;
+    -moz-box-shadow: 0 5px 2px -3px #333333;
+    box-shadow: 0 5px 2px -3px #333333;
+    color:#fff!important;
+    font-size:14px !important;
+    height:1em !important;
+    line-height: 24px !important;
+    padding:5px;
+    right: -1em;
+    top:-1em;    
+    width:1em !important;
+    opacity: 1;
+}
+.popupForm .mfp-close:hover{
+    background-color: #000;
+}
+
+.popupForm a.mfp-close{
+    display: block;
+    position: absolute;
+    text-indent: -100000px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (max-width: 760px), only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+	.giftCardLarge{
+	max-width: 100%
+	}
+	#itemDetailLogo{
+		display: none !important;
+	}
+	#itemDetailPhotos{
+		padding-top: 0px !important;
+	}
+	#itemDetailMobileDescriptionTitle{
+		margin-top: 10px;
+	}
+}

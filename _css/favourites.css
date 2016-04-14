@@ -1,0 +1,240 @@
+@charset "ISO-8859-1";
+
+@media only screen and (max-width: 640px)  {
+	body .centerAlign2 {text-align: center!important; border:none !important; height:auto !important; padding:10px !important;}
+	body .centerAlign2 img {display:inline !important;}
+	body .rightBorder {border:none !important;}
+	body #continueShop table {margin-left:auto !important; margin-right:auto !important;}
+	
+	body #wishListForm #EmailName {padding:8px !important; width:95% !important;}
+	body #wishListForm #EmailMsg {padding:8px !important; width:95% !important;}
+	body #wishListForm #FriendEmail {padding:8px !important; width:95% !important;}
+	
+	body .items a img {display:inline !important;}
+	body .remove img {width:35px !important; height:auto !important; display:inline !important;}
+	body .addCart a {display:inline-block !important; font-size:16px !important; width:120px !important;}
+	
+	body .favItems table {display: block !important;}
+	body .favItems table tbody {display: block !important;}
+	body .favItems table thead {display: block !important;}
+	body .favItems table tr {display: block !important;}
+	body .favItems table td {display: block !important; text-align:left !important; height:auto !important;}
+	
+	body .favItems table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	body .favItems table tr {border: 1px solid #ccc !important; width:100% !important;}
+	body .favItems table td {border: none !important; border-bottom: 1px solid #ccc !important; position: relative !important; padding:10px !important; padding-left: 150px !important;}
+	
+	body .favItems table td:nth-of-type(1):before { content: "Item"; }
+	body .favItems table td:nth-of-type(2):before { content: "Size & Qty"; }
+	body .favItems table td:nth-of-type(3):before { content: "Description"; }
+	body .favItems table td:nth-of-type(4):before { content: "Price"; }
+	body .favItems table td:nth-of-type(5):before { content: "Remove"; }
+	
+	body .favItems table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 70px !important; padding: 10px !important; white-space: nowrap !important;}
+	
+	body #continueShop table {float:right !important;}
+}
+
+@media only screen and (max-width: 479px) {
+	body .centerAlign2 {text-align: center!important; border:none !important; height:auto !important; padding:10px !important;}
+	body .centerAlign2 img {display:inline !important;}
+	body .rightBorder {border:none !important;}
+	body #continueShop table {margin-left:auto !important; margin-right:auto !important;}
+	#continueShop a {float:none !important; display:block !important; margin-bottom:10px !important; width:200px !important; box-sizing:border-box !important; padding:10px !important;}
+	
+	body #wishListForm #EmailName {padding:8px !important; width:95% !important;}
+	body #wishListForm #EmailMsg {padding:8px !important; width:95% !important;}
+	body #wishListForm #FriendEmail {padding:8px !important; width:95% !important;}
+	
+	body .remove img {width:35px !important; height:auto !important; display:inline !important;}
+	body .addCart a {font-size:16px !important; width:auto !important;}
+	
+	body .favItems table {display: block !important;}
+	body .favItems table th {display: block !important;}
+	body .favItems table tr {display: block !important;}
+	body .favItems table td {display: block !important; text-align:left !important; height:auto !important;}
+	
+	body .favItems table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	body .favItems table td {border: none !important; border-bottom: 1px solid #ccc !important; position: relative !important; padding:10px !important; padding-left: 110px !important;}
+	
+	body .favItems table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 25% !important; padding: 10px !important; white-space: nowrap !important;}
+}
+
+#layout #page-title {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	margin-bottom: 10px;
+}
+.favItems table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.favItems th, .favItems td {
+	border: 1px solid #CCC;
+}
+.favItems th {
+	background-color: #eee;
+	text-align: left;
+	color: #000;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.favItems td {
+	padding: 5px;
+	height: 135px;
+	vertical-align: middle;
+}
+.favItems img {
+	display: block;
+}
+.favItems .description{
+	padding: 10px;
+	height: 125px;
+}
+
+.favItems .size select {
+	width:50px;
+	display:block;
+	margin-bottom:10px;
+}
+
+.favItems td table td {
+	height: auto;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#continueShop {
+	/*padding: 10px;*/
+}
+
+#continueShop a {
+	text-decoration: none;
+	float:left;
+	padding:5px 15px 5px 15px;
+	margin-right:10px;
+	margin-bottom:10px;
+	background-color:#eee;
+	color:#555 !important;
+	border-radius:3px;
+	font-size:12px;
+	font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+}
+#layout #content .favItems .addCart a {
+	display: block;
+	padding: 8px;
+	background-color: #FF6E00;
+	text-decoration: none;
+	color: #FFF;
+	font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+	width: 90px;
+	font-size: 12px;
+	line-height:12px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius:3px;
+}
+
+.remove a i {
+  font-size: 30px;
+  color: #333;
+}
+
+.deviceWidth .favTable {
+	border-bottom-width: 15px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+}
+#emailList a {
+	text-decoration: none;
+	color: #069;
+	display: block;
+	background-image: url(../img/email3.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 6px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-left: 25px;
+}
+#wishListForm {
+	padding: 15px;
+	background-color: #DBEEF8;
+	/* [disabled]border-bottom-width: 15px; */
+	/* [disabled]border-bottom-style: solid; */
+	/* [disabled]border-bottom-color: #FFF; */
+}
+#EmailYourWishListArea {
+	margin-bottom: 20px;
+	display: none;
+}
+#wishListForm #wishListGroup {
+	padding-top: 10px;
+}
+#wishListForm #FriendEmail{
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 5px;
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+	width: 400px;
+}
+#wishListForm #EmailName {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 360px;
+	padding: 5px;
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+}
+#wishListForm #EmailMsg {
+	display: block;
+	padding: 5px;
+	width: 360px;
+	margin-top: 5px;
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+}
+
+#wishListForm input, #wishListForm textarea {
+	border: 1px solid #8cb2c5;
+}
+
+#wishListForm #emailBtn {
+	display: block;
+	background-color: #369;
+	color: #FFF;
+	border: 1px solid #069;
+	border-radius:3px;
+	padding:5px 10px 5px 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+#wishListForm h3 {
+	padding: 0px;
+	font-size: 16px;
+	color: #069;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-weight: normal;
+}
+#wishListForm strong {
+	color: #333;
+	font-size: 14px;
+}
+#wishListForm em {
+	font-size: 12px;
+}

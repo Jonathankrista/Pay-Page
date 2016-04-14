@@ -1,0 +1,262 @@
+.qvContentWrapper{
+    width: auto;
+    position: relative;
+    padding: 50px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    max-width: 600px;
+}
+.qvLeftColumn img{
+    width: 250px !important;
+    height: auto;
+}
+
+.qvSizePlaceholder{
+  margin-top: 25px;
+}
+
+/* --------------------------------------- Quick View Buttons Overlay  ------------------------ */
+
+.QVButton{
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  padding:10px;
+  display: none;
+  text-indent: -100000px !important;
+  background-image: url('../img/lightbox-theme.png') !important;
+  width:38px !important;
+  height: 38px !important;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  background-position: -43px -96px !important;
+  -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+  background-size: 170px auto !important;
+  background-repeat: no-repeat !important;
+  opacity: 0.8;
+}
+
+.QVButton:hover{
+  background-position: -129px -96px !important;
+}
+
+.upsellItem:hover .QVButton{
+    display: block;
+}
+
+
+.qvZoom{
+  position: absolute;
+  top: 35%;
+  left: 10px;
+  opacity:0;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #fff !important;
+  background-color:#000;
+  background: rgba(0, 0, 0, .75);
+  padding:10px;
+  border-radius: 22px;
+  font-size: 18px;
+  border: 2px solid #fff;
+
+}
+
+/* --------------------------------------- Quick View Modal Styles ---------------------------- */
+.qvWrapper{
+    width: auto;
+    position: relative;
+    padding: 30px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    max-width: 700px;
+}
+.qvWrapper p{
+  margin: 15px 0;
+}
+.qvLeftColumn{
+    float: left;
+    width: 360px;
+}
+.qvMainImg{
+  margin-top: 0px !important;
+}
+
+.qvRightColumn{
+    float: right;
+    width: 330px;
+}
+.qvTitle{
+  color: #00659b;
+  font-family: "open-sans-condensed-bold",Arial,sans-serif;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.qvFeatures{
+  margin-top: 10px;
+  padding-left:15px;
+  color: #333;
+}
+.qvPrice{
+  color: #444;
+  font-family: "open-sans-condensed-bold",Arial,sans-serif;
+  font-size: 35px;  
+  line-height: 35px;
+  padding: 0px;
+  text-align: center;
+}
+.qvSalePriceWrapper{
+  color: #cc0000;
+  font-family: "open-sans-condensed-bold",Arial,sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 700;
+  padding: 0px;
+  text-align: center;
+}
+.qvRegPrice{
+  text-decoration: line-through;
+  font-size: 18px;
+  color: #444;
+  line-height: 26px;
+}
+
+.qvSize h2{
+  font-size: 12px !important;
+  margin:0px 0px 5px 0px !important;
+  font-family: 'open-sans-regular', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.qvSizeAlert{
+    color: #ff0000;
+    display: none;
+    font-family: "open-sans-regular",Arial,sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+.qvSizeInput, .qvSizeInput > span{
+    height: 28px !important;
+    line-height: 27px !important;
+    font-family: 'open-sans-regular', Arial, sans-serif;
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+
+.qvWidth{
+  float: right;
+}
+
+.qvAddtoCartButton a{
+  background-color: #ff6e00;
+    clear: left;
+    color: #fff !important;
+    display: block;
+    margin: 15px 0px;
+    padding: 15px 0px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    font-size: 15px;
+    font-family: 'open-sans-regular', Arial, sans-serif;
+}
+
+
+.selectboxit-options, .selectboxit-container, .selectboxit-container .selectboxit {
+    width: 100% !important;
+}
+/*********************** Magnific Styles ******************************/
+.qvBox .mfp-inline-holder .mfp-content {
+max-width: 1050px;
+}
+
+.qvBox a.mfp-close{
+    background-image: url('../img/lightbox-theme.png');
+    width:32px;
+    height: 32px;
+    border-radius: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    background-position: -36px -2px;
+    -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+    background-size: 170px;
+    text-indent: -999999px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+}
+.qvBox a.mfp-close:hover{
+  background-position: -107px -2px;
+}
+
+.qvBox-arrow-right{
+  margin-right: 95px;
+  right: 0px;
+  top: 45%;
+  position: absolute;
+  cursor: pointer;
+  background-image: url('../img/lightbox-theme.png');
+  width:32px;
+  height: 32px;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  background-position: -36px -36px;
+  -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+  background-size: 170px;
+  text-indent: -999999px;
+}
+.qvBox-arrow-left{
+  margin-left: 95px;
+  left: 0px;
+  top: 45%;
+  position: absolute;
+  cursor: pointer;
+  background-image: url('../img/lightbox-theme.png');
+  width:32px;
+  height: 32px;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  background-position: -2px -36px;
+  -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.2);
+  background-size: 170px;
+  text-indent: -999999px;
+}
+
+/*********************** End Magnific Styles ******************************/
+
+

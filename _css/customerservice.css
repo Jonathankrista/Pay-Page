@@ -1,0 +1,260 @@
+/* TABLET PORTRAIT */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body #header {height:50px !important;}
+	body #content #accordion {display:inline !important;}
+	body .z-header {background-color:#E4ECF2 !important; text-shadow:none !important;}
+	body .z-header:hover {background-color:#b9cfe6 !important;}
+	body .z-section.z-active > .z-header  {color:#FFF !important; font-weight:normal !important; background-color:#069 !important;}
+	body #contact-info-mobile {display:block !important; margin-left:32px !important; margin-top:10px;}
+	body #content #subtitle { margin-top:5px;}
+	body #content {min-height:100px;}
+}
+
+
+
+ /*MOBILE LANDSCAPE & TABLET PORTRAIT (BROWSER PREVIEW) */
+@media only screen and (max-width: 640px) {
+	body #content #accordion {display:inline !important;}
+	body .z-header {background-color:#E4ECF2 !important; text-shadow:none !important;}
+	body .z-header:hover {background-color:#b9cfe6 !important;}
+	body .z-section.z-active > .z-header  {color:#FFF !important; font-weight:normal !important; background-color:#069 !important;}
+	body #contact-info-mobile {display:block !important; margin-left:32px !important; margin-top:20px !important;}
+	body #layout #content {margin-top:20px !important; min-height:100px !important;}
+	body #content #subtitle { margin-top:5px;}
+	body #content {min-height:100px;}
+	body #content #postions-title { float: none; width: 100%; margin: 0; border: none; padding-right: 0px; padding-left: 0px; }
+	body #content h1:first-child { margin-top: 0px;}
+	body #content #jobs { float: none; width: 100%; margin: 0; padding-right: 0px; padding-left: 0px; border: none; }
+	body #content #jobs ul, body #content #jobs #applying { padding-left: 10px; }
+	#contact-top-info { float: none; margin:0!important; height: 100%!important;}
+	#contact-top-info .contact-item { width: 100%; margin-left: 0; padding: 0!important; padding-bottom: 10px; margin:0px;}
+	#contact-top-info .contact-item .second {}
+	#contact-top-info .contact-item p:last-child {margin-bottom:10px!important;}
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+		#contact-top-info {
+		}
+
+		#contact-top-info .contact-item {
+			margin:-8px 30px 10px 0px !important;
+			font-size:11px!important;
+		}
+
+		#contact-top-info .contact-item .second p {
+			margin-bottom:0px!important;
+		}
+
+		h3#two {
+		margin-top:8px!important;
+		}
+
+		#content h1:first-child {
+		margin-top:15px;
+		}
+
+
+}
+
+.z-accordion.white.vertical > .z-section > h3 {
+	font-size: 14px;
+}
+
+/*wrap text long titles, http://zozoui.com/support/faq/zozo-accordion-faq/*/
+.z-accordion.vertical > .z-section > h3 {
+	height: auto !important;
+	line-height: 18px !important;
+	padding: 12px 40px 12px 14px !important;
+}
+#content #accordion h3 {
+	font-size: 12px;
+}
+#content #accordion h2  {
+	text-decoration: none;
+	color: #900;
+	padding: 0px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	font-size: 18px;
+}
+
+body #contact-info-mobile .bluetext {color:#069 !important;}
+body #contact-info-mobile a {color:#069 !important;}
+/*#content #customer-service-panel #contact-info {
+	margin-left: 20px;
+	margin-top:20px;
+}*/
+
+#content h1:first-child {
+    margin-bottom: 0px;
+}
+
+#content #subtitle {
+    margin-bottom: 10px;
+		display:block;
+		font-size: 11px;
+		color: #666;
+}
+.shippinginfo ol {
+	list-style: outside decimal !important;
+}
+.rate-experience #rateform input[type="text"] {
+	padding: 5px;
+	color: #000;
+	border: #ccc 1px solid;
+	display: block !important;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+.rate-experience #rateform a {
+	background: #000;
+	border: none;
+	padding: 10px;
+	color: #FFF !important;
+	display: inline-block;
+	float: none;
+}
+.TabbedPanelsContent h4 {
+  font-weight: bold !important;
+}
+.footerlinks.reduced a {
+	margin-right: 78px;
+}
+.footerlinks.reduced a:last-child {
+	margin-right: 0px;
+}
+#contact-top-info {
+	float: right;
+	margin-top:-62px;
+	height: 60px;
+}
+#contact-top-info .contact-item {
+	width: 120px;
+	float: left;
+	font-size: 12px;
+	padding-bottom: 2px;
+	margin:0px 50px 0px 0px
+}
+#contact-top-info .contact-item.first {
+	width: 165px;
+}
+#contact-top-info .contact-item i {
+	float: left;
+	font-size: 13px;
+	margin-right: 5px;
+}
+#contact-top-info .contact-item h3 {
+	margin-bottom: 0;
+	font-size: 13px;
+	padding-bottom: 3px;
+	line-height: 12px;
+}
+#contact-top-info .contact-item p {
+	margin: 0;
+	color: #666;
+}
+#contact-top-info .contact-item .second p {
+	margin-bottom: 3px;
+}
+
+/*h3#one{
+margin-top:15px;
+}*/
+
+h3#two {
+margin-top:10px;
+}
+
+div.contact-item.fourth {
+
+}
+
+.TabbedPanelsContent {
+	padding-top: 20px;
+}
+
+ div#customer-service-panel.VTabbedPanels.hideMobile {
+  margin-top: 40px!important;
+}
+
+#customer-service-panel {
+margin-top:40px!important;
+}
+
+
+.VTabbedPanels .TabbedPanelsTabGroup {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #069;
+}
+.TabbedPanelsContentGroup {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ccc;
+}
+.VTabbedPanels .TabbedPanelsTab {
+	margin-top: -1px;
+	margin-bottom: 0.2em;
+}
+.TabbedPanelsContent {
+	padding-top: 20px;
+}
+
+
+.ship-info-bottom {
+	margin:0 auto;
+}
+
+.ship-item-container {
+    margin: 0 auto;
+    width: 580px;
+}
+
+.ship-info-bottom .item {
+    float: left;
+    display: block;
+    padding: 15px 4px;
+    width: 185px;
+		margin:-9px;
+}
+
+#content .ship-info-bottom .item h4 {
+    text-align: center;
+    margin: 0;
+    background: none;
+    padding: 0px;
+}
+
+.item-img {
+    height: 60px;
+    margin: 0 auto;
+    width: 145px;
+}
+
+.item-3 img, .item-1 img {
+    padding: 10px 40px;
+}
+
+#content .ship-info-bottom .item h4 {
+    text-align: center;
+    margin: 0;
+    background: none;
+    padding: 0px;
+		font-size: 11px;
+	}
+
+
+		.item-3 {
+    width: 185px;
+    margin: 0 auto;
+}
+
+#layout #content .ship-info-bottom .item a {
+    color: #333;
+}
+
+.item-2 img {
+    vertical-align: middle;
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+#shop-left-col #kids-gender-links a {
+	display: block;
+	margin-top: 1px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	background-color: #eee;
+	text-decoration: none;
+	color: #900;
+}
+#shop-left-col #kids-gender-links a:hover {
+	color: #FFF;
+	background-color: #F00;
+}

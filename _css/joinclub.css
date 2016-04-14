@@ -1,0 +1,160 @@
+.fa-li{
+	left:-55px !important;
+}
+.successMessage h1{
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+}
+
+.successMessage{
+	background-color: #f7f2e8;
+	padding:20px;
+	font-size: 16px;
+	border-radius: 10px;
+}
+#joinClubImg{
+	width:260px;
+}
+#joinClubImgMobile{
+	display: none;
+}
+.joinClubLeftColumn{
+	float: left;
+	margin-top: 20px;
+	width: 250px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.joinClubRightColumn{
+	float: left;
+	margin-top: 30px;
+	width:550px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+
+#formTitle{
+	font-size: 21px;
+	font-family: "open-sans-condensed-bold", Arial, sans-serif !important;
+
+}
+.joinClubForm input[type=text]{
+	border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 8px;
+    width: 300px;
+}
+.joinClubForm input[type=submit]{
+	background-color: #f00;
+    border: none;
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+#formSubtitle{
+	color: #828282;
+	padding-top: 10px;
+}
+
+ul#joinClubList{
+	margin-top: 20px;
+	margin-left: 8px;
+}
+
+#joinClubList li{
+	padding-bottom: 10px;
+	font-family: "open-sans-condensed-bold", Arial, sans-serif !important;
+	font-size: 30px;	
+	line-height: 38px;
+	list-style-type: none;
+	position: relative;
+}
+
+#joinClubList li i{
+	color: #f00;
+}
+.ffSaveStory img{
+	float: right;
+	width: 66px;
+	position: absolute;
+	right: 85px;
+	top: 13px;
+}
+
+.listSmallPrint{
+	font-size: 18px;
+	color: #f00;
+}
+.joinClubDesc{
+	border-bottom: 1px solid #999;
+}
+.joinClubDesc p{
+	line-height: 20px;
+	font-size:  14px !important;
+}
+.joinClubTerms p{
+	font-size: 10px;
+	line-height: 14px !important;
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+	#joinClubImg{
+		display: none;
+	}
+	#joinClubImgMobile{
+		display: block;
+		width: 70%;
+		margin:20px auto 0px;
+	}
+	.joinClubLeftColumn{
+		float: none;
+		width: 70%;
+		margin: 0 auto;
+	}
+	.joinClubRightColumn{
+		float: none;
+		margin: 10px auto 0px;
+		width:70%;
+		padding-left: 0px;
+	}
+	.ffSaveStory img{
+		right: 75px;	
+	}
+}
+
+@media (max-width: 640px){
+	#joinClubImg{
+		display: none;
+	}
+	#joinClubImgMobile{
+		display: block;
+		width: 100%;
+	}
+	.joinClubLeftColumn{
+		float: none;
+		width: 100%;
+	}
+	.joinClubRightColumn{
+		float: none;
+		margin-top: 10px;
+		width:100%;
+		padding-left: 0px;
+	}
+	.ffSaveStory{
+		display: none;
+	}
+	#joinClubList li br{
+		display: none;
+	}
+	.joinClubForm input[type=text]{
+		width: 100%;
+	}
+}

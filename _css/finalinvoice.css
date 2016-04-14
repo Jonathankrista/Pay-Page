@@ -1,0 +1,489 @@
+body{
+	margin-top: 30px;
+	background-color: #eee;
+	color: #333;
+	font-family: Arial, sans-serif;
+}
+.vault{
+	width: 450px;
+	margin: 0 auto 20px;
+	text-align: center;
+	background-color: #f7f2e8;
+	border-radius: 10px;
+	padding:20px;
+}
+.vaultLogo {
+	float:left;
+	padding-right: 20px;
+}
+
+.vaultLogo img{
+	width: 120px;
+	height: 60px;
+}
+.vaultCopy{
+	text-align: left;
+}
+.vaultCopy h3{
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+.addCardBtn a{
+	background-color: #639;
+	padding: 10px;
+	display: block;
+	width:100px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 5px;
+	border-radius: 4px;
+	font-family: 'open-sans-regular', Arial, sans-serif;
+}
+.strongBorder td {
+  background-color: #f7f2e8 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.2) !important;
+  font-weight: bold;
+}
+.mainInvoice table .noBorder td {
+  border-top: 0 none;
+}
+#main #layout{
+	width: 760px;
+	padding:40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.finalInvoiceWrapper{
+	width: 760px;
+	margin:0 auto;
+	background-color: #fff;
+	padding:40px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.finalInvoiceHeader .logo img{
+	width: 170px;
+	height: auto;
+	float: left;
+}
+.accountRewards img{
+	width: 90px;
+	height: auto;
+	float: right;
+}
+.successMessage{
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.successMessage h1{
+	font-family: "open-sans-condensed-bold", Arial, sans-serif;
+	font-size: 30px;
+	margin: 0px 0px 5px;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+.successMessage h2{
+	margin:0px 0px 0px;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+	text-transform: none;
+	font-family: "open-sans-regular",Arial,sans-serif !important;
+
+}
+.successMessage h3{
+	font-size: 14px;
+	margin:0px 0px 20px;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+	text-transform: none;
+	font-family: 'open-sans-regular', Arial, sans-serif;
+}
+.completeRegistration {
+	background-color: #f7f2e8;
+	padding: 10px;
+	margin:0 auto;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mainInvoice{
+	padding:20px;
+	border:1px dashed #ccc;
+	font-size: 14px;
+
+}
+.mainInvoice table{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin:20px auto;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+.mainInvoice table tr:first-child td{
+	border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+.mainInvoice table tr:last-child td{
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.invoiceTitle{
+	width: 200px;
+	font-weight: bold;
+}
+.mainInvoice table td{
+	padding: 10px 20px;
+	margin: 0px;
+	border-top: 1px dotted rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	vertical-align: top;
+	font-size: 14px;
+}
+.ticketNumber{
+	float: left;
+}
+.ticketNumber a{
+	color: #000;
+	text-decoration: none;
+}
+.reviewLink{
+	float: right;
+}
+.reviewLink a{
+	color: #069;
+	text-decoration: none;
+}
+.questions{
+	text-align: center;
+	margin-top: 20px;
+}
+.questions p{
+	margin:0px;
+	font-size: 14px;
+	color: #666;
+}
+.questions h3, .questions h3 a{
+	margin:0px;
+	color: #ef2f22;
+	font-size: 21px;
+	text-decoration: none;
+	font-family: "open-sans-condensed-bold", Arial, sans-serif;
+	text-align: center;
+}
+
+.badges{
+	text-align: center;
+	margin: 20px auto 0px;
+	width: 100%;
+}
+.badgeItemWrapper{
+	margin-top: 20px;
+}
+.badgeItem{
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 25%;
+}
+.copyrightInfo{
+	width: 760px;
+	margin:10px auto 20px;
+	font-size: 10px;
+	color: #666;
+	font-style: italic;
+}
+
+.onlyMobile{
+	display: none;
+}
+
+
+/************ Clearfix Hack ******************/
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+body{
+	margin-top: 10px;
+}
+.vault{
+	width: 70%;
+	margin:0 auto;
+}
+.addCardBtn a{
+	margin:10px auto 0px;
+}
+.vaultLogo {
+	float:none;
+	padding-right:0px;
+}
+.finalInvoiceHeader{
+	display: none;
+}
+.vaultCopy h3{
+	margin-top: 10px;
+}
+.strongBorder{
+	background-color: #f7f2e8 !important;
+}
+.strongBorder td:first-child{
+	border-bottom: 0px !important;
+}
+.strongBorder td:last-child{
+	border-top: 0px !important;
+	padding-bottom: 10px;
+}
+.completeRegistration{
+	margin:0 auto;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	padding:20px;
+}
+.finalInvoiceHeader{
+	display: none;
+}
+.finalInvoiceWrapper{
+	margin:0px;
+}
+.onlyDesktop{
+	display: none;
+}
+.onlyMobile{
+	display: none;
+}
+.mainInvoice{
+	padding-bottom: 0px;
+}
+.mainInvoice table{
+	margin: 20px auto 0px;
+}
+.finalInvoiceWrapper{
+	width: 100%;
+	padding: 20px 10px;
+	margin: 0 auto;
+}
+.successMessage h1{
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+.successMessage h2{
+	font-size: 16px;
+	font-weight: bold;
+}
+.successMessage h3{
+	font-size: 13px;
+}
+.finalInvoiceHeader .logo img{
+	float: none;
+}
+.finalInvoiceHeader{
+	text-align: center;
+	margin-top: 30px;
+}
+.accountRewards{
+	display: none;
+}
+.ticketNumber{
+	float: none;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.reviewLink{
+	float: none;
+	text-align: center;
+}
+.badges{
+	width: 100%;
+}
+
+.copyrightInfo{
+	width: 100%;
+	text-align: center;
+}
+td.invoiceTitle{
+	width: 100%;
+	padding: 5px 0px 5px 10px !important;
+	margin-bottom: 5px !important;
+}
+
+.mainInvoice table td{
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	border:0px;
+	padding:0px 10px 20px 10px;
+	text-align: left;
+}
+.mainInvoice table tr:first-child td{
+	border:0px;
+}
+.mainInvoice table tr:last-child td{
+	border:0px;
+}
+.mainInvoice{
+	margin: 20px auto;
+	padding-bottom: 20px;
+	width: 70%;
+}
+.completeRegistration{
+	width: 70%;
+}
+
+}
+@media (max-width: 640px){
+.vault{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.addCardBtn a{
+	margin:10px auto 0px;
+}
+.vaultLogo {
+	float:none;
+	padding-right:0px;
+}
+.finalInvoiceHeader{
+	display: none;
+}
+.vaultCopy h3{
+	margin-top: 10px;
+}
+.strongBorder{
+	background-color: #f7f2e8 !important;
+}
+.strongBorder td:first-child{
+	border-bottom: 0px !important;
+}
+.strongBorder td:last-child{
+	border-top: 0px !important;
+	padding-bottom: 10px;
+}
+body{
+	margin-top: 10px;
+}
+.completeRegistration{
+	margin:0 auto;
+}
+.onlyDesktop{
+	display: none;
+}
+.onlyMobile{
+	display: block;
+}
+.finalInvoiceWrapper{
+	margin:0px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.mainInvoice{
+	padding-bottom: 0px;
+	border:none;
+}
+.mainInvoice table{
+	margin: 20px auto 0px;
+}
+.finalInvoiceWrapper{
+	width: 100%;
+	padding: 20px 10px;
+}
+.successMessage h1{
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+.successMessage h2{
+	font-size: 16px;
+	font-weight: bold;
+}
+.successMessage h3{
+	font-size: 13px;
+}
+.finalInvoiceHeader .logo img{
+	float: none;
+}
+.finalInvoiceHeader{
+	text-align: center;
+}
+.accountRewards{
+	display: none;
+}
+.ticketNumber{
+	float: none;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.reviewLink{
+	float: none;
+	text-align: center;
+}
+
+.badges{
+	width: 100%;
+}
+.badgeItem{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.copyrightInfo{
+	width: 100%;
+	text-align: center;
+}
+td.invoiceTitle{
+	width: 100%;
+	padding: 5px 0px 5px 10px !important;
+	margin-bottom: 5px !important;
+}
+
+.mainInvoice table td{
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	border:0px;
+	padding:0px 10px 20px 10px;
+	text-align: left;
+}
+.mainInvoice table tr:first-child td{
+	border:0px;
+}
+.mainInvoice table tr:last-child td{
+	border:0px;
+}
+}

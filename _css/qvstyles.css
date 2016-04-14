@@ -1,0 +1,119 @@
+/*********************** Content Styles **********************/
+
+.qvContentWrapper{
+    width: auto;
+    position: relative;
+    padding: 50px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    max-width: 600px;
+}
+.qvLeftColumn img{
+    width: 250px !important;
+    height: auto;
+}
+.qvContentWrapper p{
+    font-family: "open-sans-regular", Arial, sans-serif;
+    color: #333;
+}
+
+.qvContentWrapper h2{
+    font-family: "open-sans-regular", Arial, sans-serif;
+    color: #00659b;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.qvLeftColumn{
+    float: left;
+}
+.qvRightColumn{
+    float: right;
+    width: 315px;
+}
+.qvAddtoCartButton a{
+    background-color: #ff6e00;
+    clear: left;
+    color: #fff !important;
+    display: block;
+    margin: 15px 0px;
+    padding: 15px 0px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    font-size: 15px;
+    font-family: "open-sans-regular", Arial, sans-serif;
+}
+
+.qvPrice{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    color: #444;
+    font-family: "open-sans-regular", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+ul.qvFeatures {
+  color: #333;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.qvBox .mfp-inline-holder .mfp-content {
+max-width: 830px;
+}
+/*********************** End Content Styles **************************/
+
+/*********************** Button Styles ******************************/
+.mfp-close:before{
+	bottom: 0;
+    font-family:FontAwesome;
+    content:"\f00d";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-indent: 0;
+    top: 0;    
+}
+.qvBox .mfp-close, .qvBox .mfp-close:active{
+    background-color:#444;
+    border: 2px solid #fff;
+    border-radius: 100%;
+      -mox-border-radius:100%;
+    -webkit-border-radius: 100%;
+     -webkit-box-shadow: 0 5px 2px -3px #333333;
+    -moz-box-shadow: 0 5px 2px -3px #333333;
+    box-shadow: 0 5px 2px -3px #333333;
+    color:#fff!important;
+    font-size:14px !important;
+    height:1em !important;
+    line-height: 24px !important;
+    padding:5px;
+    right: -1em;
+    top:-1em;    
+    width:1em !important;
+    opacity: 1;
+}
+.mfp-close:hover{
+    background-color: #000;
+}
+
+a.mfp-close{
+    display: block;
+    position: absolute;
+    text-indent: -100000px;
+    cursor: pointer;
+}
+/*********************** End Button Styles ******************************/

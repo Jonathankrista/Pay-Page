@@ -1,0 +1,108 @@
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+}
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) { 
+	body #layout {padding:0px !important; width:auto !important; border-radius:0px !important;}
+	body #content {border:none !important;  margin-top:40px !important; padding-bottom:30px;}
+	#PopUpD {width:100% !important; height:auto !important;}
+	#french-link {padding-left:8px !important; padding-right:8px !important;}
+}
+@media only screen and (max-width:640px)  {
+	body #layout {padding:0px !important; width:auto !important; border-radius:0px !important;}
+	body #content {border:none !important;  margin-top:40px !important; padding-bottom:30px; min-height: 200px !important;}
+	#PopUpD {width:100% !important; height:auto !important;}
+	#french-link {padding-left:8px !important; padding-right:8px !important;}
+}
+@media only screen and (max-width:479px) {
+}
+
+#PopUpD {
+	visibility:hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:490px;
+	height:220px;
+	background-color:#FC3;
+}
+
+
+/*#french-link { 
+	float:right;
+	display:inline-block;
+	padding:5px;
+	color:#555;
+	background-color:#eee;
+	font-size:12px;
+} Commented out -- Originally uncommented */
+
+/*#layout {
+	width:400px !important;
+	min-height:200px;
+	padding:30px !important;
+	margin-top:20px;
+	border-radius:5px;
+} Commented out -- Originally uncommented */
+
+#content {
+	/*border-top:1px #eee solid; Commented out -- Originally uncommented */
+	margin-top:50px; /* Adjust -- Originally 15px */
+	text-align:center;
+	/*min-height:100px; Commented out -- Originally uncommented */
+}
+
+h1 {
+	text-align:center;
+	text-transform:capitalize;
+	line-height:26px;
+	text-align: center; /* Added -- Not apart of original */
+}
+
+#rateform input[type=text] {
+	padding:5px;
+	color:#000;
+	border:#ccc 1px solid;
+	display:block !important;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:16px;
+}
+
+/*input[type=text] {
+	padding:5px;
+	color:#000;
+	border:#ccc 1px solid;
+	display:block !important;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:16px;
+} Commented out -- Originally uncommented */
+
+#rateform {
+	text-align:center;
+}
+
+/*form {
+	text-align:center;
+} Commented out -- Originally uncommented */
+
+#rateform a { /* Added -- Not apart of original */
+	background:#000;
+	border:none;
+	padding:10px;
+	color:#FFF !important;
+	display:inline-block;
+	float:none;
+}
+
+/*form a {
+	background:#000;
+	border:none;
+	padding:10px;
+	color:#FFF !important;
+	display:inline-block;
+	float:none;
+} Commented out -- Originally uncommented */

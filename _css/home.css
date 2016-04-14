@@ -1,0 +1,309 @@
+/* TABLET LANDSCAPE */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	.bx-wrapper .bx-prev {left:5px !important;}
+	.bx-wrapper .bx-next{right:5px !important;}
+	#layout .titleDivider {text-align:center !important; margin:0px !important; margin-top:15px !important; display:table !important;}
+	#layout .titleDivider img {float:none !important; margin-bottom:5px !important;}
+	#layout .titleDivider #title-whatshot {height:auto !important; width:220px !important;}
+	#layout .titleDivider #title-popularstyles {height:auto !important; width:220px !important;}
+	#layout .titleDivider #title-collections {height:auto !important; width:140px !important;}
+	#layout #small-banners {height: auto !important; margin-bottom:10px; border-bottom:none !important;}
+	#layout #hero {height: auto !important;}
+	#layout #small-banners {display:table !important; height:auto !important; border-bottom:none !important;}
+	#layout #small-banners img {width:49% !important; height: auto !important; display:inline-block !important; border:#ddd solid 1px !important; margin-bottom:8px !important;
+	-webkit-box-shadow:0px 1px 2px rgba(0,0,0,0.1)!important;
+	-moz-box-shadow:0px 1px 2px rgba(0,0,0,0.1)!important;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.1)!important;
+	}
+	#layout #small-banners .left-col {margin-right:5px !important; float:left !important;}
+	#layout #small-banners .right-col {margin-right:0px !important; float:right !important;}
+	#collections {display:table !important; height:auto !important; width:100% !important;}
+	#collections div  {width:20%!important; float:left !important; display:inline-block !important; padding-top:0px !important; padding-bottom:10px !important;
+	box-sizing:border-box !important;
+	-moz-box-sizing: border-box!important;
+	-webkit-box-sizing: border-box!important;
+	-ms-box-sizing: border-box!important;
+	border-right:#FFF 1px solid !important;margin-right:0px !important; margin-left:0px !important; height:360px !important;}
+	#collections div a {padding:5px  !important;}
+	#collections #infants-collections {border-right:none !important;}
+	#collections div img {display:block !important; margin:0px !important; margin-left:auto !important;  margin-right:auto !important;  width:100% !important; height:auto !important;}
+	#collections div h2 {position:static !important; width:100% !important; margin-bottom:10px !important; padding-left:0px !important; padding-right:0px !important;}
+	#layout #popular-styles-slider div h3{ font-size:11px !important; margin-bottom:0px !important;}
+	#layout #popular-styles-slider div{ font-size:11px !important; width: 190px !important;}
+}
+
+/* MOBILE LANDSCAPE + TABLET PORTRAIT (BROWSER PREVIEW) */
+@media only screen and (max-width:640px)  {
+	.bx-wrapper .bx-prev {left:5px !important;}
+	.bx-wrapper .bx-next {right:5px !important;}
+	#layout .titleDivider {text-align:center !important; margin:0px !important; margin-top:15px !important; display:table !important;}
+	#layout .titleDivider img {float:none !important; margin-bottom:5px !important;}
+	#layout .titleDivider #title-whatshot {height:auto !important; width:220px !important;}
+	#layout .titleDivider #title-popularstyles {height:auto !important; width:220px !important;}
+	#layout .titleDivider #title-collections {height:auto !important; width:140px !important;}
+	#layout #small-banners {height: auto !important; margin-bottom:10px; border-bottom:none !important;}
+	#layout #hero {height: auto !important;}
+	#layout #small-banners {display:table !important; height:auto !important; border-bottom:none !important;}
+	#layout #small-banners img {width:49% !important; height: auto !important; display:inline-block !important; border:#ddd solid 1px !important; margin-bottom:8px !important;
+	-webkit-box-shadow:0px 1px 2px rgba(0,0,0,0.1)!important;
+	-moz-box-shadow:0px 1px 2px rgba(0,0,0,0.1)!important;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.1)!important;
+	}
+	#layout #small-banners .left-col {margin-right:5px !important; float:left !important;}
+	#layout #small-banners .right-col {margin-right:0px !important; float:right !important;}
+	#collections {display:table !important; height:auto !important; width:100% !important;}
+	#collections div  {width:20%!important; float:left !important; display:inline-block !important; padding-top:0px !important; padding-bottom:10px !important;
+	box-sizing:border-box !important;
+	-moz-box-sizing: border-box!important;
+	-webkit-box-sizing: border-box!important;
+	-ms-box-sizing: border-box!important;
+	border-right:#FFF 1px solid !important;margin-right:0px !important; margin-left:0px !important; height:400px !important;}
+	#collections div a {padding:5px  !important;}
+	#collections #infants-collections {border-right:none !important;}
+	#collections div img {display:block !important; margin:0px !important; margin-left:auto !important;  margin-right:auto !important;  width:100% !important; height:auto !important;}
+	#collections div h2 {position:static !important; width:100% !important; margin-bottom:10px !important; padding-left:0px !important; padding-right:0px !important;}
+	#layout #popular-styles-slider div h3{ font-size:11px !important; margin-bottom:0px !important;}
+	#layout #popular-styles-slider div{ font-size:11px !important;}
+}
+
+/*MOBILE PORTRAIT*/
+@media only screen and (max-width:479px) {
+	.bx-wrapper .bx-prev {left:5px !important;}
+	.bx-wrapper .bx-next{right:5px !important;}
+	#layout #small-banners img {margin:0px!important; width:100%!important; height:auto!important; margin-bottom:5px !important;  border:none !important;}
+	#layout #small-banners .left-col {float:none!important; margin-right:0px !important;}
+	#layout #small-banners .right-col {float:none!important; }
+	#collections {display:inline !important;}
+	#collections div  {width:100% !important; height:auto !important; display:table !important; float:none !important; margin:0px !important; padding-top:10px !important; padding-bottom:10px !important; background-color:#FFF !important;}
+	#collections #womens-collections {width:100% !important; height:auto !important; display:table !important; float:none !important; margin:0px !important; padding-top:10px !important; padding-bottom:10px !important; background-color:#FFF !important;}
+	#collections #mens-collections {width:100% !important; height:auto !important; display:table !important; float:none !important; margin:0px !important; padding-top:10px !important; padding-bottom:10px !important; background-color:#FFF !important;}
+	#collections #girls-collections {width:100% !important; height:auto !important; display:table !important; float:none !important; margin:0px !important; padding-top:10px !important; padding-bottom:10px !important; background-color:#FFF !important;}
+	#collections #boys-collections {width:100% !important; height:auto !important; display:table !important; float:none !important; margin:0px !important; padding-top:10px !important; padding-bottom:10px !important; background-color:#FFF !important;}
+	#collections #infants-collections {width:100% !important; height:auto !important; display:table !important; float:none !important; margin:0px !important; padding-top:10px !important; padding-bottom:10px !important; background-color:#FFF !important;}
+	#collections div img {display:block !important; margin:0px !important; margin-bottom:15px !important; margin-left:auto !important;  margin-right:auto !important;  width:auto !important; height:auto !important;}
+	#collections div h2 {position:absolute !important; top:108px !important; left:50% !important; right:auto !important; margin-left:-62px !important; width:120px !important;}
+	#layout #popular-styles-slider div h3{ font-size:11px !important; margin-bottom:0px !important;}
+	#layout #popular-styles-slider div{ font-size:11px !important;}
+}
+
+#hero {
+	height: 350px;
+	width: 890px;
+	margin-top: 10px;
+}
+
+#hero-mobile {
+	display: none;
+	/* [disabled]margin-top: 10px; */
+}
+
+#hot-social {
+	height: 30px;
+}
+
+#whatshot {
+	height: 28px;
+	width: 215px;
+	color: #FFF;
+	text-align: center;
+	float: left;
+	padding-top: 2px;
+}
+
+#hero ul  {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#layout .titleDivider {
+	height: 20px;
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0px;
+	clear: left;
+}
+
+#layout .titleDivider img{
+	float: left;
+	margin: 0px;
+	margin-left:10px;
+	padding: 0px;
+	height:100% ;
+	width:auto;
+}
+
+#socialMedia {
+	text-decoration: none;
+	text-align: right;
+	font-size:18px;
+}
+
+#socialMedia h4 {
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 0px;
+	margin-top: 3px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	display:inline;
+}
+
+#socialMedia a {
+	color:#333;
+}
+
+#socialMedia #facebook_i {
+	color:#3b5998;
+}
+
+#socialMedia #twitter_i {
+	color:#00aced;
+}
+
+#socialMedia #pinterest_i {
+	color:#C92228;
+}
+
+#socialMedia #instagram_i {
+	color:#517fa4;
+}
+
+#socialMedia #wordpress_i {
+	color:#666;
+}
+
+#socialMedia a i {
+	padding-left:5px;
+}
+
+#small-banners {
+	height: 370px;
+	/*border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ddd;*/
+}
+
+#small-banners .left-col{
+	margin-right: 10px;
+}
+
+#small-banners img {
+	float: left;
+	margin-bottom: 10px;
+	/* [disabled]border: 1px solid #ddd; */
+}
+
+#popular-styles-slider {
+	margin-bottom: 10px;
+	width: 890px;
+}
+
+#popular-styles-slider div {
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	color: #F00;
+	font-style: italic;
+	padding-bottom: 10px;
+	font-size: 11px;
+}
+
+#popular-styles-slider div h3 {
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	font-size: 12px;
+	color: #333;
+	display: block;
+	text-align: center;
+	font-weight: normal;
+}
+
+#popular-styles-buttons .bx-prev{
+	background-image: url(../img/arrow-prev-black.png);
+	opacity: 0.5;
+}
+
+#popular-styles-buttons .bx-next{
+	background-image: url(../img/arrow-next-black.png);
+	opacity: 0.5;
+}
+
+
+#collections {
+	height: 360px;
+	width: 890px;
+}
+#collections div {
+	height: 360px;
+	width: 170px;
+	background-color: #eee;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+#collections #infants-collections {
+	margin: 0px !important;
+}
+#collections #womens-collections h2 {
+	background-color: #F60;
+}
+#collections #mens-collections h2 {
+	background-color: #036;
+}
+#collections #boys-collections h2 {
+	background-color: #09f;
+}
+#collections #girls-collections h2 {
+	background-color: #eb008b;
+}
+#collections #infants-collections h2 {
+	background-color: #9C3;
+}
+#collections div img {
+	margin-bottom: 20px;
+	display: block;
+	border: 0px none #FFF;
+}
+#collections div h2 {
+	color: #FFF;
+	padding: 4px;
+	height: auto;
+	width: 120px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	background-color: #000;
+	text-align: center;
+	position: absolute;
+	top: 98px;
+	left: 23px;
+}
+#collections div a {
+	display: block;
+	text-decoration: none;
+	color: #454545;
+	font-size: 11px;
+	text-align: center;
+	padding: 3px;
+}
+#collections div a:hover , #collections div a.newarrivals:hover{
+	color: #FF3300;
+}
+#collections  div a.newarrivals {
+	color: #069;
+	font-weight: bold;
+}

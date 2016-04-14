@@ -1,0 +1,223 @@
+body {
+	margin-top: 30px;
+	font-family: Arial, sans-serif;
+	font-weight: 13px;
+	color: #000;
+}
+a{
+	border:none;
+}
+.fa-print{
+	padding-right: 5px;
+}
+.wrapper{
+	width: 720px;
+	margin: 0 auto;
+}
+
+.printButton{
+	padding-bottom: 20px;
+}
+.printButton a{
+	float: right;
+	color: #fff;
+	background-color: #069;
+	padding:10px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	text-decoration: none;
+	font-family: "open-sans-regular", Arial, sans-serif;
+	font-size: 13px;
+}
+.coupon {
+	border: 5px dashed #000;
+}
+
+.couponTitle{
+	background-color: #ef2f22;
+	padding: 15px;
+}
+
+h1{
+	margin:0px;
+	padding:0px;
+	text-align: center;
+	font-family: "open-sans-condensed-bold", Arial, sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+.couponSubInfo{
+	background-color: #f0f0f0;
+	padding:10px 40px;
+}
+.subInfoLeftColumn{
+	float: left;
+}
+.subInfoRightColumn{
+	float: right;
+}
+.couponHeading{
+	font-size: 14px;
+	font-family: "open-sans-regular", Arial, sans-serif;
+	font-weight: bolder;	
+}
+.couponContent{
+	font-size: 14px;
+	margin-bottom: 10px;
+	font-family: "open-sans-regular", Arial, sans-serif;
+	padding-left: 3px;
+
+}
+.couponDescription{
+	padding: 10px 40px 0px;
+}
+.couponDiscountInfo{
+	text-align: center;
+	font-family: "open-sans-regular", Arial, sans-serif;
+	font-weight: bold;
+	color: #ef2f22;
+	font-size: 21px;
+	margin: 20px 0;
+}
+
+.couponBanner{
+	background-color: #f0f0f0;
+	padding:10px 40px;
+}
+.couponBanner ul{
+	list-style: none;
+	text-align: center;
+	margin:0px;
+	padding: 0px;
+	font-family: "open-sans-regular", Arial, sans-serif;
+	font-size: 14px;
+}
+.couponBanner li{
+	float: left;
+	padding: 0px 40px 0px 0px;
+}
+.couponBanner li:last-child{
+	padding: 0px !important;
+}
+.couponFooter{
+	text-align: center;
+	padding: 20px 10px;
+}
+.footerLogo{
+	width:180px;
+	height: auto;
+}
+.websiteAddy a{
+	color: #ef2f22;
+	text-decoration: none;
+	font-family: "open-sans-regular", Arial, sans-serif;
+}
+.finePrint{
+	color: #666;
+	font-size: 12px;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+.fa-check-square-o{
+	color: #33cc00;
+	padding-left: 5px;
+}
+
+/************ Clearfix Hack ******************/
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+
+.wrapper{
+	width: 60%;
+}
+.printButton{
+	text-align: center;
+}
+.printButton a{
+	float: none;
+}
+
+.subInfoLeftColumn{
+	float: none;
+}
+.subInfoRightColumn{
+	float: none;
+}
+.couponItem{
+	margin-bottom: 10px;
+}
+.couponDescription{
+	text-align: center;
+}
+.couponDiscountInfo{
+	margin:5px 0;
+}
+.couponSubInfo{
+	text-align: center;
+}
+.couponHeading{
+	display: block;
+}
+.couponBanner li{
+	float: none;
+	padding: 0px;
+	margin-bottom: 5px;
+}
+
+}
+
+@media (max-width: 640px){
+
+.wrapper{
+	width: 100%
+}
+.printButton{
+	text-align: center;
+}
+.printButton a{
+	float: none;
+}
+
+.subInfoLeftColumn{
+	float: none;
+}
+.subInfoRightColumn{
+	float: none;
+}
+.couponItem{
+	margin-bottom: 10px;
+}
+.couponDescription{
+	text-align: center;
+}
+.couponDiscountInfo{
+	margin:5px 0;
+}
+.couponSubInfo{
+	text-align: center;
+}
+.couponHeading{
+	display: block;
+}
+.couponBanner li{
+	float: none;
+	padding: 0px;
+	margin-bottom: 5px;
+}
+
+}

@@ -1,0 +1,149 @@
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body #main {margin-top:70px !important;}
+	body #layout {padding:0px !important; width:auto !important; border-radius:0px !important;}
+	body #content {border:none !important;  margin-top:0px !important; padding:20px; margin-left:auto !important; margin-right:auto !important;}
+	h1 {margin-bottom:15px; font-size:26px !important;}
+	h4 {text-align:left !important; font-weight:normal !important;}
+	#PopUpD {width:100% !important; height:auto !important;}
+	#french-link {padding-left:10px !important; padding-right:10px !important; font-size:16px !important; margin-right:20px !important;}
+}
+
+@media only screen and (max-width:640px)  {
+	body #main {margin-top:70px !important;}
+	body #layout {padding:0px !important; width:auto !important; border-radius:0px !important;}
+	body #content {border:none !important;  margin-top:0px !important; padding:20px; margin-left:auto !important; margin-right:auto !important;}
+	h1 {margin-bottom:15px; font-size:26px !important;}
+	h4 {text-align:left !important; font-weight:normal !important;}
+	#PopUpD {width:100% !important; height:auto !important;}
+	#french-link {padding-left:10px !important; padding-right:10px !important; font-size:16px !important; margin-right:20px !important;}
+
+}
+
+@media only screen and (max-width:479px) {
+	body #main {margin-top:50px !important;}
+	body #layout {padding:0px !important; width:auto !important; border-radius:0px !important;}
+	body #content {border:none !important;  margin-top:0px !important; padding:20px; margin-left:auto !important; margin-right:auto !important;}
+	h1 {margin-bottom:15px; font-size:26px !important;}
+	h4 {text-align:left !important; font-weight:normal !important;}
+	#PopUpD {width:100% !important; height:auto !important;}
+	#french-link {padding-left:8px !important; padding-right:8px !important; font-size:inherit !important;}
+	#star-meaning {float:none !important; display:block !important; border-bottom:1px solid #eee !important; padding-bottom:5px !important; margin-top:10px !important;  margin-bottom:15px !important; color:#999 !important;}
+	form {margin:0px !important; border:none !important; padding:0px !important; margin:0px !important;}
+	ol {margin-left:15px !important;}
+	.question {border:none !important; padding:0px !important; height:130px; list-style-position:outside !important; }
+	.question span{marigin-left:0px !important; margin-top:5px !important;}
+	textarea {width:100% !important; box-sizing:border-box !important; display:table-cell !important;}
+	form input[type=button] {margin:0px !important; margin-top:20px !important;}
+	.rating-cancel, .star-rating {padding:10px !important; margin-right:10px !important; margin-left:0px !important; margin-bottom:10px !important; border:1px #eee solid !important; border-radius:100%;}
+}
+
+.hidden {
+	visibility:hidden;
+	position:absolute;
+}
+
+#PopUpD {
+	visibility:hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:490px;
+	height:220px;
+	background-color:#FC3;
+}
+
+#french-link {
+	float:right;
+	display:inline-block;
+	padding:5px;
+	color:#555;
+	background-color:#eee;
+	font-size:12px;
+}
+
+#layout {
+	width:800px !important;
+	min-height:200px;
+	padding:30px !important;
+	margin-top:20px;
+	border-radius:5px;
+}
+
+#content {
+	margin-top:15px;
+	min-height:100px;
+}
+
+.contentinfo {
+	padding:0px;
+}
+
+.contentinfo em{
+	clear:both;
+	font-size:12px;
+	margin-bottom:0px;
+}
+
+h1 {
+	line-height:26px;
+	color:#069;
+	font-weight:normal !important;
+}
+
+#star-meaning {
+	float: right;
+}
+
+form {
+	border:1px #eee solid;
+	clear:both;
+	margin-top:10px;
+}
+
+form input[type=button] {
+	border:none;
+	padding:8px;
+	color:#fff;
+	font-size:14px;
+	background-color:#000;
+	margin:20px;
+	cursor:pointer;
+	display:inline-block;
+}
+
+ol {
+	margin: 0px;
+	padding: 0px;
+	list-style-position: inside;
+	list-style-type: decimal;
+}
+
+.question {
+	text-align:left;
+	padding:20px;
+	border-bottom:1px solid #eee;
+}
+
+#hover-stars {
+	margin-top:10px;
+	margin-right:10px;
+	margin-bottom: 60px;
+}
+
+.question span{
+	margin-left:10px;
+}
+
+
+textarea {
+	width:100%;
+	height:100px;
+	border:#ccc solid 1px;
+	padding:10px;
+	margin-top:5px;
+	box-sizing: border-box;
+	display:block;
+}

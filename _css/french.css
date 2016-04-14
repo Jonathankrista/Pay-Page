@@ -1,0 +1,48 @@
+/* Fixes for French Template */
+
+#layout #header #free-shipping-exchanges-returns {
+	font-size: 14px;
+}
+#footer #find-a-store {
+	width: 260px;
+} 
+#footer #join-club-softmoc{
+	width: 385px;
+}
+#joinclubform #email {
+	width: 290px;
+}
+#incentive {
+	width: 855px;
+}
+#incentive div h4 {
+	font-size: 15px;
+}
+#sub-footer .footerlinks {
+	margin-right: 95px;
+}
+
+body #instagramm {
+	margin-right: 0px !important;
+}
+#footerBtns .center-last-footer-item {
+	margin-left: 120px;
+}
+body #page-title p {
+	color: #000 !important;
+	text-decoration: none !important;
+	padding: 5px 5px 5px 0px !important;
+	margin: 0px !important;
+}
+/* TABLET LANDSCAPE 
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+	body #page-title p {
+		padding: 5px 5px 5px 0px !important;
+	}
+}*/
+/* TABLET PORTRAIT */
+@media only screen and (max-device-width:1024px) and (orientation:portrait) {
+	body #page-title p {
+		padding: 5px 5px 5px 20px !important;
+	}
+}

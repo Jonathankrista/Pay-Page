@@ -1,0 +1,2538 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+<meta charset="ISO-8859-1">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META NAME="WT.si_n" CONTENT="RevPurchasingProcess">
+<META NAME="WT.si_x" CONTENT="6">
+<meta name="format-detection" content="telephone=no">
+<!--
+<META NAME="WT.pn_sku" CONTENT="">
+-->
+<title>SoftMoc - Checkout 02</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="_css/body.css" rel="stylesheet" type="text/css">
+<link href="_css/structure.css" rel="stylesheet" type="text/css">
+<link href="_css/links.css" rel="stylesheet" type="text/css">
+<link href="_css/images.css" rel="stylesheet" type="text/css">
+<link href="_css/responsive.css" rel="stylesheet" type="text/css">
+<link href="_css/forms.css" rel="stylesheet" type="text/css">
+<link href="_css/text.css" rel="stylesheet" type="text/css">
+<link href="_css/webfonts.css" rel="stylesheet">
+<link href="_css/font-awesome.min.css" rel="stylesheet">
+<link href="_css/checkout2.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="_js/new-text.js"></script>
+<script type="text/javascript" src="_js/jquery-1.11.2.min.js"></script>
+<script src="http://www.softmoc.com/_js/jquery.ui.core.js"></script>
+<script src="http://www.softmoc.com/_js/jquery.ui.mask.js"></script>
+
+<script type="text/javascript" src="http://www.softmoc.com/_js/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6457300-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<style>
+
+h4 > span {
+	color:red;
+}
+
+
+
+</style>
+
+
+<script src="//22080.l.useitbetter.com/sdk/22080/uResponses.min.js" async></script>
+<script src="//22080.l.useitbetter.com/sdk/22080/udash.min.js" async></script>
+<script>
+    function initUDash ( i ){
+        if (typeof uDash === 'undefined') { if (i < 50) { setTimeout(initUDash,50, i+1);} return; }
+        uDash.init({ uProjectName: 'SoftMoc',uProjectApiPass: '05cf221ff10e47e779bd710fd3af13bc',uPort: 22080 });
+    }
+    initUDash ( 0) ;
+</script><!-- Start Visual Website Optimizer Synchronous Code -->
+<script type='text/javascript'>
+	var _vis_opt_account_id = 211558;
+	var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+	document.write('<s' + 'cript src="' + _vis_opt_protocol +'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a='+_vis_opt_account_id+'&url='+encodeURIComponent(document.URL)+'&random='+Math.random()+'" type="text/javascript">' + '<\/s' + 'cript>');
+</script>
+
+<script type='text/javascript'>
+	if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol +'d5phz18u4wuww.cloudfront.net/vis_opt.js" type="text/javascript">' + '<\/s' + 'cript>'); }
+	// if your site already has jQuery 1.4.2, replace vis_opt.js with vis_opt_no_jquery.js above
+</script>
+
+<script type='text/javascript'>
+	if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") { _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); }); }
+</script>
+<!-- End Visual Website Optimizer Synchronous Code -->
+
+</head>
+<script language="JavaScript">
+//Created new element for attach
+function ClearPM()
+{
+	document.TmpForm.CC.value="";
+	document.TmpForm.CC.readOnly=false;
+	document.TmpForm.ED_M.selectedIndex=0;
+	document.TmpForm.ED_M.disabled=false;
+	document.TmpForm.ED_Y.selectedIndex=0;
+	document.TmpForm.ED_Y.disabled=false;
+	document.CheckoutForm.DataKey.value="";
+	document.getElementById("CC_MyPM_Area").style.display="none";
+	document.getElementById("CC_MyPM_Area").innerHTML="";
+	document.getElementById("CC_Real_Area").style.display="block";
+}
+
+function ChangeShipMetd()
+{
+
+	var TmpShippingMethodValue="";
+	for (i=0; i< parseInt(document.TmpShipMthForm.ShippingMethod_NUM.value); i++)
+	{
+		if (parseInt(document.TmpShipMthForm.ShippingMethod_NUM.value)<=1)
+		{
+			if (this.document.TmpShipMthForm.ShippingMethod.checked)
+			{
+				TmpShippingMethodValue=this.document.TmpShipMthForm.ShippingMethod.value;
+				break;
+			}g
+		}
+		else
+		{
+			if (this.document.TmpShipMthForm.ShippingMethod[i].checked)
+			{
+				TmpShippingMethodValue=this.document.TmpShipMthForm.ShippingMethod[i].value;
+				break;
+			}
+		}
+	}
+	if ((TmpShippingMethodValue=="")&&(document.TmpShipMthForm.ShippingMethod_NUM.value!="0"))
+	{
+		if (parseInt(document.TmpShipMthForm.ShippingMethod_NUM.value)<=1)
+		{
+			this.document.TmpShipMthForm.ShippingMethod.checked=true;
+			TmpShippingMethodValue=this.document.TmpShipMthForm.ShippingMethod.value;
+		}
+		else
+		{
+			this.document.TmpShipMthForm.ShippingMethod[0].checked=true;
+			TmpShippingMethodValue=this.document.TmpShipMthForm.ShippingMethod[0].value;
+		}
+	}
+/*
+	var NoOfShippingSelected=0;
+	var FirstSelected= -1;
+	for (i=0; i< document.TmpShipMthForm.ShippingMethod.options.length; i++)
+	{
+		if (document.TmpShipMthForm.ShippingMethod.options[i].selected)
+		{
+			NoOfShippingSelected++;
+			if (FirstSelected!= -1)
+			{
+				break;
+			}
+			FirstSelected=i;
+			TmpShippingMethodValue=document.TmpShipMthForm.ShippingMethod.options[i].value;
+		}
+	}
+	if (NoOfShippingSelected <= 0)
+	{
+		if (document.TmpShipMthForm.ShippingMethod.options.length > 0)
+		{
+			document.TmpShipMthForm.ShippingMethod.options[0].selected=true;
+			TmpShippingMethodValue=document.TmpShipMthForm.ShippingMethod.options[0].value;
+		}
+	}
+	else if (NoOfShippingSelected > 1)
+	{
+		for (i=0; i< document.TmpShipMthForm.ShippingMethod.options.length; i++)
+		{
+			if (i==FirstSelected)
+				document.TmpShipMthForm.ShippingMethod.options[i].selected=true;
+			else
+				document.TmpShipMthForm.ShippingMethod.options[i].selected=false;
+		}
+	}
+*/
+
+
+
+		if (document.getElementById? document.getElementById("FreeShippingWordingArea_1"): eval("FreeShippingWordingArea_1")!=null)
+		{
+			if (parseInt(document.TmpShipMthForm.ShippingMethod_NUM.value)<=1)
+			{
+				if ((document.TmpShipMthForm.ShippingMethod_NUM.value!="0")&&(this.document.TmpShipMthForm.ShippingMethod.checked))
+					document.getElementById("FreeShippingWordingArea_1").style.display = "block";
+				else
+					document.getElementById("FreeShippingWordingArea_1").style.display = "none";
+			}
+			else
+			{
+				if ((document.TmpShipMthForm.ShippingMethod_NUM.value!="0")&&(this.document.TmpShipMthForm.ShippingMethod[0].checked))
+					document.getElementById("FreeShippingWordingArea_1").style.display = "block";
+				else
+					document.getElementById("FreeShippingWordingArea_1").style.display = "none";
+			}
+		}
+
+		if (document.getElementById? document.getElementById("FreeShippingWordingArea_2"): eval("FreeShippingWordingArea_2")!=null)
+		{
+			if (parseInt(document.TmpShipMthForm.ShippingMethod_NUM.value)<=1)
+			{
+				if ((document.TmpShipMthForm.ShippingMethod_NUM.value!="0")&&(this.document.TmpShipMthForm.ShippingMethod.checked))
+					document.getElementById("FreeShippingWordingArea_2").style.display = "block";
+				else
+					document.getElementById("FreeShippingWordingArea_2").style.display = "none";
+			}
+			else
+			{
+				if ((document.TmpShipMthForm.ShippingMethod_NUM.value!="0")&&(this.document.TmpShipMthForm.ShippingMethod[0].checked))
+					document.getElementById("FreeShippingWordingArea_2").style.display = "block";
+				else
+					document.getElementById("FreeShippingWordingArea_2").style.display = "none";
+			}
+		}
+
+
+
+	var Tmp=document.getElementById? document.getElementById("ShippingMtd_LongDesc_Area"): eval("ShippingMtd_LongDesc_Area");
+	if (Tmp!=null)
+	{
+		if ((TmpShippingMethodValue!="")&&(MyparseFloat(eval("document.TmpCheckoutForm.Default_XShipAmtArray"+TmpShippingMethodValue).value) > 0.00))
+		{
+			if (document.getElementById("HowShippingCalcArea")!=null)
+	 			document.getElementById("HowShippingCalcArea").style.display = "block";
+
+	 			document.getElementById("StorePickupInfo_Area").style.display = "block";
+
+			//Tmp.innerHTML="Unfortunately this item is not eligible for free shipping to your destination.";
+		}
+		else
+		{
+			if (document.getElementById("HowShippingCalcArea")!=null)
+	 			document.getElementById("HowShippingCalcArea").style.display = "none";
+
+				document.getElementById("StorePickupInfo_Area").style.display = "none";
+
+			Tmp.innerHTML="&nbsp;";
+		}
+	}
+
+		var Tmp=document.getElementById? document.getElementById("EstimatedDate_Area"): eval("EstimatedDate_Area");
+		if (Tmp!=null)
+		{
+			document.getElementById("EstimatedDate_Area").style.display = "block";
+			Tmp.innerHTML="<font color='#670000'>Estimated Shipping Date: Apr 13, 2016</font>";
+			if ((TmpShippingMethodValue!="")&&(eval("document.TmpCheckoutForm.DeliveryEstimateDateArray"+TmpShippingMethodValue).value!=""))
+			{
+				Tmp.innerHTML+="<br><font color='#670000'>Estimated Delivery Date to Toronto:<br>"+eval("document.TmpCheckoutForm.DeliveryEstimateDateArray"+TmpShippingMethodValue).value+"</font>";
+			}
+		}
+		else
+		{
+			document.getElementById("EstimatedDate_Area").style.display = "none";
+			Tmp.innerHTML="&nbsp;";
+		}
+
+//	Tmp=document.getElementById? document.getElementById("ShippingMtd_Desc_Area"): eval("ShippingMtd_Desc_Area");
+//	if (Tmp!=null)
+//		Tmp.innerHTML=eval("document.TmpCheckoutForm.Default_XShipArray"+TmpShippingMethodValue).value;
+	var TotalShippingTax=0.00;
+	Tmp=document.getElementById? document.getElementById("ShippingMtd_Amt_Area"): eval("ShippingMtd_Amt_Area");
+	if (Tmp!=null)
+	{
+
+			Tmp.innerHTML="$"+eval("document.TmpCheckoutForm.Default_XShipAmtArray"+TmpShippingMethodValue).value;
+
+		var Tmp1;
+
+			Tmp1=(MyparseFloat(""+eval("document.TmpCheckoutForm.Default_XShipAmtArray"+TmpShippingMethodValue).value)
+						*MyparseFloat(document.TmpCheckoutForm.Tmp_Tax3P.value)/100)
+					+(MyparseFloat(document.TmpCheckoutForm.Tax3WithoutShipping.value));
+			TotalShippingTax+=MyparseFloat(""+eval("document.TmpCheckoutForm.Default_XShipAmtArray"+TmpShippingMethodValue).value)
+						*MyparseFloat(document.TmpCheckoutForm.Tmp_Tax3P.value)/100;
+			document.getElementById("Tax3Amount").innerHTML=CheckFrenchPriceFormatWithLang("$"+DoubleToString(Tmp1,true)+"."+DoubleToString(Tmp1,false),"E");
+
+	}
+	Tmp=document.getElementById? document.getElementById("Total_Area"): eval("Total_Area");
+	if (Tmp!=null)
+	{
+		var TTT= MyparseFloat(document.TmpCheckoutForm.Total.value) + MyparseFloat(eval("document.TmpCheckoutForm.Default_XShipAmtArray"+TmpShippingMethodValue).value)+TotalShippingTax;
+
+			TTT=DoubleToString(TTT,true)+"."+DoubleToString(TTT,false);
+			Tmp.innerHTML="$"+TTT;
+
+		document.TmpCheckoutForm.TotalWithShippingFee.value=TTT;
+	}
+}
+var CurrentPMSelected="";
+
+function ChangePayBy()
+{
+	var Obj=document.TmpForm.PaymentMethod;
+	document.CheckoutForm.DataKey.value="";
+	if ((Obj.options[Obj.selectedIndex].value.length>0)&&(Obj.options[Obj.selectedIndex].value.substring(0,1)=='@'))
+	{
+		CurrentPMSelected=Obj.options[Obj.selectedIndex].value;
+		var MyPMValue=Obj.options[Obj.selectedIndex].value;
+		var CC="";
+		var ED_M="";
+		var ED_Y="";
+		var DataKey="";
+		for (var i=1; i < MyPMValue.length; i++)
+		{
+			if (MyPMValue.substring(i,i+1)=='@')
+				break;
+		}
+		for (i=i+1; i < MyPMValue.length; i++)
+		{
+			if (MyPMValue.substring(i,i+1)=='@')
+				break;
+			CC+=MyPMValue.substring(i,i+1);
+		}
+		for (i=i+1; i < MyPMValue.length; i++)
+		{
+			if (MyPMValue.substring(i,i+1)=='@')
+				break;
+			ED_M+=MyPMValue.substring(i,i+1);
+		}
+		for (i=i+1; i < MyPMValue.length; i++)
+		{
+			if (MyPMValue.substring(i,i+1)=='@')
+				break;
+			ED_Y+=MyPMValue.substring(i,i+1);
+		}
+		for (i=i+1; i < MyPMValue.length; i++)
+		{
+			if (MyPMValue.substring(i,i+1)=='@')
+				break;
+			DataKey+=MyPMValue.substring(i,i+1);
+		}
+		document.TmpForm.CC.value=CC;
+		document.TmpForm.CC.readOnly=true;
+		for (i=1; i < document.TmpForm.ED_M.length; i++)
+		{
+			if (ED_M==document.TmpForm.ED_M.options[i].value)
+			{
+				document.TmpForm.ED_M.selectedIndex=i;
+				break;
+			}
+		}
+		document.TmpForm.ED_M.disabled=true;
+		for (i=1; i < document.TmpForm.ED_Y.length; i++)
+		{
+			if (ED_Y==document.TmpForm.ED_Y.options[i].value)
+			{
+				document.TmpForm.ED_Y.selectedIndex=i;
+				break;
+			}
+		}
+		document.TmpForm.ED_Y.disabled=true;
+		document.CheckoutForm.DataKey.value=DataKey;
+		document.getElementById("CC_Real_Area").style.display="none";
+		document.getElementById("CC_MyPM_Area").style.display="block";
+		var Tmp='<br><table border="0" width="100%" style="border:1px solid rgb(0,0,0);">';
+			Tmp+='<tr>';
+				Tmp+='<td>';
+					Tmp+='<h4>Credit Card #:</h4>';
+						Tmp+=CC;
+				Tmp+='</td>';
+			Tmp+='</tr>';
+			Tmp+='<tr>';
+				Tmp+='<td>';
+					Tmp+='<h4>Expiration Date:</h4>';
+						Tmp+=ED_M+ED_Y+"<br><br>";
+				Tmp+='</td>';
+			Tmp+='</tr>';
+		Tmp+='</table>';
+		document.getElementById("CC_MyPM_Area").innerHTML=Tmp;
+		document.getElementById("CCCardID_TRArea").style.display = "table-row";
+		return;
+	}
+	if ((CurrentPMSelected.length>0)&&(CurrentPMSelected.substring(0,1)=='@'))
+		ClearPM();
+	CurrentPMSelected=Obj.options[Obj.selectedIndex].value;
+	if (Obj.options[Obj.selectedIndex].text=="Interact")
+	{
+		document.getElementById("CC_TRArea").style.display = "none";
+		document.getElementById("ExpiryDate_TRArea").style.display = "none";
+		document.getElementById("CCCardID_TRArea").style.display = "none";
+	}
+	else if (Obj.options[Obj.selectedIndex].text=="Gift Card")
+	{
+		document.getElementById("CC_TRArea").style.display = "none";
+		document.getElementById("ExpiryDate_TRArea").style.display = "none";
+		document.getElementById("CCCardID_TRArea").style.display = "none";
+		ShowGiftCardArea();
+	}
+	else
+	{
+		document.getElementById("CC_TRArea").style.display = "table-row";
+		document.getElementById("ExpiryDate_TRArea").style.display = "table-row";
+		document.getElementById("CCCardID_TRArea").style.display = "table-row";
+	}
+}
+function MyparseFloat(s)
+{
+	var Input="" + s;
+	var Output="";
+	var Start="";
+	var CountLengthBeforeDot=0;
+	var GoCount=true;
+	for (var i=0; i < Input.length;i++)
+	{
+		var C=""+Input.substring(i,i+1);
+		if (((C >= '0') && (C <= '9'))  || (C=='.') || (C=='-'))
+		{
+			Output+=C;
+			if ((Start=="")&&(C!='-'))
+				Start=C;
+			if (C=='.')
+				GoCount=false;
+			if (GoCount)
+				CountLengthBeforeDot++;
+		}
+	}
+	if ((CountLengthBeforeDot > 1)&&(Start=="0"))
+	{
+		Input=Output;
+		Output="";
+		for (i=0; i < Input.length;i++)
+		{
+			if (""+Input.substring(i,i+1)!="0")
+				break;
+		}
+		for (; i < Input.length;i++)
+			Output+=""+Input.substring(i,i+1);
+	}
+	if (Output=="")
+		Output="0";
+	return parseFloat(Output);
+}
+function MyparseInt(s)
+{
+	var Input="" + s;
+	var Output="";
+	var Start="";
+	var CountLengthBeforeDot=0;
+	var GoCount=true;
+	for (var i=0; i < Input.length;i++)
+	{
+		var C=""+Input.substring(i,i+1);
+		if (((C >= '0') && (C <= '9'))  || (C=='.') || (C=='-'))
+		{
+			Output+=C;
+			if ((Start=="")&&(C!='-'))
+				Start=C;
+			if (C=='.')
+				GoCount=false;
+			if (GoCount)
+				CountLengthBeforeDot++;
+		}
+	}
+	if ((CountLengthBeforeDot > 1)&&(Start=="0"))
+	{
+		Input=Output;
+		Output="";
+		for (i=0; i < Input.length;i++)
+		{
+			if (""+Input.substring(i,i+1)!="0")
+				break;
+		}
+		for (; i < Input.length;i++)
+			Output+=""+Input.substring(i,i+1);
+	}
+	if (Output=="")
+		Output="0";
+	return parseInt(Output);
+}
+function DoubleToString(realPrice,NeedDollar,DP)
+{
+	var DecPlace="" + DP;
+	if ((DecPlace!="0")&&(DecPlace!="1")&&(DecPlace!="3")&&(DecPlace!="4")&&(DecPlace!="5")&&(DecPlace!="6"))
+		DecPlace="2";
+	DecPlace=MyparseInt(DecPlace);
+
+	var Input='' + realPrice;
+	if ((parseFloat(realPrice) > 0.000000)&&(parseFloat(realPrice) < 0.000001))
+		Input="0.000000";
+	if ((parseFloat(realPrice) < 0.000000)&&(parseFloat(realPrice) > -0.000001))
+		Input="0.000000";
+	if ((MyparseFloat(realPrice) > 0.000000)&&(MyparseFloat(realPrice) < 0.000001))
+		Input="0.000000";
+	if ((MyparseFloat(realPrice) < 0.000000)&&(MyparseFloat(realPrice) > -0.000001))
+		Input="0.000000";
+	var TT="" + Input;
+	Input="";
+	for (var xx=0; xx < TT.length; xx++)
+	{
+		if (((TT.substring(xx,xx+1)>='0') &&(TT.substring(xx,xx+1)<='9')) || (TT.substring(xx,xx+1)=='-')
+						|| (TT.substring(xx,xx+1)=='.'))
+			Input+=TT.substring(xx,xx+1);
+	}
+
+	var IsZeroNeg='';
+	if (NeedDollar)
+		if (Input.length >= 2)
+		{
+			if (Input.substring(0,2)=='-.')
+				return "-0";
+			else if ((Input.substring(0,1)=='-')&&(Input.substring(1,2)=='0'))
+				IsZeroNeg='-';
+		}
+
+	var Pos=Input.indexOf('.',0);
+	if (Pos<0)
+	{
+		if (!NeedDollar)
+		{
+			var Output="";
+			for (var i=0; i < DecPlace; i++)
+				Output+="0";
+			return Output;
+		}
+		Pos=Input.length;
+	}
+	var DollarOutput=0;
+	if (NeedDollar)
+	{
+		var Output='';
+		for (var i=0;((i < Pos)&&(i < Input.length));i=i+1)
+			Output+=Input.substring(i,i+1);
+		if (Output!='')
+			DollarOutput=MyparseInt(Output);
+	}
+	var Output='';
+	for (var i=Pos+1;(i < Input.length);i=i+1)
+		Output+=Input.substring(i,i+1);
+	if ((Output=='')||(Output.length < 1))
+	{
+		if (NeedDollar)
+			return ''+IsZeroNeg + DollarOutput;
+		Output="";
+		for (var i=0; i < DecPlace; i++)
+			Output+="0";
+		return Output;
+	}
+	if (Output.length < DecPlace)
+	{
+		if (NeedDollar)
+			return ''+IsZeroNeg+DollarOutput;
+
+		for (var i=Output.length; i < DecPlace; i++)
+			Output+="0";
+		return Output;
+	}
+	if (Output.length == DecPlace)
+	{
+		if (NeedDollar)
+			return ''+IsZeroNeg+DollarOutput;
+		return Output;
+	}
+
+	var Tmp=0;
+	var CheckNum=0;
+	for (var i=0; i < DecPlace; i++)
+	{
+		Tmp=(Tmp * 10) +MyparseInt(Output.substring(i,i+1));
+		CheckNum=(CheckNum * 10) + 9;
+	}
+	if (MyparseInt(Output.substring(i,i+1))>=5)
+	{
+		if (Tmp>=CheckNum)
+		{
+			if (NeedDollar)
+			{
+				if (DollarOutput < 0)
+					return ''+IsZeroNeg+(DollarOutput-1);
+				else
+					return ''+IsZeroNeg+(DollarOutput+1);
+			}
+			else
+			{
+				Output="";
+				for (var i=0; i < DecPlace; i++)
+					Output+="0";
+				return Output;
+			}
+		}
+		else
+			Tmp=Tmp+1;
+	}
+	if (NeedDollar)
+		return ''+IsZeroNeg+DollarOutput;
+	if (Tmp==0)
+	{
+		Output="";
+		for (var i=0; i < DecPlace; i++)
+			Output+="0";
+		return Output;
+	}
+	else
+	{
+		Output='' + Tmp;
+		for (var i=Output.length; i < DecPlace; i++)
+			Output="0"+Output;
+	}
+	return Output;
+}
+function launchWhatIsCreditCardID()
+{
+	newWind=window.open("WhatIsCreditCardID.asp?SysLang=E","newWindow2","status=no,toolbar=no,scrollbars=yes,width=580,height=300");
+}
+function launchHowShippingCostCalc()
+{
+	newWind=window.open("HowShippingCostCalc.asp?SysLang=E","newWindow3","status=no,toolbar=no,scrollbars=yes,width=580,height=200");
+}
+function launchshipfree()
+{
+	newWind=window.open("shipfree.asp?SysLang=E","newWindow4","status=no,toolbar=no,scrollbars=yes,width=580,height=200");
+}
+
+function CheckoutWithCCNow()
+{
+
+		for (var a=0; a < 3; a++)
+		{
+			var Tmp=document.getElementById? document.getElementById("RealGiftCardMsg"+(a+1)): eval("document.all.RealGiftCardMsg"+(a+1));
+			if (Tmp.innerHTML.indexOf("Loading.",0)>=0)
+			{
+				setTimeout("CheckoutWithCCNow()",2000);
+				return;
+			}
+		}
+
+		if ((document.TmpForm.RealGiftCardNumber1.value!="")&&(document.TmpForm.RealGiftCardNumber1.value==document.TmpForm.RealGiftCardNumber2.value))
+		{
+			alert("Error, cannot re-enter the same Gift Card.");
+			return;
+		}
+		if ((document.TmpForm.RealGiftCardNumber1.value!="")&&(document.TmpForm.RealGiftCardNumber1.value==document.TmpForm.RealGiftCardNumber3.value))
+		{
+			alert("Error, cannot re-enter the same Gift Card.");
+			return;
+		}
+		if ((document.TmpForm.RealGiftCardNumber2.value!="")&&(document.TmpForm.RealGiftCardNumber2.value==document.TmpForm.RealGiftCardNumber3.value))
+		{
+			alert("Error, cannot re-enter the same Gift Card.");
+			return;
+		}
+		var NumOfGC=0;
+		var UseTestGiftCard=false;
+		for (var a=0; a < 3; a++)
+		{
+			if ((eval("document.TmpForm.RealGiftCardNumber"+(a+1)).value=="") && (eval("document.TmpForm.RealGiftCardPwd"+(a+1)).value==""))
+				continue;
+			NumOfGC++;
+			if (eval("document.TmpForm.RealGiftCardNumber"+(a+1)).value=="")
+			{
+				alert("Gift Card# ("+(a+1)+") cannot be blank.");
+				return;
+			}
+			if (eval("document.TmpForm.RealGiftCardPwd"+(a+1)).value=="")
+			{
+				alert("Pin ("+(a+1)+") cannot be blank.");
+				return;
+			}
+
+			if (!UseTestGiftCard)
+			{
+				if (LastCheck_RealGiftCard_Credit[a]<=0.00)
+				{
+					var Tmp=document.getElementById? document.getElementById("RealGiftCardMsg"+(a+1)): eval("document.all.RealGiftCardMsg"+(a+1));
+					alert(""+Tmp.innerHTML+" ("+(a+1)+")");
+					return;
+				}
+				if (LastCheck_RealGiftCard_PinMatched[a]!="1")
+				{
+
+					alert("Invalid Pin ("+(a+1)+").");
+
+					return;
+				}
+			}
+		}
+		if ((NumOfGC>0)&&(!UseTestGiftCard))
+		{
+			var FormInputArray=new Array();
+			var ASPName="/CheckNeedCaptcha.asp";
+			var CallBackFunctionName="";
+			var WantGrayOut=false;
+			var WantPleaseWaitPopUp=false;
+			var PleaseWaitPopUp_Width=0;
+			var PleaseWaitPopUp_Height=0;
+			var PleaseWaitPopUp_HTML="";
+			FormInputArray["SysLang"]="E";
+			ServerCheckingFrame_Exec(ASPName,CallBackFunctionName,FormInputArray,WantGrayOut,WantPleaseWaitPopUp,
+						PleaseWaitPopUp_Width,PleaseWaitPopUp_Height,PleaseWaitPopUp_HTML);
+			return;
+		}
+		else
+			RealCheckoutWithCCNow();
+
+}
+function ShowCaptcha()
+{
+	grayOut(true, false,{'zindex':'50', 'bgcolor':'#FFFFFF', 'opacity':'0'});
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	PopUp.style.display="block";
+	PopUp.innerHTML = "<form name='TheForm' id='TheForm'><h1>SECURITY CHECK</h1><img src='LanapBotDetectHandler.asp?Command=CreateImage&amp;TextStyle=4&amp;ImageWidth=300&amp;imageHeight=50&amp;CodeLength=5&amp;CodeType=0' width='100%' height='auto' id='captchaImg'><p>Please type the above (not case sensitive):</p><input class='textbox' size='10' maxlength='20' name='CaptchaCode' id='CaptchaCode' value='' type='text'><div style='padding-left:18px'><font color='#FF0000' face='Verdana' size='1' id='Msg_Captcha'></font></div><input value='OK' onclick='AskCaptchaBeforeSubmit()' type='button' id='okBtn'><input value='Cancel' onclick='grayOut(false);HidePop(\"\")' type='button' id='cancelBtn'><input name='__ncforminfo' value='uhdgmT2C-xYTRp0h1uhuliQ5fj_wwYyD7kUu3WfJlX5Ph45K5dIvtTERRNCfeAQRFL4XkBoQpHSPmSVjYOXOx1935rLwiXeg' type='hidden'></form>";
+}
+
+function AskCaptchaBeforeSubmit()
+{
+	var FormInputArray=new Array();
+	var ASPName="/Checkout_confirm_AskCaptcha.asp";
+	var CallBackFunctionName="";
+	var WantGrayOut=false;
+	var WantPleaseWaitPopUp=false;
+	var PleaseWaitPopUp_Width=0;
+	var PleaseWaitPopUp_Height=0;
+	var PleaseWaitPopUp_HTML="";
+
+	FormInputArray["SysLang"]="E";
+	FormInputArray["CaptchaCode"]=this.document.TheForm.CaptchaCode.value;
+
+	ServerCheckingFrame_Exec(ASPName,CallBackFunctionName,FormInputArray,WantGrayOut,WantPleaseWaitPopUp,
+				PleaseWaitPopUp_Width,PleaseWaitPopUp_Height,PleaseWaitPopUp_HTML);
+}
+function AskCaptchaBeforeSubmit_CallBack(Msg)
+{
+	this.document.getElementById("Msg_Captcha").innerHTML = "" + Msg;
+}
+function GCRealCheckoutWithCCNow()
+{
+	HidePop();
+	RealCheckoutWithCCNow();
+}
+function CanDiv(Up,Down)
+{
+    var rr= 0 + Up%Down;
+    if (rr==0)
+		return true;
+	return false;
+}
+function ConfirmGoodCC(CC,CCCardID)
+{
+	var PayNum=document.TmpForm.PaymentMethod.options[document.TmpForm.PaymentMethod.selectedIndex].value;
+	var PaymentMethod="";
+	if ((PayNum >='0')&&(PayNum <='8'))
+		PaymentMethod=eval('this.document.TmpCheckoutForm.XArray' + PayNum+'.value');
+	var realCC='';
+	var s=0;
+	if ((CC!="")&&(CC!=null))
+		s=CC.length;
+    for (var i=0;i< s;i=i+1)
+    {
+		var InputC=CC.substring(i,i+1);
+		if ((InputC>='0')&&(InputC<='9'))
+			realCC+=InputC;
+    }
+    if (PaymentMethod=='Amex')
+    {
+		var LLL=0;
+		if ((realCC!="")&&(realCC!=null))
+				LLL=realCC.length;
+		if (LLL!=15)
+				return false;
+		var tmp1=realCC.substring(0,1);
+		var tmp2=realCC.substring(1,2);
+		if ((tmp1!='3') || ((tmp2!='4')&&(tmp2!='7')))
+				return false;
+		if (CCCardID.length!=4)
+				return false;
+    }
+    else if (PaymentMethod=='Mastercard')
+    {
+        var LLL=0;
+        if ((realCC!="")&&(realCC!=null))
+                LLL=realCC.length;
+        if (LLL!=16)
+                return false;
+        var tmp1=realCC.substring(0,1);
+        var tmp2=realCC.substring(1,2);
+        if ((tmp1!='5') ||((tmp2!='1')&&(tmp2!='2')&&(tmp2!='3')&&(tmp2!='4')&&(tmp2!='5')))
+                return false;
+		if (CCCardID.length!=3)
+				return false;
+    }
+    else if (PaymentMethod=='Visa')
+    {
+        var LLL=0;
+        if ((realCC!="")&&(realCC!=null))
+                LLL=realCC.length;
+        if ((LLL!=13)&&(LLL!=16))
+                return false;
+        var tmp1=realCC.substring(0,1);
+        if (tmp1!='4')
+                return false;
+		if (CCCardID.length!=3)
+				return false;
+    }
+    else if (PaymentMethod=='Discover')
+    {
+        var LLL=0;
+        if ((realCC!="")&&(realCC!=null))
+                LLL=realCC.length;
+        if (LLL!=16)
+                return false;
+        var tmp1=realCC.substring(0,1);
+        var tmp2=realCC.substring(1,2);
+        var tmp3=realCC.substring(2,3);
+        var tmp4=realCC.substring(3,4);
+        if ((tmp1!='6')||(tmp2!='0')||(tmp3!='1')||(tmp4!='1'))
+                return false;
+		if (CCCardID.length!=3)
+				return false;
+    }
+    else
+            return false;
+    var ss= 1-1;
+    var LLL=0;
+    if ((realCC!="")&&(realCC!=null))
+            LLL=realCC.length;
+    for (i=0;i< LLL;i=i+1)
+    {
+        var Num= 1-1;
+        Num=parseInt(realCC.substring(LLL-i-1,LLL-i));
+        if (CanDiv(i,2)==false)
+        {
+                ss += 1+(2*Num)-1;
+                if (Num>4)
+                ss= 1 + ss;
+        }
+        else
+                ss= 1 + ss + Num - 1;
+    }
+	if (CanDiv(ss,10))
+		return true;
+	return false;
+}
+function RealCheckoutWithCCNow()
+{
+	document.CheckoutForm.PaymentMethod.value="";
+	document.CheckoutForm.CC.value="";
+	document.CheckoutForm.CCCardID.value="";
+	document.CheckoutForm.ED_M.value="";
+	document.CheckoutForm.ED_Y.value="";
+
+	while (this.document.TmpForm.CC.value.indexOf("&#",0)>=0)
+		this.document.TmpForm.CC.value=ReplaceNow(this.document.TmpForm.CC.value,"&#","");
+
+
+	var NeedCCPayment=true;
+
+	for (var a=0; a < 3; a++)
+	{
+		var Tmp=document.getElementById? document.getElementById("RealGiftCardMsg"+(a+1)): eval("document.all.RealGiftCardMsg"+(a+1));
+		if (Tmp.innerHTML.indexOf("Loading.",0)>=0)
+		{
+			setTimeout("CheckoutWithCCNow()",2000);
+			return;
+		}
+	}
+	if ((document.TmpForm.RealGiftCardNumber1.value!="")&&(document.TmpForm.RealGiftCardNumber1.value==document.TmpForm.RealGiftCardNumber2.value))
+	{
+		alert("Error, cannot re-enter the same Gift Card.");
+		return;
+	}
+	if ((document.TmpForm.RealGiftCardNumber1.value!="")&&(document.TmpForm.RealGiftCardNumber1.value==document.TmpForm.RealGiftCardNumber3.value))
+	{
+		alert("Error, cannot re-enter the same Gift Card.");
+		return;
+	}
+	if ((document.TmpForm.RealGiftCardNumber2.value!="")&&(document.TmpForm.RealGiftCardNumber2.value==document.TmpForm.RealGiftCardNumber3.value))
+	{
+		alert("Error, cannot re-enter the same Gift Card.");
+		return;
+	}
+	for (var a=0; a < 3; a++)
+	{
+		if ((eval("document.TmpForm.RealGiftCardNumber"+(a+1)).value=="") && (eval("document.TmpForm.RealGiftCardPwd"+(a+1)).value==""))
+			continue;
+		if (eval("document.TmpForm.RealGiftCardNumber"+(a+1)).value=="")
+		{
+			alert("Gift Card# ("+(a+1)+") cannot be blank.");
+			return;
+		}
+		if (eval("document.TmpForm.RealGiftCardPwd"+(a+1)).value=="")
+		{
+			alert("Pin ("+(a+1)+") cannot be blank.");
+			return;
+		}
+		var UseTestGiftCard=false;
+
+		if (UseTestGiftCard)
+		{
+			LastCheck_RealGiftCard_Credit[a]=99999;
+			RealGiftCard_Credit.innerHTML="99999";
+		}
+		else
+		{
+			if (LastCheck_RealGiftCard_Credit[a]<=0.00)
+			{
+				var Tmp=document.getElementById? document.getElementById("RealGiftCardMsg"+(a+1)): eval("document.all.RealGiftCardMsg"+(a+1));
+				alert(""+Tmp.innerHTML+" ("+(a+1)+")");
+				return;
+			}
+			if (LastCheck_RealGiftCard_PinMatched[a]!="1")
+			{
+
+				alert("Invalid Pin ("+(a+1)+").");
+
+				return;
+			}
+		}
+		eval("document.CheckoutForm.RealGiftCardNumber"+(a+1)).value=eval("document.TmpForm.RealGiftCardNumber"+(a+1)).value;
+		eval("document.CheckoutForm.RealGiftCardPwd"+(a+1)).value=eval("document.TmpForm.RealGiftCardPwd"+(a+1)).value;
+	}
+	var tmpRealGiftCard_Credit = RealGiftCard_Credit.innerHTML;
+	var tmpTotalWithShippingFee = document.TmpCheckoutForm.TotalWithShippingFee.value;
+
+
+
+	if (parseFloat(tmpRealGiftCard_Credit) >= MyparseFloat(tmpTotalWithShippingFee))
+		NeedCCPayment=false;
+
+	if (NeedCCPayment)
+	{
+		if (document.CheckoutForm.DataKey.value!="")
+		{
+			if (document.TmpForm.CCCardID.value=="")
+			{
+				alert("Invalid Credit Card # or ID.");
+				return;
+			}
+			document.CheckoutForm.CC.value=document.TmpForm.CC.value;
+			document.CheckoutForm.CCCardID.value=document.TmpForm.CCCardID.value;
+			document.CheckoutForm.ED_M.value=document.TmpForm.ED_M.options[document.TmpForm.ED_M.selectedIndex].value;
+			document.CheckoutForm.ED_Y.value=document.TmpForm.ED_Y.options[document.TmpForm.ED_Y.selectedIndex].value;
+			document.TmpForm.CC.value="";
+			document.TmpForm.CCCardID.value="";
+		}
+		else
+		{
+			if (document.TmpForm.PaymentMethod.selectedIndex<=0)
+			{
+
+					if ((document.TmpForm.RealGiftCardNumber1.value!="")||(document.TmpForm.RealGiftCardNumber2.value!="")||(document.TmpForm.RealGiftCardNumber3.value!=""))
+						alert("You have insufficient Gift Card credits.");
+					else
+						alert("Please select the Card Type.");
+
+				return;
+			}
+			var PayNum=document.TmpForm.PaymentMethod.options[document.TmpForm.PaymentMethod.selectedIndex].value;
+			var PayText=document.TmpForm.PaymentMethod.options[document.TmpForm.PaymentMethod.selectedIndex].text;
+			var IsCC='0';
+
+			if ((PayNum >='0')&&(PayNum <='8'))
+			{
+				document.CheckoutForm.PaymentMethod.value=PayNum;
+				IsCC=eval('this.document.TmpCheckoutForm.XIsCCArray' + PayNum+'.value');
+			}
+			if ((PayText=="Interact")||(PayText=="Gift Card"))
+			{
+				document.TmpForm.CC.value="";
+				document.TmpForm.CCCardID.value="";
+				document.TmpForm.ED_M.selectedIndex=0;
+				document.TmpForm.ED_Y.selectedIndex=0;
+				document.CheckoutForm.CC.value="";
+				document.CheckoutForm.CCCardID.value="";
+				document.CheckoutForm.ED_M.value="";
+				document.CheckoutForm.ED_Y.value="";
+			}
+			else
+			{
+				if (IsCC=='1')
+				{
+
+					if (!ConfirmGoodCC(document.TmpForm.CC.value,document.TmpForm.CCCardID.value))
+					{
+						alert("Invalid Credit Card # or ID.");
+
+
+
+
+						return;
+					}
+					if ((document.TmpForm.ED_M.selectedIndex<=0)||(document.TmpForm.ED_Y.selectedIndex<=0))
+					{
+						alert("Invalid Credit Card Expiry Date.");
+						return;
+					}
+					document.CheckoutForm.CC.value=document.TmpForm.CC.value;
+					document.CheckoutForm.CCCardID.value=document.TmpForm.CCCardID.value;
+					document.CheckoutForm.ED_M.value=document.TmpForm.ED_M.options[document.TmpForm.ED_M.selectedIndex].value;
+					document.CheckoutForm.ED_Y.value=document.TmpForm.ED_Y.options[document.TmpForm.ED_Y.selectedIndex].value;
+					document.TmpForm.CC.value="";
+					document.TmpForm.CCCardID.value="";
+				}
+				var CC=document.CheckoutForm.CC.value
+				var realCC='';
+				var s=0;
+				if ((CC!="")&&(CC!=null))
+						s=CC.length;
+				for (var i=0;i< s;i=i+1)
+				{
+						var InputC=CC.substring(i,i+1);
+						if ((InputC>='0')&&(InputC<='9'))
+								realCC+=InputC;
+				}
+			}
+		}
+	}
+	else
+	{
+		document.CheckoutForm.DataKey.value="";
+		document.TmpForm.CC.value="";
+		document.TmpForm.CCCardID.value="";
+		document.TmpForm.ED_M.selectedIndex=0;
+		document.TmpForm.ED_Y.selectedIndex=0;
+		document.CheckoutForm.CC.value="";
+		document.CheckoutForm.CCCardID.value="";
+		document.CheckoutForm.ED_M.value="";
+		document.CheckoutForm.ED_Y.value="";
+	}
+
+
+//		this.document.CheckoutForm.IsFreeShipping.value=this.document.TmpCheckoutForm.Default_IsFreeShipping.value;
+		var TmpShippingMethodValue="";
+		var TmpShippingMethodText="";
+		for (i=0; i< parseInt(document.TmpShipMthForm.ShippingMethod_NUM.value); i++)
+		{
+			if (parseInt(document.TmpShipMthForm.ShippingMethod_NUM.value)<=1)
+			{
+				if (this.document.TmpShipMthForm.ShippingMethod.checked)
+				{
+					TmpShippingMethodValue=this.document.TmpShipMthForm.ShippingMethod.value;
+					TmpShippingMethodText=eval("this.document.TmpShipMthForm.ShippingMethod_Text"+(i+1)).value;
+					break;
+				}
+			}
+			else
+			{
+				if (this.document.TmpShipMthForm.ShippingMethod[i].checked)
+				{
+					TmpShippingMethodValue=this.document.TmpShipMthForm.ShippingMethod[i].value;
+					TmpShippingMethodText=eval("this.document.TmpShipMthForm.ShippingMethod_Text"+(i+1)).value;
+					break;
+				}
+			}
+		}
+		if (TmpShippingMethodValue=="")
+		{
+			alert("Please select the shipping method.");
+			return;
+		}
+/*		var NoOfShippingSelected=0;
+		for (i=0; i< document.TmpShipMthForm.ShippingMethod.options.length; i++)
+		{
+			if (document.TmpShipMthForm.ShippingMethod.options[i].selected)
+			{
+				NoOfShippingSelected++;
+				TmpShippingMethodValue=document.TmpShipMthForm.ShippingMethod.options[i].value;
+				TmpShippingMethodText=document.TmpShipMthForm.ShippingMethod.options[i].text;
+			}
+		}
+		if (NoOfShippingSelected != 1)
+		{
+			alert("Please select the shipping method.");
+			return;
+		}
+*/		this.document.CheckoutForm.ShippingMethod.value=TmpShippingMethodValue;
+		this.document.CheckoutForm.RealShippingMethod.value=TmpShippingMethodText;
+
+		this.document.CheckoutForm.action="PAY_checkoutnow.asp";
+
+	document.TmpForm.CC.value="";
+	document.TmpForm.CCCardID.value="";
+	this.document.TmpForm.action="PAY_checkoutnow.asp";
+
+/*
+	var myw=400;
+	var myh=300;
+	var Wid=0;
+	var Hei=0;
+	var ScrollTop=0;
+	var ScrollLeft=0;
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+var w=Wid;
+var h=Hei;
+
+	var LeftPosition = ((Wid) ? (Wid-w)/2 : 0) + ScrollLeft;
+	var TopPosition = ((Hei) ? (Hei-h)/2 : 0) + ScrollTop;
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	PopUp.style.zIndex=51;
+	PopUp.style.top=TopPosition+"px";
+	PopUp.style.left=LeftPosition+"px";
+	PopUp.style.width=w;
+	PopUp.style.height=h;
+	PopUp.style.visibility="visible";
+	PopUp.innerHTML = '<IFRAME frameborder="0" SRC="PAY_PleaseWait.htm" id="PopUpDFrame" NAME="PopUpDFrame" WIDTH='+w+' HEIGHT='+h+'></IFRAME>';
+	setTimeout('SubmitCheckoutForm();', 100);
+*/
+	this.document.CheckoutForm.submit();
+}
+function SubmitCheckoutForm()
+{
+	var Tmp=document.getElementById? document.getElementById("TmpD"): document.all.TmpD;
+	Tmp.innerHTML = '<IFRAME frameborder="0" SRC="blank.htm" id="TmpDFrame" NAME="TmpDFrame"></IFRAME>';
+	this.document.CheckoutForm.target="TmpDFrame";
+	this.document.CheckoutForm.submit();
+}
+function GoChangeShippingInfo()
+{
+
+		this.document.CheckoutForm.action="https://www.softmoc.com/ca/Checkout.asp#ShippingArea";
+
+	this.document.CheckoutForm.ForceOpenShipToADifferentAddress.value="1";
+	this.document.CheckoutForm.submit();
+}
+function GoChangeShippingInfoToInStorePickup()
+{
+
+		this.document.CheckoutForm.action="https://www.softmoc.com/ca/Checkout.asp#ShippingArea";
+
+	this.document.CheckoutForm.InStorePickupStoreID.value="1";
+	this.document.CheckoutForm.submit();
+}
+function GoChangeInfo(ForceToInStorePickup,Bookmark)
+{
+
+		this.document.CheckoutForm.action="https://www.softmoc.com/ca/Checkout.asp";
+
+	if (""+Bookmark!="")
+		this.document.CheckoutForm.action+="#"+Bookmark;
+	if (ForceToInStorePickup)
+		this.document.CheckoutForm.InStorePickupStoreID.value="1";
+	this.document.CheckoutForm.submit();
+}
+/*function GoToInStorePickupPage()
+{
+	this.document.CheckoutForm.action="Checkout_InStorePickup.asp";
+	this.document.CheckoutForm.submit();
+}
+function GoChangeShippingInfo(FirstName,LastName,Address,City,State,Zip,Country,Phone)
+{
+	if (!confirm('Are you sure you want to change the shipping info now ?'))
+		return;
+	this.document.CheckoutForm.action="PAY_checkout_confirm.asp";
+	this.document.CheckoutForm.InStorePickupStoreID.value="";
+	this.document.CheckoutForm.ShipFirstName.value=""+FirstName;
+	this.document.CheckoutForm.ShipLastName.value=""+LastName;
+	this.document.CheckoutForm.ShipAddress.value=""+Address;
+	this.document.CheckoutForm.ShipCity.value=""+City;
+	this.document.CheckoutForm.ShipProvince.value=""+State;
+	this.document.CheckoutForm.ShipPostalCode.value=""+Zip;
+//	this.document.CheckoutForm.ShipCusCountry.value=""+Country;
+	this.document.CheckoutForm.ShipPhone.value=""+Phone;
+	this.document.CheckoutForm.submit();
+}
+function ChangeShippingInfo()
+{
+	w=510;
+	h=330;
+	var Wid=0;
+	var Hei=0;
+	var ScrollTop=0;
+	var ScrollLeft=0;
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var LeftPosition = ((Wid) ? (Wid-w)/2 : 0) + ScrollLeft;
+	var TopPosition = ((Hei) ? (Hei-h)/2 : 0) + ScrollTop;
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	var CD=new Date();
+	var DummyStr=CD.getYear()+"__";
+	DummyStr+=CD.getMonth()+"__";
+	DummyStr+=CD.getDay()+"__";
+	DummyStr+=CD.getHours()+"__";
+	DummyStr+=CD.getMinutes()+"__";
+	DummyStr+=CD.getSeconds()+"__";
+	DummyStr+=CD.getMilliseconds();
+	var dummy="PAY_Checkout_confirm_ChangeShippingInfo.asp?Country=ca&InStorePickupStoreID=0&Dummy="+DummyStr;
+	PopUp.style.top=TopPosition+"px";
+	PopUp.style.left=LeftPosition+"px";
+	PopUp.style.width=w;
+	PopUp.style.height=h;
+	PopUp.style.visibility="visible";
+	PopUp.innerHTML = '<IFRAME SRC="' + dummy + '" NAME="PopUpDFrame" WIDTH='+w+' HEIGHT='+h+'></IFRAME>';
+}
+
+function GoChangeItemQty(ItemSeq,Qty,Size,Width)
+{
+	if ((Qty=="0") ||(parseInt(Qty) <= 0))
+	{
+		if (!confirm('Are you sure you want to delete the item now ?'))
+			return;
+
+			this.document.CheckoutForm.action="PAY_checkout_confirm.asp";
+			this.document.CheckoutForm.ChangeItem_Seq.value=""+ItemSeq;
+			this.document.CheckoutForm.ChangeItem_Qty.value="0";
+			this.document.CheckoutForm.submit();
+
+	}
+	else
+	{
+		if (!confirm('Are you sure you want to change the item qty now ?'))
+			return;
+		this.document.CheckoutForm.action="PAY_checkout_confirm.asp";
+		this.document.CheckoutForm.ChangeItem_Seq.value=""+ItemSeq;
+		this.document.CheckoutForm.ChangeItem_Qty.value=""+Qty;
+		this.document.CheckoutForm.ChangeItem_Size.value=""+Size;
+		this.document.CheckoutForm.ChangeItem_Width.value=""+Width;
+		this.document.CheckoutForm.submit();
+	}
+}
+function ChangeItemQty(ItemSeq)
+{
+	w=510;
+	h=330;
+	var Wid=0;
+	var Hei=0;
+	var ScrollTop=0;
+	var ScrollLeft=0;
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var LeftPosition = ((Wid) ? (Wid-w)/2 : 0) + ScrollLeft;
+	var TopPosition = ((Hei) ? (Hei-h)/2 : 0) + ScrollTop;
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	var CD=new Date();
+	var DummyStr=CD.getYear()+"__";
+	DummyStr+=CD.getMonth()+"__";
+	DummyStr+=CD.getDay()+"__";
+	DummyStr+=CD.getHours()+"__";
+	DummyStr+=CD.getMinutes()+"__";
+	DummyStr+=CD.getSeconds()+"__";
+	DummyStr+=CD.getMilliseconds();
+	var dummy="PAY_Checkout_confirm_ChangeItemQty.asp?Country=ca&Currency=CA$&SysLang=E&I="+ItemSeq+"&Dummy="+DummyStr;
+	PopUp.style.top=TopPosition+"px";
+	PopUp.style.left=LeftPosition+"px";
+	PopUp.style.width=w;
+	PopUp.style.height=h;
+	PopUp.style.visibility="visible";
+	PopUp.innerHTML = '<IFRAME SRC="' + dummy + '" NAME="PopUpDFrame" WIDTH='+w+' HEIGHT='+h+'></IFRAME>';
+}
+
+function GoChangeBillingInfo(FirstName,LastName,Address,City,State,Zip,Country,Phone,FrequentBuyerNo,Email)
+{
+	if (!confirm('Are you sure you want to change the billing info now ?'))
+		return;
+	this.document.CheckoutForm.action="PAY_checkout_confirm.asp";
+	this.document.CheckoutForm.FirstName.value=""+FirstName;
+	this.document.CheckoutForm.LastName.value=""+LastName;
+	this.document.CheckoutForm.Address.value=""+Address;
+	this.document.CheckoutForm.City.value=""+City;
+	this.document.CheckoutForm.Province.value=""+State;
+	this.document.CheckoutForm.PostalCode.value=""+Zip;
+	this.document.CheckoutForm.CusCountry.value=""+Country;
+	this.document.CheckoutForm.Phone.value=""+Phone;
+	this.document.CheckoutForm.FrequentBuyerNo.value=""+FrequentBuyerNo;
+	this.document.CheckoutForm.Email.value=""+Email;
+	this.document.CheckoutForm.submit();
+}*/
+function ChangeBillingInfo()
+{
+	history.back();
+	return;
+
+/*
+	w=510;
+	h=330;
+	var Wid=0;
+	var Hei=0;
+	var ScrollTop=0;
+	var ScrollLeft=0;
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var LeftPosition = ((Wid) ? (Wid-w)/2 : 0) + ScrollLeft;
+	var TopPosition = ((Hei) ? (Hei-h)/2 : 0) + ScrollTop;
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	var CD=new Date();
+	var DummyStr=CD.getYear()+"__";
+	DummyStr+=CD.getMonth()+"__";
+	DummyStr+=CD.getDay()+"__";
+	DummyStr+=CD.getHours()+"__";
+	DummyStr+=CD.getMinutes()+"__";
+	DummyStr+=CD.getSeconds()+"__";
+	DummyStr+=CD.getMilliseconds();
+	var dummy="PAY_Checkout_confirm_ChangeBillingInfo.asp?Country=ca&Dummy="+DummyStr;
+	PopUp.style.top=TopPosition+"px";
+	PopUp.style.left=LeftPosition+"px";
+	PopUp.style.width=w;
+	PopUp.style.height=h;
+	PopUp.style.visibility="visible";
+	PopUp.innerHTML = '<IFRAME SRC="' + dummy + '" NAME="PopUpDFrame" WIDTH='+w+' HEIGHT='+h+'></IFRAME>';
+*/}
+function HidePop(Msg)
+{
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	if (PopUp == null)
+		return;
+	PopUp.innerHTML = '';
+	PopUp.style.display="none";
+	if ((""+Msg!="")&&(""+Msg!="undefined"))
+		alert(""+Msg);
+}
+
+	var LastCheck_RealGiftCardNumber=new Array();
+	var LastCheck_RealGiftCardPwd=new Array();
+	var LastCheck_RealGiftCard_Credit=new Array();
+	var LastCheck_RealGiftCard_PinMatched=new Array();
+
+	LastCheck_RealGiftCardNumber[0]="";
+	LastCheck_RealGiftCardPwd[0]="";
+	LastCheck_RealGiftCard_Credit[0]=0.00;
+	LastCheck_RealGiftCard_PinMatched[0]="0";
+
+	LastCheck_RealGiftCardNumber[1]="";
+	LastCheck_RealGiftCardPwd[1]="";
+	LastCheck_RealGiftCard_Credit[1]=0.00;
+	LastCheck_RealGiftCard_PinMatched[1]="0";
+
+	LastCheck_RealGiftCardNumber[2]="";
+	LastCheck_RealGiftCardPwd[2]="";
+	LastCheck_RealGiftCard_Credit[2]=0.00;
+	LastCheck_RealGiftCard_PinMatched[2]="0";
+
+	function ChangeRealGiftCard(Num)
+	{
+
+		if ((eval("document.TmpForm.RealGiftCardNumber"+Num).value!=LastCheck_RealGiftCardNumber[Num-1])
+				|| (eval("document.TmpForm.RealGiftCardPwd"+Num).value!=LastCheck_RealGiftCardPwd[Num-1]))
+		{
+			var Tmp=document.getElementById? document.getElementById("RealGiftCardMsg"+Num): eval("document.all.RealGiftCardMsg"+Num);
+			Tmp.innerHTML="&nbsp;";
+			LastCheck_RealGiftCardNumber[Num-1]=eval("document.TmpForm.RealGiftCardNumber"+Num).value;
+			LastCheck_RealGiftCardPwd[Num-1]=eval("document.TmpForm.RealGiftCardPwd"+Num).value;
+			if (LastCheck_RealGiftCardNumber[Num-1]!="")
+			{
+				Tmp.color="#FF0000";
+				Tmp.innerHTML="Loading......";
+				var CD=new Date();
+				var DummyStr=CD.getYear()+"__";
+				DummyStr+=CD.getMonth()+"__";
+				DummyStr+=CD.getDay()+"__";
+				DummyStr+=CD.getHours()+"__";
+				DummyStr+=CD.getMinutes()+"__";
+				DummyStr+=CD.getSeconds()+"__";
+				DummyStr+=CD.getMilliseconds();
+				BackgroundD.innerHTML = '<IFRAME frameborder="0" SRC="blank.htm" id="BackgroundDFrame" NAME="BackgroundDFrame"></IFRAME>';
+				document.BackgroundForm.action="CheckRealGiftCard.asp?Lg=E";
+				document.BackgroundForm.SeqNum.value=""+Num;
+				document.BackgroundForm.RealGiftCardNumber.value=LastCheck_RealGiftCardNumber[Num-1];
+				document.BackgroundForm.RealGiftCardPwd.value=LastCheck_RealGiftCardPwd[Num-1];
+				document.BackgroundForm.submit();
+			}
+			else
+			{
+				Tmp.color="#FF0000";
+				if ((LastCheck_RealGiftCardNumber[Num-1]=="")&&(LastCheck_RealGiftCardPwd[Num-1]!=""))
+					Tmp.innerHTML="Please enter Card#.";
+				LastCheck_RealGiftCard_Credit[Num-1]=0.00;
+				LastCheck_RealGiftCard_PinMatched[Num-1]="0";
+				RefreshCredit();
+			}
+		}
+	}
+	function ReadRealGiftCardInfo(Num,Msg,Credit,PinMatched)
+	{
+		var Tmp=document.getElementById? document.getElementById("RealGiftCardMsg"+Num): eval("document.all.RealGiftCardMsg"+Num);
+		if (Tmp==null)
+			return;
+		if (Msg!="")
+		{
+			LastCheck_RealGiftCard_Credit[Num-1]=0.00;
+			LastCheck_RealGiftCard_PinMatched[Num-1]=""+PinMatched;
+			Tmp.color="#FF0000";
+			Tmp.innerHTML=""+Msg;
+		}
+		else
+		{
+
+				LastCheck_RealGiftCard_Credit[Num-1]=MyparseFloat(DoubleToString(Credit,true)+'.'+DoubleToString(Credit,false));
+				LastCheck_RealGiftCard_PinMatched[Num-1]=""+PinMatched;
+				Tmp.innerHTML="Credit: $"+Credit;
+
+
+			if (LastCheck_RealGiftCardPwd[Num-1]=="")
+			{
+				Tmp.color="#FF0000";
+				Tmp.innerHTML+=", please enter Pin#.";
+			}
+			else if (PinMatched!="1")
+			{
+				Tmp.color="#FF0000";
+				Tmp.innerHTML+=", invalid Pin#.";
+			}
+			else
+			{
+				Tmp.color="#008800";
+				Tmp.innerHTML+=", Gift Card Approved!";
+			}
+		}
+		RefreshCredit();
+	}
+	function RefreshCredit()
+	{
+		var Tmp1=0.00;
+		for (var a=0; a < 3; a++)
+		{
+			Tmp1+=LastCheck_RealGiftCard_Credit[a];
+		}
+
+			RealGiftCard_Credit.innerHTML=""+DoubleToString(Tmp1,true)+'.'+DoubleToString(Tmp1,false);
+
+	}
+
+
+function CheckGiftCardBalance()
+{
+	grayOut(true, false,{'zindex':'50', 'bgcolor':'#FFFFFF', 'opacity':'0'});
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	PopUp.style.display="block";
+	PopUp.innerHTML = "<form name='GiftCardCheckingForm' id='GiftCardCheckingForm'><h1>CHECK GIFT CARD BALANCE</h1> <p>Please key in your gift card number!</p> <input name='GC' size='20' maxlength='20' value='' class='textfield' type='text'> <input value='CHECK' onclick='CheckGiftCardBalanceBeforeSubmit()' type='button'> <div><font color='#FF0000' face='Verdana' size='1' id='Msg_GC'></font></div> <input name='__ncforminfo' value='9kU1Xhj_-LBftZR_X5Jb9ouurpu7nTa6aDoCvatq_AvD5FEW9F1uJw_bHajhW3uOVSKBhCYalvrUbbGiAreH0bQQ1chdzqK6' type='hidden'> <h3>Gift Card Balance:&nbsp;<font id='GCBalance'>$0.00</font></h3> <a href='javascript:HidePop(\"\");javascript:grayOut(false);'>Close</a></form>";
+	return;
+}
+function CheckGiftCardBalanceBeforeSubmit()
+{
+	var FormInputArray=new Array();
+	var ASPName="/Checkout_confirm_GiftCardChecking.asp";
+	var CallBackFunctionName="";
+	var WantGrayOut=false;
+	var WantPleaseWaitPopUp=false;
+	var PleaseWaitPopUp_Width=0;
+	var PleaseWaitPopUp_Height=0;
+	var PleaseWaitPopUp_HTML="";
+
+	FormInputArray["Lg"]="E";
+	FormInputArray["GC"]=this.document.GiftCardCheckingForm.GC.value;
+
+	ServerCheckingFrame_Exec(ASPName,CallBackFunctionName,FormInputArray,WantGrayOut,WantPleaseWaitPopUp,
+				PleaseWaitPopUp_Width,PleaseWaitPopUp_Height,PleaseWaitPopUp_HTML);
+}
+function CheckGiftCardBalanceBeforeSubmit_CallBack(Msg, Balance)
+{
+	this.document.getElementById("Msg_GC").innerHTML = "" + Msg;
+	this.document.getElementById("GCBalance").innerHTML = "" + Balance;
+}
+function ReplaceNow(InString,From,To)
+{
+	var st='';
+	var tmp=(InString.indexOf(From,0));
+	if (tmp<0)
+		return st;
+	if (tmp>0)
+		st=InString.substring(0,tmp);
+	st+=To;
+	if (tmp+From.length < InString.length)
+		st+=InString.substring(tmp+From.length,InString.length);
+	return st;
+}
+function MakeIt(InSt)
+{
+	var InString="" +InSt;
+	while (InString.indexOf("%",0)>=0)
+		InString=ReplaceNow(InString,"%","~!@");
+	while (InString.indexOf("~!@",0)>=0)
+		InString=ReplaceNow(InString,"~!@","%25");
+	while (InString.indexOf("~",0)>=0)
+		InString=ReplaceNow(InString,"~","%7E");
+	while (InString.indexOf("|",0)>=0)
+		InString=ReplaceNow(InString,"|","%7C");
+	while (InString.indexOf("}",0)>=0)
+		InString=ReplaceNow(InString,"}","%7D");
+	while (InString.indexOf("{",0)>=0)
+		InString=ReplaceNow(InString,"{","%7B");
+	while (InString.indexOf("`",0)>=0)
+		InString=ReplaceNow(InString,"`","%60");
+	while (InString.indexOf("^",0)>=0)
+		InString=ReplaceNow(InString,"^","%5E");
+	while (InString.indexOf("]",0)>=0)
+		InString=ReplaceNow(InString,"]","%5D");
+	while (InString.indexOf("\\",0)>=0)
+		InString=ReplaceNow(InString,"\\","%5C");
+	while (InString.indexOf("[",0)>=0)
+		InString=ReplaceNow(InString,"[","%5B");
+	while (InString.indexOf("?",0)>=0)
+		InString=ReplaceNow(InString,"?","%3F");
+	while (InString.indexOf(">",0)>=0)
+		InString=ReplaceNow(InString,">","%3E");
+	while (InString.indexOf("=",0)>=0)
+		InString=ReplaceNow(InString,"=","%3D");
+	while (InString.indexOf("<",0)>=0)
+		InString=ReplaceNow(InString,"<","%3C");
+	while (InString.indexOf(";",0)>=0)
+		InString=ReplaceNow(InString,";","%3B");
+	while (InString.indexOf(":",0)>=0)
+		InString=ReplaceNow(InString,":","%3A");
+	while (InString.indexOf(")",0)>=0)
+		InString=ReplaceNow(InString,")","%29");
+	while (InString.indexOf("(",0)>=0)
+		InString=ReplaceNow(InString,"(","%28");
+	while (InString.indexOf("'",0)>=0)
+		InString=ReplaceNow(InString,"'","%27");
+	while (InString.indexOf("&",0)>=0)
+		InString=ReplaceNow(InString,"&","%26");
+	while (InString.indexOf("$",0)>=0)
+		InString=ReplaceNow(InString,"$","%24");
+	while (InString.indexOf("#",0)>=0)
+		InString=ReplaceNow(InString,"#","%23");
+	while (InString.indexOf('"',0)>=0)
+		InString=ReplaceNow(InString,'"',"%22");
+	while (InString.indexOf("!",0)>=0)
+		InString=ReplaceNow(InString,"!","%21");
+	while (InString.indexOf("/",0)>=0)
+		InString=ReplaceNow(InString,"/","%2F");
+	while (InString.indexOf(",",0)>=0)
+		InString=ReplaceNow(InString,",","%2C");
+	while (InString.indexOf("+",0)>=0)
+		InString=ReplaceNow(InString,"+","%2B");
+	while (InString.indexOf(" ",0)>=0)
+		InString=ReplaceNow(InString," ","%20");
+	return InString;
+}
+function AddGiftCard()
+{
+	var Tmp;
+	for (var i=0; i < 3; i++)
+	{
+		Tmp=eval("GiftCardNumberArea"+(i+1));
+		if (Tmp==null)
+			continue;
+		if (Tmp.style.display!="block")
+		{
+			Tmp.style.display="block";
+			Tmp=eval("GiftCardPwdArea"+(i+1));
+			if (Tmp!=null)
+				Tmp.style.display="block";
+			return;
+		}
+	}
+	alert("Sorry, you can only add up to 3 gift cards.");
+}
+function ShowGiftCardArea()
+{
+	document.getElementById("GiftCard_AskShow_TRArea").style.display = "none";
+	document.getElementById("GiftCard_TRArea").style.display = "table-row";
+	document.getElementById("GiftCard_Desc_TRArea").style.display = "block";
+}
+
+function CannotShipToPOBox()
+{
+	alert("Sorry shipping address cannot be a PO Box, please enter a physical address.");
+	GoChangeInfo(false,'');
+}
+
+function NoPaymentMethodAvailable()
+{
+	var R="PAYPAL";
+	if (R=="CHG_ADDRESS")
+	{
+
+			this.document.CheckoutForm.action="https://www.softmoc.com/ca/Checkout.asp";
+
+	}
+	else
+	{
+		this.document.CheckoutForm.action="https://www.softmoc.com/ca/PayPal_ExpressCheckout.asp";
+	}
+	this.document.CheckoutForm.submit();
+}
+function UserScrolling()
+{
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	if (PopUp==null)
+		return;
+	if (PopUp.style.visibility!="visible")
+		return;
+	var Wid=0;
+	var Hei=0;
+	var ScrollTop=0;
+	var ScrollLeft=0;
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var LeftPosition = ((Wid) ? (Wid-w)/2 : 0) + ScrollLeft;
+	var TopPosition = ((Hei) ? (Hei-h)/2 : 0) + ScrollTop;
+	PopUp.style.top=TopPosition;
+	PopUp.style.left=LeftPosition;
+}
+
+//window.onscroll=UserScrolling;
+
+function grayOut(vis, options)
+{
+  // Pass true to gray out screen, false to ungray
+  // options are optional.  This is a JSON object with the following (optional) properties
+  // opacity:0-100         // Lower number = less grayout higher = more of a blackout
+  // zindex: #             // HTML elements with a higher zindex appear on top of the gray out
+  // bgcolor: (#xxxxxx)    // Standard RGB Hex color code
+  // grayOut(true, {'zindex':'50', 'bgcolor':'#0000FF', 'opacity':'70'});
+  // Because options is JSON opacity/zindex/bgcolor are all optional and can appear
+  // in any order.  Pass only the properties you need to set.
+  var options = options || {};
+  var zindex = options.zindex || 50;
+  var opacity = options.opacity || 30;
+  var opaque = (opacity / 100);
+  var bgcolor = options.bgcolor || '#000000';
+  var dark=document.getElementById('darkenScreenObject');
+  if (!dark) {
+    // The dark layer doesn't exist, it's never been created.  So we'll
+    // create it here and apply some basic styles.
+    // If you are getting errors in IE see: http://support.microsoft.com/default.aspx/kb/927917
+    var tbody = document.getElementsByTagName("body")[0];
+    var tnode = document.createElement('div');           // Create the layer.
+        tnode.style.position='absolute';                 // Position absolutely
+        tnode.style.top='0px';                           // In the top
+        tnode.style.left='0px';                          // Left corner of the page
+        tnode.style.overflow='hidden';                   // Try to avoid making scroll bars
+        tnode.style.display='none';                      // Start out Hidden
+        tnode.id='darkenScreenObject';                   // Name it so we can find it later
+    tbody.appendChild(tnode);                            // Add it to the web page
+    dark=document.getElementById('darkenScreenObject');  // Get the object.
+  }
+  if (vis)
+  {
+    // Calculate the page width and height
+    if( document.body && ( document.body.scrollWidth || document.body.scrollHeight ) )
+	{
+        pageWidth = document.body.scrollWidth+'px';
+        pageHeight = document.body.scrollHeight+'px';
+    }
+	else if( document.body.offsetWidth )
+	{
+      pageWidth = document.body.offsetWidth+'px';
+      pageHeight = document.body.offsetHeight+'px';
+    }
+	else
+	{
+       pageWidth='100%';
+       pageHeight='100%';
+    }
+    //set the shader to cover the entire page and make it visible.
+    dark.style.opacity=opaque;
+    dark.style.MozOpacity=opaque;
+    dark.style.filter='alpha(opacity='+opacity+')';
+    dark.style.zIndex=zindex;
+    dark.style.backgroundColor=bgcolor;
+    dark.style.width= pageWidth;
+    dark.style.height= pageHeight;
+    dark.style.display='block';
+  }
+  else
+     dark.style.display='none';
+}
+
+function ShowSessionExpired()
+{
+	setTimeout("SessionExpiredAndGoPreviousPage()",120000);
+
+	grayOut(true, false,{'zindex':'50', 'bgcolor':'#FFFFFF', 'opacity':'0'});
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	PopUp.style.display="block";
+	PopUp.innerHTML = '<h1>SoftMoc Security Timeout</h1><p>Do you require additional time to check out?</p><input type="button" value="YES" onclick="javascript:GoRefresh()">';
+}
+function SessionExpiredAndGoPreviousPage()
+{
+	this.document.CheckoutForm.action="https://www.softmoc.com/ca/Checkout.asp?smpc=1";
+	this.document.CheckoutForm.submit();
+}
+function GoRefresh()
+{
+	this.document.CheckoutForm.action="PAY_checkout_confirm.asp";
+	this.document.CheckoutForm.submit();
+}
+var win = null;
+function NewWindow(mypage, myname, w, h, scroll, pos) {
+    if (pos == "random") { LeftPosition = (screen.width) ? Math.floor(Math.random() * (screen.width - w)) : 100; TopPosition = (screen.height) ? Math.floor(Math.random() * ((screen.height - h) - 75)) : 100; }
+    if (pos == "center") { LeftPosition = (screen.width) ? (screen.width - w) / 2 : 100; TopPosition = (screen.height) ? (screen.height - h) / 2 : 100; }
+    else if ((pos != "center" && pos != "random") || pos == null) { LeftPosition = 0; TopPosition = 20 }
+    settings = 'width=' + w + ',height=' + h + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=' + scroll + ',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+    win = window.open(mypage, myname, settings);
+}
+</script>
+<style type="text/css">
+#dhtmltooltip
+{
+	position: absolute;
+	width: 150px;
+	border: 2px solid black;
+	padding: 2px;
+	background-color: lightyellow;
+	visibility: hidden;
+	z-index: 100;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+</style>
+<body>
+<div id="dhtmltooltip"></div>
+
+<script type="text/javascript">
+var offsetxpoint=-60 //Customize x offset of tooltip
+var offsetypoint=20 //Customize y offset of tooltip
+var ie=document.all
+var ns6=document.getElementById && !document.all
+var enabletip=false
+if (ie||ns6)
+var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""
+function ietruebody()
+{
+	return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function ddrivetip(thetext, thecolor, thewidth)
+{
+	if (ns6||ie)
+	{
+		if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"
+		if (typeof thecolor!="undefined" && thecolor!="") tipobj.style.backgroundColor=thecolor
+		tipobj.innerHTML=thetext
+		enabletip=true
+		return false
+	}
+}
+function positiontip(e)
+{
+	if (enabletip)
+	{
+		var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;
+		var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;
+		//Find out how close the mouse is to the corner of the window
+		var rightedge=ie&&!window.opera? ietruebody().clientWidth-event.clientX-offsetxpoint : window.innerWidth-e.clientX-offsetxpoint-20
+		var bottomedge=ie&&!window.opera? ietruebody().clientHeight-event.clientY-offsetypoint : window.innerHeight-e.clientY-offsetypoint-20
+
+		var leftedge=(offsetxpoint<0)? offsetxpoint*(-1) : -1000
+
+		//if the horizontal distance isn't enough to accomodate the width of the context menu
+		if (rightedge< tipobj.offsetWidth)
+			//move the horizontal position of the menu to the left by it's width
+			tipobj.style.left=ie? ietruebody().scrollLeft+event.clientX-tipobj.offsetWidth+"px" : window.pageXOffset+e.clientX-tipobj.offsetWidth+"px"
+		else if (curX< leftedge)
+			tipobj.style.left="5px"
+		else
+			//position the horizontal position of the menu where the mouse is positioned
+			tipobj.style.left=curX+offsetxpoint+"px"
+
+		//same concept with the vertical position
+		if (bottomedge< tipobj.offsetHeight)
+			tipobj.style.top=ie? ietruebody().scrollTop+event.clientY-tipobj.offsetHeight-offsetypoint+"px" : window.pageYOffset+e.clientY-tipobj.offsetHeight-offsetypoint+"px"
+		else
+			tipobj.style.top=curY+offsetypoint+"px"
+		tipobj.style.visibility="visible"
+	}
+}
+function hideddrivetip()
+{
+	if (ns6||ie)
+	{
+		enabletip=false
+		tipobj.style.visibility="hidden"
+		tipobj.style.left="-1000px"
+		tipobj.style.backgroundColor=''
+		tipobj.style.width=''
+	}
+}
+function Myddrivetip()
+{
+	ddrivetip("Shipping cost, if any, is based on the item you have ordered and your shipping destination. For most items and destinations in Canada, SoftMoc will ship the item to you at no charge. Oh Canada, we love you, but you are a very big place! SoftMoc cannot offer free shipping to all locations in Canada.",'#fffeca', 300);
+}
+document.onmousemove=positiontip
+
+function showItemDetails() {
+	document.getElementById('plusBtn').style.display='none';
+	document.getElementById('minusBtn').style.display='inline';
+	var x = document.getElementsByClassName("collapse");
+    var i;
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "block";
+	}
+}
+
+function hideItemDetails() {
+	document.getElementById('plusBtn').style.display='inline';
+	document.getElementById('minusBtn').style.display='none';
+	var x = document.getElementsByClassName("collapse");
+    var i;
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+	}
+}
+</script>
+<div name="TmpD" id="TmpD"></div>
+<div name="PopUpD" id="PopUpD"></div>
+<div name="BackgroundD" id="BackgroundD"></div>
+<div style="position:absolute">
+<form method="POST" name="TmpCheckoutForm" action="PAY_checkoutnow.asp">
+<input type="hidden" name="Total" value='231.63'>
+<input type="hidden" name="TotalWithShippingFee" value='231.63'>
+
+<input type="hidden" name="Default_XShipArray0" value='Expedited Parcel 4-7 Days'>
+<input type="hidden" name="Default_XShipLongArray0" value='Expedited Parcel 4-7 Days (FREE)'>
+<input type="hidden" name="Default_XShipAmtArray0" value='0.00'>
+<input type="hidden" name="DeliveryEstimateDateArray0" value='Apr 18, 2016 to Apr 22, 2016'>
+<input type="hidden" name="Default_XShip_IsU_or_C_Array0" value='C'>
+
+<input type="hidden" name="Default_XShipArray1" value='XpressPost 1-2 Days'>
+<input type="hidden" name="Default_XShipLongArray1" value='XpressPost 1-2 Days (FREE)'>
+<input type="hidden" name="Default_XShipAmtArray1" value='0.00'>
+<input type="hidden" name="DeliveryEstimateDateArray1" value='Apr 15, 2016 to Apr 18, 2016'>
+<input type="hidden" name="Default_XShip_IsU_or_C_Array1" value='C'>
+
+<input type="hidden" name="Default_XShipArray2" value='Standard 1-4 Days'>
+<input type="hidden" name="Default_XShipLongArray2" value='Standard 1-4 Days (FREE)'>
+<input type="hidden" name="Default_XShipAmtArray2" value='0.00'>
+<input type="hidden" name="DeliveryEstimateDateArray2" value='Apr 15, 2016 to Apr 20, 2016'>
+<input type="hidden" name="Default_XShip_IsU_or_C_Array2" value='U'>
+
+<input type="hidden" name="Default_XShipArray3" value=''>
+<input type="hidden" name="Default_XShipLongArray3" value=''>
+<input type="hidden" name="Default_XShipAmtArray3" value='0.00'>
+<input type="hidden" name="DeliveryEstimateDateArray3" value='Apr 15, 2016 to Apr 18, 2016'>
+<input type="hidden" name="Default_XShip_IsU_or_C_Array3" value=''>
+
+<input type="hidden" name="Default_XShipArray4" value='Express Saver 1-2 Days'>
+<input type="hidden" name="Default_XShipLongArray4" value='Express Saver 1-2 Days ($2.11)'>
+<input type="hidden" name="Default_XShipAmtArray4" value='2.11'>
+<input type="hidden" name="DeliveryEstimateDateArray4" value='Apr 15, 2016 to Apr 18, 2016'>
+<input type="hidden" name="Default_XShip_IsU_or_C_Array4" value='U'>
+
+<input type="hidden" name="Default_XShipArray5" value=''>
+<input type="hidden" name="Default_XShipLongArray5" value=''>
+<input type="hidden" name="Default_XShipAmtArray5" value='0.00'>
+<input type="hidden" name="DeliveryEstimateDateArray5" value='Dec ,  to Dec , '>
+<input type="hidden" name="Default_XShip_IsU_or_C_Array5" value=''>
+
+<input type="hidden" name="Default_XShipArray6" value=''>
+<input type="hidden" name="Default_XShipLongArray6" value=''>
+<input type="hidden" name="Default_XShipAmtArray6" value='0.00'>
+<input type="hidden" name="DeliveryEstimateDateArray6" value='Dec ,  to Dec , '>
+<input type="hidden" name="Default_XShip_IsU_or_C_Array6" value=''>
+
+<input type="hidden" name="Default_XShipArray7" value=''>
+<input type="hidden" name="Default_XShipLongArray7" value=''>
+<input type="hidden" name="Default_XShipAmtArray7" value='0.00'>
+<input type="hidden" name="DeliveryEstimateDateArray7" value='Dec ,  to Dec , '>
+<input type="hidden" name="Default_XShip_IsU_or_C_Array7" value=''>
+
+<input type="hidden" name="Default_XShipArray8" value=''>
+<input type="hidden" name="Default_XShipLongArray8" value=''>
+<input type="hidden" name="Default_XShipAmtArray8" value='0.00'>
+<input type="hidden" name="DeliveryEstimateDateArray8" value='Dec ,  to Dec , '>
+<input type="hidden" name="Default_XShip_IsU_or_C_Array8" value=''>
+
+<input type="hidden" name="Default_IsFreeShipping" value='0'>
+<input type="hidden" name="Tmp_Tax1P" value='0'>
+<input type="hidden" name="Tmp_Tax2P" value='0'>
+<input type="hidden" name="Tmp_Tax3P" value='13'>
+<input type="hidden" name="Tax1WithoutShipping" value='0.00'>
+<input type="hidden" name="Tax2WithoutShipping" value='0.00'>
+<input type="hidden" name="Tax3WithoutShipping" value='26.65'>
+
+<input type="hidden" name="XArray0" value=''>
+<input type="hidden" name="XIsCCArray0" value='0'>
+
+<input type="hidden" name="XArray1" value='Visa'>
+<input type="hidden" name="XIsCCArray1" value='1'>
+
+<input type="hidden" name="XArray2" value='Mastercard'>
+<input type="hidden" name="XIsCCArray2" value='1'>
+
+<input type="hidden" name="XArray3" value='Amex'>
+<input type="hidden" name="XIsCCArray3" value='1'>
+
+<input type="hidden" name="XArray4" value='Discover'>
+<input type="hidden" name="XIsCCArray4" value='1'>
+
+<input type="hidden" name="XArray5" value=''>
+<input type="hidden" name="XIsCCArray5" value='0'>
+
+<input type="hidden" name="XArray6" value='Gift Card'>
+<input type="hidden" name="XIsCCArray6" value='0'>
+
+<input type="hidden" name="XArray7" value=''>
+<input type="hidden" name="XIsCCArray7" value='0'>
+
+<input type="hidden" name="XArray8" value='Interact'>
+<input type="hidden" name="XIsCCArray8" value='1'>
+
+<input type="hidden" name="__ncforminfo" value="cYfuSGoriBOoqFCWrHHYVwVv5NPMwVIHsW0v2vtQLAJ0rntRbUPZIYSqHT2rAtSrjuT1ablRu3dqrM8_fLua8VZqmyiM_TDFdeMVBXg08ZmQYjsskzWna-OpaVHIMWotQqH3SqKid0KC6VudVYEl2VPMSj7F548xskXZxEO42KHiIr_nvwJjLGX4YZXr6wNZfANf33q2A2yDXK3-SvjLmqSdZ2M5btohVU3X5CXkN_47wrp1xmlq7OxBU5zAnvPg6YNCtZUeWKT2gT36ByijxxnFB6RCE1NC"/></form>
+<form method="POST" action="PAY_checkout_confirm.asp" name="CheckoutForm">
+<input type="hidden" name="ForceOpenShipToADifferentAddress" value="">
+<input type="hidden" name="SkipGetMemberBillingInfo" value="1">
+<input type="hidden" name="PAY_From_Root_URL" value="www.softmoc.com">
+<input type="hidden" name="PAY_CheckOutHttps" value="https">
+<input type="hidden" name="PAY_MemberLoginID" value="257450">
+<input type="hidden" name="CaptchaCode" value="">
+<input type="hidden" name="ShippingMethod_MyOrInStore" value="M">
+<input type="hidden" name="Checkout_QueueID" value="12721905">
+<input type="hidden" name="InStorePickupStoreID" value="0">
+<input type="hidden" name="UPS_OFFICE_ID" value="">
+<input type="hidden" name="CND_OFFICE_ID" value="">
+<input type="hidden" name="IsToFriend" class="no-mouseflow" value="0">
+<input type="hidden" name="IsToFriend_WantCC" class="no-mouseflow" value="0">
+<input type="hidden" name="FirstNameOfFriend" class="no-mouseflow" value="">
+<input type="hidden" name="LastNameOfFriend" class="no-mouseflow" value="">
+<input type="hidden" name="EmailOfFriend" class="no-mouseflow" value="">
+<input type="hidden" name="MessageToFriend" class="no-mouseflow" value="">
+<input type="hidden" name="InStorePickup_IsToFriend" class="no-mouseflow" value="0">
+<input type="hidden" name="InStorePickup_IsToFriend_WantCC" class="no-mouseflow" value="0">
+<input type="hidden" name="InStorePickup_FirstNameOfFriend" class="no-mouseflow" value="">
+<input type="hidden" name="InStorePickup_LastNameOfFriend" class="no-mouseflow" value="">
+<input type="hidden" name="InStorePickup_EmailOfFriend" class="no-mouseflow" value="">
+<input type="hidden" name="InStorePickup_MessageToFriend" class="no-mouseflow" value="">
+<input type="hidden" name="SameAsBilling" class="no-mouseflow" value="1">
+<input type="hidden" name="StorePickup_I_State" class="no-mouseflow" value="">
+<input type="hidden" name="StorePickup_I_City" class="no-mouseflow" value="">
+
+	<input type="hidden" class="no-mouseflow" name="RealGiftCardNumber1" value="">
+	<input type="hidden" class="no-mouseflow" name="RealGiftCardPwd1" value="">
+
+	<input type="hidden" class="no-mouseflow" name="RealGiftCardNumber2" value="">
+	<input type="hidden" class="no-mouseflow" name="RealGiftCardPwd2" value="">
+
+	<input type="hidden" class="no-mouseflow" name="RealGiftCardNumber3" value="">
+	<input type="hidden" class="no-mouseflow" name="RealGiftCardPwd3" value="">
+
+<input type="hidden" name="PaymentMethod" class="no-mouseflow" value="">
+<input type="hidden" name="XType" class="no-mouseflow" value="">
+<input type="hidden" name="DataKey" class="no-mouseflow" value="">
+<input type="hidden" name="CC" class="no-mouseflow" value="">
+<input type="hidden" name="CCCardID" class="no-mouseflow" value="">
+<input type="hidden" name="ED_M" class="no-mouseflow" value="">
+<input type="hidden" name="ED_Y" class="no-mouseflow" value="">
+<input type="hidden" name="OldTicketID" class="no-mouseflow" value="">
+<input type="hidden" name="OldTicketPassword" class="no-mouseflow" value="">
+<input type="hidden" name="OldTicketPassword1" class="no-mouseflow" value="">
+<input type="hidden" name="PromotionCode" class="no-mouseflow" value="">
+
+	<input type="hidden" name="ShippingMethod" value="">
+	<input type="hidden" name="RealShippingMethod" value="">
+
+<input type="hidden" name="FirstName" class="no-mouseflow" value="Test">
+<input type="hidden" name="LastName" class="no-mouseflow" value="Dontship">
+<input type="hidden" name="Province" class="no-mouseflow" value="ON">
+<input type="hidden" name="City" class="no-mouseflow" value="Toronto">
+<input type="hidden" name="Address" class="no-mouseflow" value="2204 N.W. 123 Street">
+<input type="hidden" name="PostalCode" class="no-mouseflow" value="l1n 2c3">
+<input type="hidden" name="Phone" class="no-mouseflow" value="242.333.3333">
+<input type="hidden" name="FrequentBuyerNo" class="no-mouseflow" value="8880036298">
+<input type="hidden" name="Fax" class="no-mouseflow" value="">
+<input type="hidden" name="Email" class="no-mouseflow" value="chris.thronebury@mwfgroupbahamas.com">
+<input type="hidden" name="ShipFirstName" class="no-mouseflow" value="Test">
+<input type="hidden" name="ShipLastName" class="no-mouseflow" value="Dontship">
+<input type="hidden" name="ShipProvince" class="no-mouseflow" value="ON">
+<input type="hidden" name="ShipCity" class="no-mouseflow" value="Toronto">
+<input type="hidden" name="ShipAddress" class="no-mouseflow" value="2204 N.W. 123 Street">
+<input type="hidden" name="ShipPostalCode" class="no-mouseflow" value="l1n 2c3">
+<input type="hidden" name="ShipPhone" class="no-mouseflow" value="242.333.3333">
+<input type="hidden" name="ShipCusCountry" class="no-mouseflow" value="Canada">
+<input type="hidden" name="CusCountry" class="no-mouseflow" value="Canada">
+<input type="hidden" name="TmpCheckoutID" value="12872951">
+<input type="hidden" name="ChangeItem_Seq" value="">
+<input type="hidden" name="ChangeItem_Qty" value="">
+<input type="hidden" name="ChangeItem_Size" value="">
+<input type="hidden" name="ChangeItem_Width" value="">
+
+<input type="hidden" name="AddToEmailList" class="no-mouseflow" value="undefined">
+<input type="hidden" name="PAY_Country" value='ca'>
+<input type="hidden" name="PAY_Cookies_Num" value='2'>
+<!--
+<input type="hidden" name="PAY_IsFromCJ" value='<X%=SecurityFilter("" + Request.Form("PAY_IsFromCJ"))%X>'>
+-->
+
+	<input type="hidden" name="PAY_Cookies_I_0" value='14045-BKW'>
+	<input type="hidden" name="PAY_Cookies_S_0" value='6.0'>
+	<input type="hidden" name="PAY_Cookies_W_0" value=''>
+	<input type="hidden" name="PAY_Cookies_Q_0" value='1'>
+	<input type="hidden" name="PAY_Cookies_Ext_0" value=''>
+
+	<input type="hidden" name="PAY_Cookies_I_1" value='LOUISA-BLK'>
+	<input type="hidden" name="PAY_Cookies_S_1" value='6'>
+	<input type="hidden" name="PAY_Cookies_W_1" value=''>
+	<input type="hidden" name="PAY_Cookies_Q_1" value='1'>
+	<input type="hidden" name="PAY_Cookies_Ext_1" value=''>
+
+<input type="hidden" name="__ncforminfo" value="cYfuSGoriBOoqFCWrHHYVwVv5NPMwVIHEz4I__ZnFyZBTmUuk8yXPewQNB9j1G0deF_6EHnqlpOH0FjfNLrAUbaWadN_Qndu5mHx7YruMoHxtcseUgq82XHbsio-takzvVLnjAgadqu480XVKsA5uOYYU5npmq3XUVNHD8YrfGpqclvklqoNCRE7EOx4BY2UAyMpPAtwct97vMTg9ruAfibKFPLHZk9QxjWwzGbdln2HvnDWDLcUTRRFXYsGYEZYtJ12I3Gd6EXe6b3bN-9MQvQznv5y__3xY2ObmLf4xQ_5ybzKR4rzftQasVoyBn8buewlm39ufpEEUox_sDgEjVpyHy_RMHCGi8W0d_ZBSZfuM9jZUOSzpKSoDeH6OODq7S27t2ngccaLWuJj1Rt5N1GMQjweXf3mV3mgLMfMKrrkgDZFVO9jNRII-t3YFZ4JSAx7x6dEutIsFUECyGpfbVBCaVG7L_dv07gA0BCURaVVQ5HsimrM2ENDMbqHqWVroQPBuLJJgFQm25sk3tgnC9bXxgs6MsBVvQIE4dHegsRm4iQqDC0Mk3_fSZpXu9brBQEn9iDjO48gzOFcoxxcNlcyDUe_aQ4vAMW6BaBTzAN_OHfnYvbD-aXdLvYO03s7t65qVEgZc5QKfVReSK0X2D-bO_trpkP477a87DAUljpOuLKc4K-xgKoFbWthmwsLuS6jERS7X168tDIEzfe3g64dLheJ_d5xy2nGc-LpyQmh3fZzzS6tnh1SMiVevM-OoEJK8L_qtmfEoHU8I65fBjQ70vy_t1XfrD3iAqGpgUeaVV3rdWHrQzhUhv6V61OKfHbDgnUKX6IAsP7YjiZjc4U9hcYpAIAgcHbWp3RH8KoPgawCy-sEPQi5SiB8zjPLIy0iRep3uFaMam_4Pbi7iT4252jv-Q46E8F3sb-bXC2fTqgNUr72u-ldTahdpBJY"/></form>
+<form name="BackgroundForm" action="CheckRealGiftCard.asp?Lg=E" method="POST" target="BackgroundDFrame">
+<input type=hidden name="SeqNum" class="no-mouseflow" value="">
+<input type=hidden name="RealGiftCardNumber" class="no-mouseflow" value="">
+<input type=hidden name="RealGiftCardPwd" class="no-mouseflow" value="">
+<input type="hidden" name="__ncforminfo" value="cYfuSGoriBOoqFCWrHHYVwVv5NPMwVIHV2po33QsFnUNC0QDLIpPYCIhdzYSVnG7a5Yd9ll67wa58WpNq3DIkxDg2o_quD-bsQXKcM48USsJvTVkSusrqg=="/></form>
+</div>
+
+
+<div id="wrapper">
+	<div id="main">
+		<div id="mobile-header" class="deviceWidth mm-fixed-top">
+
+			<a href="https://www.softmoc.com/ca"><img src="/img/softmoc-logo-ca-m.png" border="0" width="163" height="26" id="logo-mobile"></a>
+
+		</div>
+		<div class="deviceWidth" id="layout">
+			<div id="header">
+
+				<div class="hideMobile" id="logo-image"><a href="https://www.softmoc.com/ca"><img src="/img/softmoc_ca_logo.png" border="0" width="180" height="64"></a></div>
+
+				<div class="deviceWidth hideMobile" id="checkout-step">
+					<h1><i class="fa fa-lock"></i> Secure Checkout</h1>
+					<em>Step 2 of 2</em>
+				</div>
+				<div id="my-account-rewards" class="hideMobile"><a href="https://www.softmoc.com/ca/frequentbuyerrewards.asp"><img src="/img/my-rewards-logo.png" width="123" height="80" border="0"></a></div>
+			</div>
+			<div class="hide show" id="page-title-mobile">
+				<h1><i class="fa fa-lock"></i> Secure Checkout</h1>
+				<span><em>Step 2 of 2</em></span>
+			</div>
+			<div id="content">
+				<table width="890" border="0" cellpadding="0" cellspacing="0" class="deviceWidth">
+
+					<tr>
+						<td id="review-title"><h2>Review Your Order</h2></td>
+					</tr>
+				</table>
+				<table width="890" border="0" cellpadding="0" cellspacing="0" class="deviceWidth">
+					<tr>
+						<td id="order-info">
+							<table width="240" border="0" align="left" cellpadding="0" cellspacing="0" class="infoWidth">
+								<tr>
+									<td id="billing-info"><h3>Billing Information</h3>
+										Test&nbsp;Dontship<br>
+										2204 N.W. 123 Street<br>
+										Toronto,&nbsp;ON,&nbsp;l1n 2c3<br>
+										Canada<br>
+										242.333.3333<br>
+										Email:&nbsp;chris.thronebury@mwfgroupbahamas.com
+										<a href="javascript:GoChangeInfo(false,'')"><i class="fa fa-pencil"></i> Change</a>
+									</td>
+								</tr>
+							</table>
+							<table width="240" border="0" align="left" cellpadding="0" cellspacing="0" class="infoWidth" >
+								<tr>
+									<td id="shipping-info"><h3>Shipping Information</h3>
+										Test&nbsp;Dontship<br>
+										2204 N.W. 123 Street<br>
+										Toronto,&nbsp;ON,&nbsp;l1n 2c3<br>
+										Canada<br>
+										242.333.3333
+										<a href="javascript:GoChangeShippingInfo(false)"><i class="fa fa-pencil"></i> Change</a>
+									</td>
+								</tr>
+							</table>
+							<table border="0" align="left" cellpadding="0" cellspacing="0" class="invoiceWidth">
+								<tr>
+									<td id="invoice-detail"><h3>Invoice Details</h3>
+										<table border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td>Subtotal: </td>
+												<td class="nobr"><strong>$204.98</strong></td>
+											</tr>
+											<tr>
+												<td>Shipping:</td>
+
+													<td><strong><span id="ShippingMtd_Amt_Area" name="ShippingMtd_Amt_Area">&nbsp;</span></strong></td>
+
+											</tr>
+
+
+											<tr>
+												<td>H.S.T.:</td>
+												<td class="nobr"><strong><font id="Tax3Amount">$26.65</font></strong></td>
+											</tr>
+
+											<tr>
+												<td><h3 ><strong>Total:</strong></h3></td>
+												<td class="nobr"><h3 id="Total_Area" name="Total_Area">$231.63</h3></td>
+											</tr>
+										</table>
+
+										<span class="hideMobile" id="HowShippingCalcArea" style="display:none" onMouseout="hideddrivetip()" onMouseover="Myddrivetip()">How are the shipping cost calculated?</span>
+
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table width="890" border="0" cellpadding="0" cellspacing="0" class="deviceWidth">
+					<tr>
+						<td id="shipping-payment">
+							<table width="630px" border="0" align="left" cellpadding="0" cellspacing="0" class="deviceWidth">
+								<tr>
+									<td id="shipping-details">
+
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="deviceWidth">
+											<tr>
+												<td>
+													<table border="0" align="left" cellpadding="0" cellspacing="0">
+														<tr>
+															<td id="shipment-details">
+																<h3>Shipment Details</h3>
+																Please Select Your Shipping Method:
+																<form method="POST" name="TmpShipMthForm" action="PAY_checkoutnow.asp">
+																	<input type="hidden" name="ShippingMethod_NUM" value="4">
+																	<label class='cndpost'><input type='radio' name='ShippingMethod'  checked  onClick="ChangeShipMetd()" value="0">Expedited Parcel 4-7 Days (FREE)</label><input type='hidden' name='ShippingMethod_Text1' value='Expedited Parcel 4-7 Days (FREE)'><label class='cndpost'><input type='radio' name='ShippingMethod'   onClick="ChangeShipMetd()" value="1">XpressPost 1-2 Days (FREE)</label><input type='hidden' name='ShippingMethod_Text2' value='XpressPost 1-2 Days (FREE)'><label class='ups'><input type='radio' name='ShippingMethod'   onClick="ChangeShipMetd()" value="2">Standard 1-4 Days (FREE)</label><input type='hidden' name='ShippingMethod_Text3' value='Standard 1-4 Days (FREE)'><label class='ups'><input type='radio' name='ShippingMethod'   onClick="ChangeShipMetd()" value="4">Express Saver 1-2 Days ($2.11)</label><input type='hidden' name='ShippingMethod_Text4' value='Express Saver 1-2 Days ($2.11)'>
+																<input type="hidden" name="__ncforminfo" value="cYfuSGoriBOoqFCWrHHYVwVv5NPMwVIHKAMXhgSPAjQ2cMCdl6k8UUkfqXDcDMKMPgz9YNC2zWCuaFcgEr4XxkwJyl7jWxBlHE6KX05p4_73fm7oUZvII0J6L8oSpo4ht8hoGFd1sism_tjmceo5CClWwm_jbfmgalyVlwsmrOnBcF5a08T60w=="/></form>
+																<div id="ShippingMtd_LongDesc_Area" name="ShippingMtd_LongDesc_Area">&nbsp;</div>
+																<div id="EstimatedDate_Area">&nbsp;</div>
+															</td>
+														</tr>
+													</table>
+
+													<table width="300px" border="0" align="left" cellpadding="0" cellspacing="0" class="deviceWidth trust">
+														<tr>
+															<td id="StorePickupInfo_Area">
+																<table width="100" border="0" align="left" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td id="save-story"><strong>SAVE</strong><br>
+																			On Shipping When You Pick Up<br>Your Order<br>At A SoftMoc Store.
+																			<a href="javascript:GoChangeShippingInfoToInStorePickup()" style="text-decoration:none;">Click Here</a>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" id="shadow"><img src="/img/email-bottom-shadow.png" width="100" height="5"></td>
+																	</tr>
+																</table>
+															</td>
+															<td class="hideMobileOnly" id="trust"><h2>You Can Always Trust Your Purchase on SoftMoc.com</h2>
+																<ul>
+																<li>Free Shipping</li>
+																<li>Free Returns*</li>
+																<li>100% Satisfaction Guarantee</li>
+																<li>75 Day Hassle Free Refunds</li>
+																<li>25 yrs of Earning Customer Loyalty</li>
+																<li>110+ Store Locations Across Canada</li>
+																</ul>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>&nbsp;</td>
+											</tr>
+										</table>
+
+
+										<table width="580" border="0" cellpadding="0" cellspacing="0" class="deviceWidth">
+											<tr>
+												<td>
+													<div id="itemDetailBtns">
+														<button type="button" id="plusBtn" onClick="showItemDetails()">+ Show Item Details</button>
+														<button type="button" id="minusBtn" onClick="hideItemDetails()">- Hide Item Details</button>
+													</div>
+													<div  id="item-invoice-info">
+														<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+															<tr class="headerRow">
+																<th align="center">Item:</th>
+																<th align="center">Description:</th>
+																<th align="center">Size:</th>
+																<th align="center">Price:</th>
+																<th align="center">Qty:</th>
+															</tr>
+
+															<tr>
+																<td align="center">
+																	<img src="https://www.softmoc.com/Items/images/14045-BKW_SSS.jpg" alt="product image" width="75" height="76" border="0">
+
+																</td>
+																<td class="description collapse">
+																	Women's GOwalk 3 black convertible heel slip ons<br>
+																	<strong>Item ID:</strong> 14045-BKW<br>
+																	<strong>Brand:</strong>&nbsp;Skechers<br>
+
+																		<small><small>
+
+																			<div class="item-note" id="FreeShippingWordingArea_1" style="display:block"><font color="#0000D7">Free Shipping & Returns.</font></div>
+
+																		</small></small>
+
+																</td>
+																<td class="size collapse">6 Women's</td>
+																<td class="price">
+																	<nobr><strong>$89.99</strong></nobr>
+
+
+
+
+
+
+																</td>
+																<td class="qty collapse">1<a href="javascript:GoChangeInfo(false,'ShoppingCartArea')"><i class="fa fa-pencil"></i> Change</a></td>
+															</tr>
+
+															<tr>
+																<td align="center">
+																	<img src="https://www.softmoc.com/Items/images/LOUISA-BLK_SSS.jpg" alt="product image" width="75" height="76" border="0">
+
+																</td>
+																<td class="description collapse">
+																	Women's LOUISA black casual thong sandals<br>
+																	<strong>Item ID:</strong> LOUISA-BLK<br>
+																	<strong>Brand:</strong>&nbsp;Taos<br>
+
+																		<small><small>
+
+																			<div class="item-note" id="FreeShippingWordingArea_2" style="display:block"><font color="#0000D7">Free Shipping & Returns.</font></div>
+
+																		</small></small>
+
+																</td>
+																<td class="size collapse">6 Women's</td>
+																<td class="price">
+																	<nobr><strong>$114.99</strong></nobr>
+
+
+
+
+
+
+																</td>
+																<td class="qty collapse">1<a href="javascript:GoChangeInfo(false,'ShoppingCartArea')"><i class="fa fa-pencil"></i> Change</a></td>
+															</tr>
+
+														</table>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="hideMobileOnly">FREE RETURNS: Any online order which ships to you for FREE also qualifies for FREE RETURN shipping.</td>
+											</tr>
+										</table>
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="hideMobile">
+											<tr>
+												<td id="security">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td align="left"><script type="text/javascript" src="https://sealserver.trustwave.com/seal.js?code=x4irdzWieNOhkhjZrnTROqnRX2IC2k"></script></td>
+																<td align="left"><a href="http://www.visa.ca/verified/infopane/index.html" onclick="NewWindow(this.href,'mywin','550','500','no','center');return false" onfocus="this.blur()"><img src="/img/visa_logo.gif"></a></td>
+																<td align="center"><a href="http://www.mastercard.com/ca/personal/en/cardholderservices/securecode/index.html" onclick="NewWindow(this.href,'_blank','550','500','no','center');return false" onfocus="this.blur()"><img src="/img/master_logo.gif"></a></td>
+																<td align="center"><a href="https://seal.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=pay.softmoc.com&amp;lang=en" onclick="NewWindow(this.href,'mywin','550','500','no','center');return false" onfocus="this.blur()"><img src="/img/verisign_trans.gif" border="0" width="100"></a></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<table width="100" border="0" align="right" cellpadding="0" cellspacing="0" class="deviceWidth">
+								<tr>
+									<td id="secure-order">
+										<form method="POST" name="TmpForm" action="PAY_checkoutnow.asp" class="deviceWidth">
+
+											<h4>PAYMENT METHOD</h4>
+											<table border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td>
+														<img src="/img/ccards2.png" name="paymethods" id="paymethods" height="25">
+													</td>
+												</tr>
+
+												<tr>
+													<td><h4><span>&#x0002A;</span>Card Type :</h4>
+														<select name="PaymentMethod" id="PaymentMethod" class="no-mouseflow" onChange="ChangePayBy()">
+															<option value="">please select...</option>
+
+																<option   value="1">Visa</option>
+
+																<option   value="2">Mastercard</option>
+
+																<option   value="3">Amex</option>
+
+																<option   value="4">Discover</option>
+
+																<option   value="6">Gift Card</option>
+
+																<option   value="8">Interact</option>
+
+																<option   value="@Visa@4547***1016@02@16@IHBETCO5s1z7XrQB0JTzjUQu6">Visa (EXPIRED) (4547***1016)</option>
+
+
+
+
+
+
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div id="CC_Real_Area" style="display:block">
+															<table cellpadding="0" cellspacing="0" border="0" width="100%">
+																<tr id="CC_TRArea" style="display:table-row">
+																	<td>
+																		<h4><span>&#x0002A;</span>Credit Card Number</h4>
+																		<input type="text" name="CC" id="CC" class="no-mouseflow" maxlength="20" size="21">
+																	</td>
+																</tr>
+																<tr id="ExpiryDate_TRArea" style="display:table-row">
+																	<td>
+																		<h4><span>&#x0002A;</span>Expiration Date:</h4>
+																		<span id="ExpiryDate_Area"><label>MM <select class="option" name="ED_M" size="1" class="option no-mouseflow"><option selected value=""> </option><option value="01">Jan</option><option value="02">Feb</option><option value="03">Mar</option><option value="04">Apr</option><option value="05">May</option><option value="06">Jun</option><option value="07">Jul</option><option value="08">Aug</option><option value="09">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select></label> <label>YYYY <select name="ED_Y" size="1" class="option no-mouseflow"><option selected value=""> </option><option value="16">2016</option><option value="17">2017</option><option value="18">2018</option><option value="19">2019</option><option value="20">2020</option><option value="21">2021</option><option value="22">2022</option><option value="23">2023</option><option value="24">2024</option><option value="25">2025</option></select></label></span>
+																		<br><br>
+																	</td>
+																</tr>
+															</table>
+														</div>
+														<div id="CC_MyPM_Area" style="display:none"></div>
+													</td>
+												</tr>
+												<tr id="CCCardID_TRArea" style="display:table-row">
+													<td style="padding:1px;">
+														<div style="position: relative;top:-10px;">
+															<h4><span>&#x0002A;</span>Security Code</h4>
+															<input name="CCCardID" type="text" class="no-mouseflow" id="CCCardID" style="width:25px" maxlength="4"><a href="javascript:launchWhatIsCreditCardID()">what's this?</a>
+														</div>
+													</td>
+												</tr>
+
+													<tr id="GiftCard_AskShow_TRArea" style="display:table-row">
+														<td>
+															<a href="javascript:ShowGiftCardArea()">Pay With Gift Card</a>
+														</td>
+													</tr>
+													<tr id="GiftCard_TRArea" style="display:none">
+														<td>
+															<table border="0" cellspacing="0" cellpadding="0" align="left">
+
+																<tr id="GiftCardNumberArea1" style="display:block">
+																	<td>
+																		<h4>Gift Card (1):<br>
+																		<input type="text" class="no-mouseflow" name="RealGiftCardNumber1" id="RealGiftCardNumber1" maxlength="20" size="16" onBlur="ChangeRealGiftCard(1)">
+																		</strong></h4>
+																	</td>
+																</tr>
+																<tr id="GiftCardPwdArea1" style="display:block">
+																	<td>
+																		<h4>Card PIN #:</h4>
+																		<input name="RealGiftCardPwd1" class="no-mouseflow" type="text" id="RealGiftCardPwd1" size="6" maxlength="10" onBlur="ChangeRealGiftCard(1)">
+																		<br>
+																		<span id="RealGiftCardMsg1"></span>
+																	</td>
+																</tr>
+
+																<tr id="GiftCardNumberArea2" style="display:none">
+																	<td>
+																		<h4>Gift Card (2):<br>
+																		<input type="text" class="no-mouseflow" name="RealGiftCardNumber2" id="RealGiftCardNumber2" maxlength="20" size="16" onBlur="ChangeRealGiftCard(2)">
+																		</strong></h4>
+																	</td>
+																</tr>
+																<tr id="GiftCardPwdArea2" style="display:none">
+																	<td>
+																		<h4>Card PIN #:</h4>
+																		<input name="RealGiftCardPwd2" class="no-mouseflow" type="text" id="RealGiftCardPwd2" size="6" maxlength="10" onBlur="ChangeRealGiftCard(2)">
+																		<br>
+																		<span id="RealGiftCardMsg2"></span>
+																	</td>
+																</tr>
+
+																<tr id="GiftCardNumberArea3" style="display:none">
+																	<td>
+																		<h4>Gift Card (3):<br>
+																		<input type="text" class="no-mouseflow" name="RealGiftCardNumber3" id="RealGiftCardNumber3" maxlength="20" size="16" onBlur="ChangeRealGiftCard(3)">
+																		</strong></h4>
+																	</td>
+																</tr>
+																<tr id="GiftCardPwdArea3" style="display:none">
+																	<td>
+																		<h4>Card PIN #:</h4>
+																		<input name="RealGiftCardPwd3" class="no-mouseflow" type="text" id="RealGiftCardPwd3" size="6" maxlength="10" onBlur="ChangeRealGiftCard(3)">
+																		<br>
+																		<span id="RealGiftCardMsg3"></span>
+																	</td>
+																</tr>
+
+																<tr>
+																	<td><a href="javascript:AddGiftCard()">Add Another Gift Card</a>
+
+																		<a href="javascript:CheckGiftCardBalance()">Check Gift Card Balance</a><strong>Total Credit:</strong>CA$<font id="RealGiftCard_Credit">0.00</font>
+
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+
+											</table>
+
+											<div id="GiftCard_Desc_TRArea" style="display:none">
+												<p class="note">If you enter more than 1 Gift Card, all the remaining Credit will be placed on the first one.</p>
+											</div>
+
+											<input type="button" name="orderbtn" style="width:200px;font-size: 16px;" style="height:50px;" id="orderbtn" value="PLACE YOUR ORDER" onClick="CheckoutWithCCNow()">
+										<input type="hidden" name="__ncforminfo" value="cYfuSGoriBOoqFCWrHHYVwVv5NPMwVIHK73uITKukQRG_Nqcz7SNeytnasNTBS7KhRJ8wFgHooHuoAlR-PrKuRuR0oa5vmDtb5ytB3TUA1tQedm_51nScVX9lKer6Wyzg3-qUVhqhAKOZS2SZQt4hMAPWeIdgq_-oRnREp2u5gdrQgNhZKbdxRMXxdNIoZbO975aSvhGt7qHQ3GQZ6db6w3QwVK_SP6qu-4KkAJB2rw48Lp1ItTHfzFH2RUG7mtAavHq3uz9Qb3suJcN8yEJekEfB359MeOt7Nq0cnaJqYMoArRHM4aIcxPDpvt5GTjBHDDNzgrkuB186WHtIDBLN51uDlBj5HeSduDbHyy5m5pt06jouBZJnJwysaBtjSjC4G7ldIw_pDwnBx-WMJ6P06deVezTjhe54zxL14-ThfkdWk1UCKdZuoYQj9IIjzVr3pasHWCyRi8miFJIZf5xo0XY3XsBtgINWG3DrzG-ExWZljEhVcSIqNay4e3Vpm6C"/></form>
+									</td>
+								</tr>
+								<tr>
+									<td id="live-chat">
+										<a id="_lpChatBtn" href='https://server.iad.liveperson.net/hc/65474986/?cmd=file&file=visitorWantsToChat&site=65474986&byhref=1&imageUrl=https://server.iad.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/Small/2c' target='chat65474986'  onClick="lpButtonCTTUrl = 'https://server.iad.liveperson.net/hc/65474986/?cmd=file&file=visitorWantsToChat&site=65474986&imageUrl=https://server.iad.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/Small/2c&referrer='+escape(document.location); lpButtonCTTUrl = (typeof(lpAppendVisitorCookies) != 'undefined' ? lpAppendVisitorCookies(lpButtonCTTUrl) : lpButtonCTTUrl); lpButtonCTTUrl = ((typeof(lpMTag)!='undefined' && typeof(lpMTag.addFirstPartyCookies)!='undefined')?lpMTag.addFirstPartyCookies(lpButtonCTTUrl):lpButtonCTTUrl);window.open(lpButtonCTTUrl,'chat65474986','width=475,height=400,resizable=yes');return false;" ><img src="/img/live-chat.png" width="117" height="128"></a>
+										<p>If you have any Questions:<br>
+											1-877-SOFTMOC<br>
+										(1-877-763-8662)<br>
+										or 1-800-833-4439
+										<br></p>
+
+										<a href="mailto:shoes@softmoc.com">shoes@softmoc.com</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="deviceWidth" id="copyright">
+			Copyright &copy; 1996 - 2016 SoftMoc&trade; Inc.
+			<br class="hide show"> E-Commerce by <a href='http://www.mwfgroupbahamas.com' target='_blank'>MWF&nbsp;Group.</a> All rights reserved.
+		</div>
+	</div>
+</div>
+<script LANGUAGE="JavaScript">
+
+	setTimeout("ChangeShipMetd()",100);
+	setTimeout("ChangePayBy()",200);
+
+
+setTimeout("ShowSessionExpired()",600000);
+</script>
+<script data-cfasync="false" type="text/javascript">
+
+setTimeout(function(){var a=document.createElement("script");
+
+var b=document.getElementsByTagName("script")[0];
+
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0012/1512.js?"+Math.floor(new Date().getTime()/3600000);
+
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+</script>
+<!-- BEGIN LivePerson Monitor. -->
+
+<script type="text/javascript">
+
+if(typeof window.lpTag==='undefined'){window.lpTag={site:'65474986',_v:'1.3',protocol:location.protocol,events:{bind:function(app,ev,fn){lpTag.defer(function(){lpTag.events.bind(app,ev,fn)},0)},trigger:function(app,ev,json){lpTag.defer(function(){lpTag.events.trigger(app,ev,json)},1)}},defer:function(fn,fnType){if(fnType==0){this._defB=this._defB||[];this._defB.push(fn)}else if(fnType==1){this._defT=this._defT||[];this._defT.push(fn)}else{this._defL=this._defL||[];this._defL.push(fn)}},load:function(src,chr,id){var t=this;setTimeout(function(){t._load(src,chr,id)},0)},_load:function(src,chr,id){var url=src;if(!src){url=this.protocol+'//'+((this.ovr&&this.ovr.domain)?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site}var s=document.createElement('script');s.setAttribute('charset',chr?chr:'UTF-8');if(id){s.setAttribute('id',id)}s.setAttribute('src',url);document.getElementsByTagName('head').item(0).appendChild(s)},init:function(){this._timing=this._timing||{};this._timing.start=(new Date()).getTime();var that=this;if(window.attachEvent){window.attachEvent('onload',function(){that._domReady('domReady')})}else{window.addEventListener('DOMContentLoaded',function(){that._domReady('contReady')},false);window.addEventListener('load',function(){that._domReady('domReady')},false)}if(typeof(window._lptStop)=='undefined'){this.load()}},_domReady:function(n){if(!this.isDom){this.isDom=true;this.events.trigger('LPT','DOM_READY',{t:n})}this._timing[n]=(new Date()).getTime()}};lpTag.init()}
+
+</script>
+
+<!-- END LivePerson Monitor. -->
+<!-- Google Code for Remarketing Tag -->
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1072714520/?value=0&amp;guid=ON&amp;script=0"/>
+
+<script type="text/javascript">
+
+   var _mfq = _mfq || [];
+
+   (function() {
+
+       var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
+
+       mf.src = "//cdn.mouseflow.com/projects/771a5a50-629f-4271-ad85-ce2254d8a18d.js";
+
+       document.getElementsByTagName("head")[0].appendChild(mf);
+
+   })();
+
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PNMM6H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PNMM6H');</script>
+<!-- End Google Tag Manager -->
+	<script type="text/javascript" data-cfasync="false" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+	<script type="text/javascript" data-cfasync="false">
+	var site_type = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+	var criteo_q = window.criteo_q || [];
+	criteo_q.push(
+
+				{ event: "setAccount", account: 11642 }
+
+	//		,{ event: "setCustomerId", id: "#Customer ID#"}
+			,{ event: "setSiteType", type: site_type}  //m mobile, t tablet, d classic
+
+			,{ event: "viewBasket",
+				product: [
+
+						{ id: "14045-BKW", price: 89.99, quantity: 1 }
+
+							,
+
+						{ id: "LOUISA-BLK", price: 114.99, quantity: 1 }
+
+					]
+			}
+
+		);
+	</script>
+
+
+</body>
+</html>

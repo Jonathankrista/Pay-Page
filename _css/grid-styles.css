@@ -1,0 +1,154 @@
+.itemShortDesc h4 {
+    font-size: 12px !important;
+}
+.itemImg img{
+    width: 135px;
+    height: 135px;
+}
+.itemInfo,
+.itemInfo:after,
+.itemInfo:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.madeInCanada{
+    font-size: 10px;
+    color: #333;
+}
+.onlineOnly{
+    font-size: 10px;
+    color: #333;
+}
+#productsWrapper {
+    overflow: hidden;
+    max-width: 1900px;
+    margin: 0 auto;
+    font-size: 0px;
+}
+
+.itemInfo {
+    display: -moz-inline-stack;
+    display: inline-block;
+    /* For IE */
+    zoom: 1;
+    *display: inline;
+    /* End IE */
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+    width: 25%;
+    padding: 0px 15px 30px 15px;
+    float: none;
+}
+.itemImg {
+    width: 135px;
+    height: 135px;
+    position: relative;
+    margin: 0 auto;
+}
+.itemShortDesc {
+    margin-top: 20px;
+    padding-right: 5px;
+    height: 55px;
+    display: block;
+}
+
+.itemShortDesc h4,
+.itemShortDesc h4 a {
+    color: #006699;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.itemSubtitle,
+a.itemSubtitle {
+    font-size: 11px;
+    color: #333 !important;
+    text-decoration: none;
+    display: block;
+    height: 30px;
+}
+
+a.itemSubtitle:hover {
+    text-decoration: underline;
+}
+
+.itemShortDesc h4 a {
+    text-decoration: none;
+}
+
+.itemShortDesc h4 a:hover {
+    text-decoration: underline;
+}
+
+.priceInfo {
+    min-height: 34px;
+}
+
+.saleprice {
+    color: #CC0000;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "open-sans-regular", Arial, sans-serif;
+}
+.price{
+    color: #333;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "open-sans-regular", Arial, sans-serif;
+}
+.regPrice{
+    color: #333;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "open-sans-regular", Arial, sans-serif;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .itemShortDesc h4 a {
+        font-size: 12px;
+    }
+
+    .itemShortDesc {
+        padding-right: 0px !important;
+        margin-top: 5px;
+        min-height: 50px;
+    }
+
+    .itemSubtitle,
+    a.itemSubtitle {
+        font-size: 12px;
+    }
+
+    .itemInfo {
+        width: 25%;
+    }
+}
+@media (max-width: 650px) {
+
+    .itemShortDesc h4 a {
+        font-size: 12px;
+    }
+
+    .itemShortDesc {
+        padding-right: 0px !important;
+        margin-top: 5px;
+        min-height: 50px;
+    }
+
+    .itemSubtitle,
+    a.itemSubtitle {
+        font-size: 12px;
+    }
+
+    .itemInfo {
+        width: 33%;
+    }
+}
+
+@media (max-width: 480px) {
+    .itemInfo {
+        width: 50%;
+    }
+}

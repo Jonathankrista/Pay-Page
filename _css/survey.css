@@ -1,0 +1,24 @@
+body {
+	margin: 0px;
+	background-color: #eee;
+	font-size: 13px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+}
+
+.smcx-embed {
+	margin-left:auto !important;
+	margin-right:auto !important;
+	border-radius:5px !important;
+}
+
+.smcx-show {
+	margin-top:20px !important;
+}
+
+.smcx-iframe-container {
+	-webkit-overflow-scrolling: touch !important;
+  	overflow-y: scroll !important;
+	position: fixed !important;
+}

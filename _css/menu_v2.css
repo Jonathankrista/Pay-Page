@@ -1,0 +1,230 @@
+#nav{
+	list-style:none;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+#nav li{
+	float:left;
+	position:relative;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#nav a{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	font-family:  cartogothicstd-book , Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 15px;
+	padding-top: 6px;
+	padding-right: 9px;
+	padding-bottom: 0px;
+	padding-left: 7px;
+	height: 22px;
+	margin: 0px;
+}
+#nav a:hover{
+	color:#fff;
+	text-decoration: none;
+	background-color: #FAE9E9;
+}
+
+
+
+
+
+/*--- DROPDOWN ---*/
+#nav ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	z-index: 9999;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #900;
+}
+#nav ul li{
+	float:none;
+	padding: 0px;
+	margin: 0px;
+}
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover #menubrands { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	width: 400px;
+	background-color: #900;
+}
+#nav li #menubrands li  { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	display: none;
+}
+#nav li:hover  #menubrands li{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+	float: left;
+	display: block;
+	/* [disabled]width: 165px; */
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #900;
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	text-decoration:none;
+	background-color: #C00;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+	font-size: 14px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #900;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background-color: #FFF;
+	color: #000;
+}
+
+
+#flag-combo-nav{
+	list-style:none;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+#flag-combo-nav li{
+	float:left;
+	position:relative;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#flag-combo-nav a{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	font-family:  cartogothicstd-book , Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 12px;
+	padding-top: 6px;
+	padding-right: 9px;
+	padding-bottom: 0px;
+	padding-left: 7px;
+	height: 18px;
+	margin: 0px;
+}
+#flag-combo-nav a:hover{
+	color:#F7BCBC;
+	text-decoration: none;
+	background-color: #FAE9E9;
+}
+
+
+
+
+
+/*--- DROPDOWN ---*/
+#flag-combo-nav ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; 
+	margin: 0px;
+	padding: 0px;
+	z-index: 9999;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CDCDCD;
+}
+#flag-combo-nav ul li{
+	float:none;
+	padding: 0px;
+	margin: 0px;
+}
+#flag-combo-nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#flag-combo-nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+#flag-combo-nav li:hover #menubrands { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	width: 400px;
+	background-color: #CDCDCD;
+}
+#flag-combo-nav li #menubrands li  { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	display: none;
+}
+#flag-combo-nav li:hover  #menubrands li{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+	float: left;
+	display: block;
+	/* [disabled]width: 165px; */
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CDCDCD;
+}
+#flag-combo-nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	text-decoration:none;
+	background-color: #FAE9E9;
+}
+#flag-combo-nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+	font-size: 12px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CDCDCD;
+}
+#flag-combo-nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background-color: #F7BCBC;
+	color: #000;
+}
+
+
+#layout #flag-combo {
+	height: 20px;
+	background-color: #FDE1E1;
+	color: #F7BCBC;
+}
+#layout #menu {
+	height: 30px;
+	background-color: #F00;
+	color: #FFF;
+}
+#layout #menu #free-ship {
+	height: 29px;
+	text-align: left;
+	font-size: 17px;
+	background-color: #000000;
+	color: #FFF;
+	font-family: "myriad-pro-condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+	width: 215px;
+	float: right;
+	display: block;
+	text-decoration: none;
+	padding-top: 1px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	background-image: url(/img/shipping-menu-icon.png);
+	background-repeat: no-repeat;
+	background-position: 145px center;
+	border-left-width: 0px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+}
+#layout #menu #free-ship:hover {
+	/* [disabled]background-color: #900; */
+}

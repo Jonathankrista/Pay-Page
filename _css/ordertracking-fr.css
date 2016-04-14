@@ -1,0 +1,268 @@
+#responsiveTell{
+    display: none;
+    line-height: 0px;
+    font-size: 0px;
+    height: 0px;
+    visibility: none;
+}
+.orderTrackingLeftColumn{
+	float: left;
+	width: 450px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 40px;
+	margin-top: 20px;
+}
+.orderTrackingForm{
+	margin-bottom: 10px;
+}
+.orderTrackingRightColumn{
+	float: right;
+	width: 400px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 40px;
+	margin-top: 20px;
+	text-align: right;
+}
+.orderTrackingForm input[type=text], .billingInfo input[type=text]{
+	border: 1px solid #ccc;
+    margin-bottom: 15px;
+    margin-top: 3px;
+    padding: 8px;
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.orderTrackingSubmit, .submitButton{
+	background-color: #069;
+    border: 0px;
+    color: #fff;
+    padding: 8px;
+    margin-top: 10px;
+    display: block;
+    margin-right: 10px;
+    min-width: 110px;
+    cursor: pointer;
+    border-radius: 3px !important;
+}
+
+.submitButton{
+	background-color: #ff6e00 !important;
+}
+.itemDetail select{
+}
+.orderTrackingLabel{
+	font-family: "open-sans-regular",Arial,sans-serif;
+}
+
+.orderInfoTitle{
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding:10px 0px;
+	margin: 20px 0px;
+	position: relative;
+}
+.orderInfoTitleLeft{
+	float: left;
+	font-family: "open-sans-regular", Arial, sans-serif;
+	font-size: 18px;
+	padding:10px 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cancelOrderButton a{
+	padding:10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #f00;
+	color: #fff !important;
+	font-family: "open-sans-regular", Arial, sans-serif;
+	font-size: 14px;
+	position: absolute;
+	top: 20%;
+	right: 0px;
+	text-align: center;
+	min-width: 110px;
+    border-radius: 3px;
+}
+.orderInfoHeading{
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-family: "open-sans-regular",Arial,sans-serif;
+	font-weight: bolder;
+}
+.orderInfoContent{
+}
+.trackingNumber{
+	text-align: center;
+	padding:20px;
+	background-color: #cae5ff;
+	border-style: dashed;
+	border-width:  1px;
+	border-color: #069;
+	margin:20px 0px;
+	font-weight: bold;
+}
+.trackingNumber a{
+	text-decoration: underline;
+}
+.successMessage{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.successMessage a{
+	text-decoration: underline;
+	font-weight: bold;
+}
+.billingInfo, .shippingInfo, .itemDetail, .invoiceDetail{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 49%;
+	float: left;
+}
+.billingInfo, .itemDetail{
+	padding-right: 20px;
+}
+.shippingInfo, .invoiceDetail{
+	padding-left: 20px;
+}
+.mobileSectionHeader h2{
+	width: 100%;
+	background-color: #069;
+	color: #fff;
+	padding:5px 0px 5px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "open-sans-regular", Arial, sans-serif;
+	text-transform: none;
+	font-size: 16px !important;
+}
+.sectionWrapper{
+	margin-bottom: 20px;
+}
+.orderInfoBottomButtons{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.billingInfo .orderInfoContent{
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.billingInfo select{
+	margin: 5px 0px 10px;
+}
+.rmaArea{
+	font-size: 11px;
+	font-style: italic;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 5px;
+}
+.rmaButton a{
+	padding:10px;
+	background-color: #f00;
+	width: 200px;
+	text-align: center;
+	color: #fff !important;
+	font-size: 13px;
+	font-style: normal;
+	float: right;
+	margin-left: 10px;
+    border-radius: 3px;
+}
+.printButton a{
+	float: right;
+	padding:10px;
+	background-color: #069;
+	width: 100px;
+	text-align: center;
+	color: #fff !important;
+    border-radius: 3px;
+}
+.mobileCollapse{
+	padding:0 10px;
+}
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+.mobileSectionHeader h2:after{
+	display: none !important;
+	content: "" !important;
+}
+.orderTrackingLeftColumn{
+	float: none;
+	width: 60%;
+	padding-right: 0px;
+	margin-top: 10px;
+}
+.orderTrackingRightColumn{
+	float: none;
+	display: none;
+}
+.mobileCollapse{
+	display: block !important;
+}
+}
+@media (max-width: 640px){
+#responsiveTell{
+    display: block;
+    visibility: visible;
+}
+.orderInfoTitleLeft{
+	float: none;
+}
+.cancelOrderButton a{
+	position: relative;
+	display: block;
+	width: 180px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.orderTrackingLeftColumn{
+	float: none;
+	width: 100%;
+	padding-right: 0px;
+	margin-top: 10px;
+}
+.orderTrackingRightColumn{
+	float: none;
+	display: none;
+}
+.billingInfo, .shippingInfo, .itemDetail, .invoiceDetail{
+	width: 100%;
+	float: none;
+	padding:0px;
+}
+.sectionWrapper{
+	margin:0px;
+}
+.printButton a{
+	float: left;
+	width: 90px;
+}
+.mobileCollapse .orderInfoHeading:first-child{
+	margin-top: 0px;
+}
+.orderTrackingSubmit{
+	float: left;
+	margin-right: 0px;
+	font-family: "open-sans-regular",Arial,sans-serif;
+	font-size: 14px;
+}
+.rmaButton a{
+	width:180px;
+}
+.rmaArea{
+	margin-top: 10px;
+}
+}

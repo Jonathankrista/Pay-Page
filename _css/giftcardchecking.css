@@ -1,0 +1,89 @@
+.cardBalance{
+	width: 50%;
+	margin-top: 50px;
+	float: left;
+}
+.cardBalanceFormWrapper{
+	margin-top: 30px;
+}
+.cardBalanceFormRow, .cardBalanceFormRow *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cardBalanceFormRow{
+	margin-bottom: 10px;
+}
+.cardBalanceFormRow label{
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+	display: block;
+	font-size: 12px;
+}
+.formLeft{
+	float: left;
+	padding-right: 10px;
+	width: 70%;
+}
+.formRight{
+	float: right;
+	width: 30%;
+	padding-left: 10px;
+}
+.cardBalanceFormRow input[type="text"], .cardBalanceFormRow input[type="password"]{
+	border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 5px;
+    padding: 8px;
+    width: 100%;
+}
+.cardBalanceFormSubmit{
+	background-color: #069;
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+  margin-right: 10px;
+	padding: 8px 10px;
+	border-radius: 3px !important;
+	border: 0px;
+}
+.giftcard{
+	width:  50%;
+	float: right;
+}
+@media only screen and (max-device-width: 1024px) and (min-device-width: 481px) and (orientation: portrait) {
+	.cardBalance, .giftcard {
+		float: none;
+	}
+	.cardBalance {
+		margin-top: 0px;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.cardBalance {
+		margin-top: 0px;
+		width: 100%;
+	}
+	.cardBalanceFormSubmit {
+		margin-top: 10px;
+	}
+	.giftcard {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.formLeft, .formRight {
+		float: none;
+	}
+	.formLeft {
+		width: 100%;
+	}
+	.formRight {
+		padding-left:0;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.giftcard img {
+		width: 100%;
+	}
+}

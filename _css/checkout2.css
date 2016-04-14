@@ -1,0 +1,472 @@
+/* TABLET LANDSCAPE */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+}
+
+/* TABLET PORTRAIT */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body #main {margin-top:51px !important;}
+	body #main #content {margin-top:0px !important;}
+	body #page-title-mobile {padding:0px !important; margin:0px !important;}
+	body #page-title-mobile h1{color:#000 !important; font-weight:normal !important; font-size:20px!important; text-decoration:none!important; margin:0px!important; margin-top:10px !important; padding:0px !important; text-align:center !important;}
+	body #page-title-mobile span {text-align:center !important; display:block !important; margin-bottom:5px !important;}
+	body #item-invoice-info table {display:block !important; width:95% !important; border-collapse:collapse !important; border:none !important; margin-left:auto !important; margin-right:auto !important;}
+	body .invoiceWidth  table {width:220px !important;}
+	body #shipping-details .trust {width:340px !important;}
+	body #header {height:0px !important;}
+	#order-info table td { text-overflow: ellipsis; max-width: 220px; overflow: hidden; }
+}
+
+/*MOBILE LANDSCAPE & TABLET PORTRAIT (BROWSER PREVIEW) */
+@media only screen and (max-width:640px) {
+	body #main {margin-top:51px !important;}
+	body #main #content {margin-top:0px !important;}
+	body .infoWidth {width:160px !important; padding:0px!important;}
+	body .invoiceWidth  table {width:220px !important;}
+	body #page-title-mobile {padding:0px !important; margin:0px !important;}
+	body #page-title-mobile h1{color:#000 !important; font-weight:normal !important; font-size:20px!important; text-decoration:none!important; margin:0px!important; margin-top:10px !important; padding:0px !important; text-align:center !important;}
+	body #page-title-mobile span {text-align:center !important; display:block !important; margin-bottom:5px !important;}
+
+	body #header {height:0px !important;}
+	body #invoice-detail { width:100px !important;}
+	body #item-invoice-info table {display:block !important; width:95% !important; border-collapse:collapse !important; border:none !important; margin-left:auto !important; margin-right:auto !important;}
+
+	body #shipping-details .trust {width:340px !important;}
+	#order-info table td { text-overflow: ellipsis; max-width: 220px; overflow: hidden; }
+}
+
+/*MOBILE PORTRAIT*/
+@media only screen and (max-width:479px) {
+
+	body .infoWidth {width:160px !important; padding:0px!important; background-color:#FFF !important;}
+	body #page-title-mobile {padding:0px !important; margin:0px !important;}
+	body #page-title-mobile h1{color:#000 !important; font-weight:normal !important; font-size:20px!important; text-decoration:none!important; margin:0px!important; margin-top:10px !important; padding:0px !important; text-align:center !important;}
+	body #page-title-mobile span {text-align:center !important; display:block !important; margin-bottom:5px !important;}
+	body #content #order-info #invoice-detail {padding-top:0px !important;}
+
+	body #header {height:0px !important;}
+
+	body #shipping-details .trust {display:none !important;}
+
+	body #review-title h2  {text-align:center !important; padding:0px !important; margin:0px !important;}
+	body #review-title {padding-left:0px !important;}
+
+	body #secure-order form #orderbtn {width:100% !important;}
+
+	body #item-invoice-info table {display:block !important; width:90% !important; border-collapse:collapse !important; border:none !important; margin-left:auto !important; margin-right:auto !important;}
+	body #item-invoice-info table th {display:block !important;}
+	body #item-invoice-info table tbody {display:block !important;}
+	body #item-invoice-info table thead {display:block !important;}
+	body #item-invoice-info table tr {display:block !important; border:1px solid #ccc !important; margin-bottom:15px !important; border-bottom:none !important;}
+	body #item-invoice-info table td {display:block; text-align:left !important; height:auto !important; border:none !important; border-bottom:1px solid #ccc !important; position:relative !important; padding:10px !important; padding-left:100px !important;}
+
+	body #item-invoice-info table .headerRow {position:absolute !important; top:-9999px !important; left:-9999px !important;}
+
+	body #item-invoice-info table td:nth-of-type(1):before { content:"Item:"; font-weight:bold; }
+	body #item-invoice-info table td:nth-of-type(2):before { content:"Description:"; font-weight:bold; }
+	body #item-invoice-info table td:nth-of-type(3):before { content:"Size:"; font-weight:bold; }
+	body #item-invoice-info table td:nth-of-type(4):before { content:"Price:"; font-weight:bold; }
+	body #item-invoice-info table td:nth-of-type(5):before { content:"Qty:"; font-weight:bold; }
+
+	body #item-invoice-info table td:before {position:absolute !important; top:0px !important; left:0px !important; padding:10px !important; white-space:nowrap !important;}
+
+    /*body #item-invoice-info .item-note {text-align:left !important; }*/
+
+	body #item-invoice-info table .collapse {display:none;}
+
+	body #itemDetailBtns {position:relative !important; display:block !important; margin-bottom:5px !important; height:25px !important; text-align:right !important; width:90% !important; margin-left:auto !important; margin-right:auto !important;}
+	body #itemDetailBtns button {background-color:#DDD !important; color:#000 !important; border:none !important; border-radius:3px; cursor:pointer !important; padding:5px !important; position:static !important; }
+	#order-info table td { max-width: 260px; }
+}
+
+#PopUpD, #TmpD {
+	display: none;
+	position: fixed;
+	top: 35%;
+	left: 25%;
+	right: 50%;
+	width: 50%;
+	height: auto;
+	margin: 0px auto;
+	background-color: #FFF;
+	padding: 20px;
+	box-sizing: border-box;
+	z-index: 9999;
+	text-align: center;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3) !important;
+	border-radius: 3px;
+}
+
+#BackgroundD {
+	visibility:hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:0px;
+	height:0px;
+}
+
+#plusBtn {position:absolute; top:-9999px; left:-9999px;}
+#minusBtn {display:none;}
+
+#dhtmltooltip {
+	position:absolute;
+	width:150px;
+	border:2px solid black;
+	padding:2px;
+	background-color:lightyellow;
+	visibility:hidden;
+	z-index:100;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+
+#layout #header #my-account-rewards {
+	width:225px;
+	float:right;
+	text-align:center;
+	height:90px;
+	margin:0px;
+}
+
+
+#layout #header #checkout-step {
+	float:left;
+	height:40px;
+	width:385px;
+	text-align:center;
+	font-size:16px;
+	padding-top:30px;
+	padding-right:25px;
+	padding-left:25px;
+}
+#checkout-step em {
+	color:#666;
+}
+#checkout-step h1 {
+	padding:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	color:#000;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+	font-size:24px;
+}
+#checkout-title em {
+	font-size:21px;
+	color:#999;
+}#review-title {
+	background-color:#f2f2f2;
+	padding-top:10px;
+	padding-bottom:5px;
+	padding-left:20px;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#CCC;
+}
+#review-title h2 {
+	margin:0px;
+	padding:0px;
+	line-height:18px;
+	font-size:18px;
+}
+.nobr {
+	white-space:nowrap;
+}
+.rightBorder {
+	border-right-width:1px;
+	border-right-style:solid;
+	border-right-color:#CCC;
+}
+#layout #content #order-info h3{
+	font-size:13px;
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:5px;
+	margin-left:0px;
+}
+#order-info table td {
+	font-size:13px;
+	line-height:14px;
+	font-family:Helvetica, "Helvetica Neue", Arial, sans-serif;
+	padding:20px;
+}
+#order-info #invoice-detail td   {
+	padding-top:0px;
+	padding-right:5px;
+	padding-bottom:5px;
+	padding-left:0px;
+}
+#content #order-info #invoice-detail td h3{
+	font-size:16px;
+	margin-top:5px;
+}
+#content #order-info a{
+	text-decoration:none;
+	color:#069;
+	font-size:12px;
+}
+#content #order-info #billing-info a , #content #order-info #shipping-info a{
+	display:block;
+	height:13px;
+	padding-top:3px;
+	margin-top:10px;
+	font-size:11px;
+}
+#content #order-info #invoice-detail #HowShippingCalcArea     {
+	display:none;
+	background-image:url(/img/info.png);
+	background-repeat:no-repeat;
+	padding-left:20px;
+	background-position:left top;
+	height:15px;
+	padding-top:1px;
+	margin-top:5px;
+	cursor:help;
+	color:#069;
+}
+/*
+#content #order-info #invoice-detail #Total_Area{
+	color:#F00;
+}
+*/
+#content #order-info #invoice-detail  #Total_Area{
+/*
+	color:#FFF;
+*/
+}
+#content #shipping-payment {
+	border-top-width:1px;
+	border-top-style:solid;
+	border-top-color:#CCC;
+	/* [disabled]background-color:#FCF; */
+}
+#shipping-details #shipment-details {
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+}
+#shipping-details #shipment-details h3 {
+	padding:0px;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:5px;
+	margin-left:0px;
+	font-size:14px;
+}
+#shipping-details #shipment-details label {
+	display:block;
+	padding-top:5px;
+	padding-bottom:5px;
+	cursor:pointer;
+}
+#shipping-details #shipment-details label input {
+	padding:0px;
+	height:auto;
+	width:auto;
+	margin-top:0px;
+	margin-right:5px;
+	margin-bottom:0px;
+	margin-left:0px;
+}
+#shipment-details div {
+	font-size:12px;
+	color:#600;
+	margin-bottom:5px;
+	line-height:15px;
+}
+#shipping-details #StorePickupInfo_Area {
+	display:none;
+	width:100px;
+}
+#shipping-details #StorePickupInfo_Area #save-story{
+	padding:10px;
+	background-color:#FFC;
+	text-align:center;
+	border-right-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	border-right-color:#CCC;
+	border-bottom-color:#CCC;
+	border-left-color:#CCC;
+}
+#shipping-details #StorePickupInfo_Area strong {
+	font-size:18px;
+	color:#F00;
+}
+#shipping-details #StorePickupInfo_Area a {
+	white-space:nowrap;
+	display:block;
+	margin-top:5px;
+	text-decoration:none;
+	color:#F00;
+}
+#shipping-details #shadow img {
+	/* [disabled]height:auto; */
+	width:90%;
+}
+#shipping-details #trust h2 {
+	font-size:14px;
+	font-weight:bold;
+	color:#069;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
+#shipping-details #trust ul {
+	list-style-image:url(/img/check-red.png);
+	margin:0px;
+	padding-top:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	padding-left:20px;
+}
+#shipping-details #trust ul li {
+	margin-bottom:3px;
+}
+#shipping-details #trust {
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-left:15px;
+}
+#shipping-payment #secure-order {
+	background-color:#dfeaf4;
+	padding-top:10px;
+	padding-right:20px;
+	padding-bottom:20px;
+	padding-left:20px;
+}
+#shipping-payment #secure-order h4 {
+	margin-top:10px;
+	margin-right:0px;
+	margin-bottom:2px;
+	margin-left:0px;
+}
+#secure-order #order-opts #paymethods {
+	margin-bottom:10px;
+}
+#content #shipping-payment #secure-order #order-opts input{
+	padding:5px;
+	border:1px solid #069;
+	width:160px;
+	display:block;
+}
+#secure-order #GiftCard_TRArea a {
+	display:block;
+	margin-top:15px;
+	margin-bottom:10px;
+}
+#secure-order #CCCardID_TRArea  td a           {
+	text-decoration:none;
+	display:block;
+	margin-bottom:15px;
+	width:80px;
+}
+#GiftCard_AskShow_TRArea a   {
+	text-decoration:none;
+	padding:0px;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:10px;
+	margin-left:0px;
+	display:block;
+	font-weight:bold;
+	width:130px;
+}
+#GiftCard_TRArea td table td a   {
+	display:block;
+	margin-bottom:5px;
+}
+#secure-order form #orderbtn {
+	color:#FFF;
+	background-color:#F30;
+	padding:8px;
+	font-size:18px;
+	margin-top:10px;
+	border-radius:3px;
+	border:1px solid #F00;
+	cursor:pointer;
+}
+#shipping-details #security td img {
+	margin-left:15px;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+#secure-order form input {
+	border:1px solid #69C;
+	padding:5px;
+	margin-bottom:5px;
+}
+#secure-order form #PaymentMethod {
+	margin:0px;
+}
+#content #shipping-payment #shipping-details #item-invoice-info a    {
+	display:block;
+	height:13px;
+	padding-top:0px;
+	width:60px;
+	text-decoration:none;
+	font-size:11px;
+	margin-top:10px;
+}
+#shipping-details #item-invoice-info table {
+	border:1px solid #ccc;
+}
+
+#item-invoice-info table {
+	border-collapse:collapse;
+	margin-bottom:15px;
+}
+
+#item-invoice-info th {
+	text-align:left;
+	padding:5px;
+	border:1px solid #ccc;
+}
+#item-invoice-info td {
+	padding:5px;
+	border:1px solid #ccc;
+}
+#item-invoice-info .qty a {
+	display:block;
+}
+
+#item-invoice-info .item-note {
+	color:#636;
+	text-decoration:none;
+	font-size:11px;
+	clear:left;
+	margin-top:10px;
+	display:block;
+}
+#item-invoice-info .item-note p{
+	color:#900;
+	text-decoration:none;
+	font-weight:bold;
+	padding:0px;
+	margin-top:5px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+}
+#live-chat img {
+	/* [disabled]display:block; */
+	margin-right:auto;
+	margin-left:auto;
+}
+#live-chat {
+	text-align:center;
+	overflow:visible;
+	padding:15px;
+}
+#plusBtn {position:absolute; top:-9999px; left:-9999px;}
+#minusBtn {display:none;}

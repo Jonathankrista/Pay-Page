@@ -1,0 +1,361 @@
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+#leftColumn div {display:none !important;}
+	#leftColumn h1{position: absolute; margin:50px 15px 15px!important; width: 200px;}
+	#rightColumn {border:none !important;}
+	#rightColumn #shoeshop-image {margin:0px 0px 20px 210px !important; width:auto !important; height:160px !important; float:left !important;}
+	#rightColumn #shoeshop-specials{margin:0px !important; margin-top:0px !important; margin-left:5px !important; padding:10px !important; padding-top:0px !important; width:170px !important; height:auto !important; background-color:#FFF !important; float:left !important; }
+	#rightColumn #shoeshop-specials h2 {font-size:14px !important; margin-top:15px !important;}
+	#content #shoeshop-specials a{font-size:11px !important; padding:6px !important;}
+	#rightColumn .shoeshop-products {margin-left:0px  !important; margin-top:0px !important;}
+	#rightColumn .shoeshop-products h2 {padding-left:15px !important; font-size:18px !important;}
+	#rightColumn .shoeshop-products h2 strong {right:5px !important; top:14px !important;}
+	#rightColumn #shoeshop-dept-buttons {display:block !important; position:absolute; top:96px; padding-left:12px; width:190px;}
+	#rightColumn #shoeshop-dept-buttons h3 {font-size:12px !important; margin:0px !important; text-transform:capitalize !important; font-weight:normal !important;} 
+	#shoeshop-dept-buttons span {width:180px !important; display:block !important; background-color:#eee; padding-right:7px; border-radius:3px; box-sizing:border-box; margin-bottom:10px; position:relative;}
+	#shoeshop-dept-buttons span .fa {font-size:12px; position:absolute; top:5px; right:5px;}
+	#shoeshop-dept-buttons select {background-color:#eee; -webkit-appearance:none; -moz-appearance: none; border-radius:0px; color:#fff; padding:3px 6px 3px 6px; border:none; color:#000; width:180px; border-radius:3px;}
+	h2.mobileSubtitle{display: block;}
+}
+
+@media only screen and (max-width:640px)  {
+	#layout #content {border-bottom:none !important;}
+	#leftColumn div {display:none !important;}
+	#leftColumn {width:100% !important; height:auto !important; float:none !important; padding:0px !important; margin:0px !important; background-color:#ed322d; border:none !important;}
+	#leftColumn h1 {padding:0px !important; padding:5px 0px 5px 15px !important; margin:0px !important;}
+	#leftColumn h1 a {color:#FFF !important; font-size:16px !important;}
+	#rightColumn {border:none !important;}
+	#rightColumn #shoeshop-image {display: none !important;}
+	#rightColumn #shoeshop-specials{margin:0px !important; margin-top:10px !important; margin-left:5px !important; padding:10px !important; width:auto !important; height:auto !important; background-color:#FFF !important; float:left !important; }
+	#rightColumn #shoeshop-specials h2 {font-size:14px !important;}
+	#content #shoeshop-specials a{font-size:11px !important; padding:4px !important; padding-left:5px !important; padding-right:5px !important;}
+	#rightColumn .shoeshop-products {margin-left:0px  !important; margin-top:20px !important;}
+	#rightColumn .shoeshop-products h2 {padding-left:15px !important; font-size:18px !important;} 
+	#rightColumn .shoeshop-products h2 strong {right:5px !important; top:14px !important;}
+	h2.mobileSubtitle{display: block;}
+	}
+
+.mobileBrandLogo {text-align: center; margin-bottom: 5px;}
+.threesixty_images img.previous-image { z-index: -999; }
+/* Unknown Styles */
+
+.magnifyarea { /* CSS to add shadow to magnified image. Optional */
+	box-shadow: 5px 5px 7px #818181;
+	-webkit-box-shadow: 5px 5px 7px #818181;
+	-moz-box-shadow: 5px 5px 7px #818181;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#818181, offX=5, offY=5, positive=true);
+	background: white;
+}
+
+.ZoomImgArea { /* CSS for container div(s) of the zoomable image */
+	width: 350px; /* wide or wider than the widest zoomable image */
+	height: 350px; /* high or higher than the tallest zoomable image */
+	margin-top:3px;
+}
+
+.ZoomImgArea img { /*zoomable image*/
+	margin: auto; /*for horizontal centering*/
+	display: block; /*also for horizontal centering*/
+	position: relative; /*along with on the fly calculations in script, for vertical centering*/
+	border-width: 0;
+}
+
+/* LEFT COLUMN */
+ h2.departmentTitle{
+    margin-left: 15px;
+    margin-bottom: 0px !important;
+    font-size: 21px;
+    line-height: 21px;
+    font-family: 'open-sans-regular', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.departmentCount{
+    margin-left: 15px;
+    margin-bottom: 20px !important;
+    font-size: 16px !important;
+    font-family: 'open-sans-regular', Arial, sans-serif;
+}
+h2.mobileSubtitle{
+    display: none;
+    padding:3px 0 3px 15px !important;
+    font-size: 16px !important;
+}
+/* LEFT COLUMN */
+
+
+#content #leftColumn {
+	float: left;
+	width: 205px;
+	border-right: 1px solid #ddd;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+#content #leftColumn   h1{
+	margin: 15px;
+	padding: 0px;
+	color: #000;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 28px;
+}
+#content #leftColumn h1 a {
+	color: #000;
+} 
+
+#department-links, #collection-gender-links {
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+#content .title-divider{
+	background-color: #eee;
+	width: 190px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+#content #department-links a{
+	text-decoration: none;
+	color: #666;
+	font-family: Helvetica, Arial, sans-serif;
+	padding-left: 15px;
+}
+#content #department-links a:hover{
+	color: #000000 !important;
+	background-image: url(../img/arrow-left-nav.png) !important;
+	background-size: auto 6px;
+	background-repeat: no-repeat !important;
+	background-position: 5px 3px !important;
+}
+#content #department-links .shopall a {
+	background-color: #333;
+	color: #FFF;
+	font-weight: normal;
+	font-size:11px;
+	padding: 5px;
+	border-radius:3px;
+}
+#content #department-links .shopall a:hover {
+	background-image: none;
+	color: #FFF !important;
+	background-color: #369;
+}
+#content #department-links .shopall {
+	padding-left: 15px;
+	margin-top: 10px;
+}
+#content #department-links .shopall i {
+	font-size: 8px;
+}
+
+#content #collection-gender-links a {
+	text-decoration: none;
+	color: #666;
+	font-family: Helvetica, Arial, sans-serif;
+	padding-left: 15px;
+}
+#content #collection-gender-links a:hover {
+	color: #000000 !important;
+	background-image: url(../img/arrow-left-nav.png) !important;
+	background-size: auto 6px;
+	background-repeat: no-repeat !important;
+	background-position: 5px 3px !important;
+}
+
+#shop-by-size {
+	padding-left: 12px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#shop-by-size table input {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background-color: #FFF;
+	color: #369;
+	cursor: pointer;
+	width: 40px;
+	text-align: center;
+}
+#shop-by-size table input:hover {
+	border: 1px solid #666;
+}
+
+
+/* RIGHT COLUMN */
+
+
+#content #rightColumn {
+	float: left;
+	width: 684px;
+	clear: right;
+	min-height: 800px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #ddd;
+}
+
+#rightColumn #shoeshop-image {
+	display:block;
+	border:none;
+ 	float: left;
+	margin-top: 14px;
+	margin-right: 11px;
+	margin-bottom: 25px;
+	margin-left: 14px;
+}
+
+#rightColumn  #shoeshop-specials {
+	height: 176px;
+	width: 190px;
+	float: left;
+	margin-top: 14px;
+	background: #f5f5f5;
+	margin-bottom: 15px;
+	padding: 12px;
+}
+
+#content #shoeshop-specials a{
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-bottom: 5px;
+	background-color: #069;
+	padding: 5px;
+}
+
+#content #shoeshop-specials a:hover{
+	background-color: #19406B;
+	color: #FFF;
+}
+
+#content #shoeshop-specials h2 {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	color: #000;
+	font-family: 'open-sans-regular', Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 18px;
+}
+
+#content #rightColumn h2 a  {
+	color: #333;
+	text-decoration: none;
+}
+ .shoeshop-products {
+	clear: left;
+	width: 670px;
+	margin-left: 14px;
+	margin-bottom: 30px;	
+	font-size: 0px;
+	position:relative;
+}
+
+/*.shoeshop-departments{
+	display:none;
+}*/
+
+
+
+/* RIGHT COLUMN PRODUCTS */
+
+#rightColumn .shoeshop-products  h2{
+	color: #333;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ddd;
+}
+
+#rightColumn .shoeshop-products h2 strong {
+	font-size: 10px;
+	background-color: #666;
+	color: #FFF;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	font-weight: normal;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: absolute;
+	top: 18px;
+	right: 0px;
+}
+
+
+#rightColumn .productinfo {
+	display: -moz-inline-stack;
+	display: inline-block;
+	/* For IE */
+	zoom: 1;
+	*display:inline;
+	/* End IE */
+	vertical-align: top;
+	width: 25%;
+	padding: 20px;
+	font-size: 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+#rightColumn .productinfo > div {
+	display: none;
+}
+
+#layout #content #rightColumn .productinfo a{
+	text-decoration: none;
+	color: #333;
+	display: block;
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+#layout #content #rightColumn .productinfo .product-desc {
+	height:55px;
+}
+#layout #content #rightColumn .productinfo a:hover {
+	text-decoration: underline;
+}
+#layout #content #rightColumn .saleprice {
+	font-size: 14px;
+	display: block;
+}
+
+#rightColumn .shoeshop-products .productinfo > a img{
+	width: 135px;
+	height: 135px;
+	cursor: pointer;
+}
+
+#layout #content #rightColumn .productinfo .QVButton{
+	position: absolute;
+	opacity: 0.8;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+	left: 35px;
+	top: 60px;
+	padding: 5px;
+	background-color: #fff;
+	color: #000;
+	border: #fff solid 1px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+	border-radius:3px;
+}
+
+#layout #content #rightColumn .productinfo .QVButton:hover{
+	opacity: 0.9;
+	filter: alpha(opacity=90); /* For IE8 and earlier */
+	text-decoration: none;
+	border: #ccc solid 1px;
+	background-color:#FFF;
+	color:#000;
+}

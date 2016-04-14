@@ -1,0 +1,14 @@
+#main #layout #title-area {
+	color: #333;
+	background-color: #FFCC33;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: 670px center;
+	margin-bottom: 0px;
+}
+#main #layout #title-area #page-title h1 {
+	/* [disabled]font-family: "ff-market-web", cursive; */
+	color: #C00;
+	/* [disabled]font-size: 31px; */
+	/* [disabled]margin-top: 7px; */
+}

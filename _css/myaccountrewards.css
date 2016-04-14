@@ -1,0 +1,501 @@
+.createAccountButton{
+	color: #fff !important;
+	background-color: #f14546;
+	padding:10px;
+	display: block;
+	width: 160px;
+	text-align: center;
+	border-radius: 3px;
+	border: none;
+}
+#content{
+	margin-top: 20px;
+}
+#content h2{
+	padding:5px;
+	text-align: center;
+	padding:5px;
+	background-color: #ededed;
+}
+.myAlert{
+	position: absolute;
+	top:0;
+	right: 0;
+}
+.myAlert:after {
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    height: 40px;
+    width: 1px;
+}
+#updatePasswordForm{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.updateInput{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 3px;
+    padding: 8px;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.updateLabel {
+display:inline-block;
+}
+
+}
+.updateRow{
+	margin-bottom: 15px;
+}
+#updateBtn{
+    background-color: #069;
+    border: 0 none;
+    border-radius: 3px !important;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin-right: 10px;
+    margin-top: 10px;
+    min-width: 110px;
+    padding: 8px;
+}
+#updateEmail{
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+.fa-ul{
+	margin-left: 3.143em;
+}
+
+.forgotPwdField{
+	border: 1px solid #ccc;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 8px;
+    width: 60%%;
+    display: block;
+    margin-top: 10px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.forgotPwdBtn{
+	background-color: #069;
+    color: #fff;
+    padding: 8px;
+    margin-top: 10px;
+    display: block;
+    margin-right: 10px;
+    float: left;
+    border-radius: 3px !important;
+    border:none;
+}
+
+.forgotPwdCancel{
+
+    color: #ff0000;
+    margin-top: 10px;
+    display: block;
+    float: ;
+    margin-top: 19px;
+}
+.myAccountLogo img{
+	width: 150px;
+	height: auto;
+	display: block;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+.myAccountLeftColumn{
+	float: right;
+	width: 65%;
+	padding-left: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+.myAccountRightColumn{
+	float: left;
+	width: 35%;
+	padding-right: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-right: 1px solid #ddd;
+}
+.myAccountIconGrid{
+	font-size: 18px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.benefitList .fa{
+	font-size: 25px;
+	color: #069;
+}
+.benefitList .fa-gift, .fa-calendar, .fa-files-o{
+	margin-top: -3px;
+}
+.benefitList li{
+	font-family: "open-sans-regular", Arial, sans-serif;
+	color: #555;
+	padding-bottom: 20px;
+}
+.registerFormWrapper{
+	margin-top: 15px;
+}
+.registerFormRow, .registerFormRow *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.registerFormRow label, .signInFormWrapper label{
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+	display: inline;
+	font-size: 12px;
+}
+.formLeft{
+	float:left;
+	padding-right: 10px;
+	width: 50%;
+}
+.formRight{
+	float: right;
+	width: 50%;
+	padding-left: 10px;
+}
+.registerFormRow input[type="text"], .registerFormRow input[type="password"]{
+	border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 60%;
+}
+.signInFormWrapper input[type="text"], .signInFormWrapper input[type="password"]{
+	border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 5px;
+    padding: 8px;
+    width: 60%;
+}
+.registerFormSubmit, #signin-button{
+	background-color: #069;
+    color: #fff !important;
+    display: block;
+    margin-right: 10px;
+	padding: 8px 10px;
+	border-radius: 3px !important;
+	border: 0px;
+}
+
+#login-button{
+	background-color: #069;
+  color: #fff !important;
+  margin-top: 10px;
+	padding: 8px 10px;
+	border-radius: 3px !important;
+	border: 0px;
+	box-sizing:border-box;
+	display:inline-block;
+}
+.continueCheckout{
+	background-color: #ff6e00;
+    border: none;
+    color: #fff;
+    display: block;
+    margin-right: 10px;
+	padding: 8px 10px;
+	float: left;
+	border-radius: 3px !important;
+}
+.cancelButton{
+	background-color: #666;
+    border: none;
+    color: #fff;
+    display: block;
+    margin-right: 10px;
+	padding: 8px 10px;
+	float: left;
+	border-radius: 3px !important;
+}
+.signInOptions{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+.signInOptions li a{
+	font-size: 16px;
+}
+
+.myAccountPhone{
+	color: #f00;
+	font-weight: bold;
+}
+.signInOptions li a .optionSubtitle{
+	font-size: 13px;
+	font-style: italic;
+	margin-bottom: 20px;
+	color: #000 !important;
+}
+.registerFormRow:last-child{
+	margin-top: 20px;
+}
+.formSmallPrint{
+	margin-top: 20px
+}
+.memberPass{
+	margin-bottom: 20px !important;
+}
+.signInFormWrapper label{
+	margin-top: 20px;
+}
+.signInFormWrapper{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.showPassword{
+	display:inline-block;
+}
+
+.showPassword-fr{
+	display:inline-block;
+}
+
+.showPassword2{
+	display:inline;
+	margin-left:5.5px;
+}
+
+.showPassword3{
+	display:inline;
+	margin-left:5.5px;
+}
+
+
+
+label#showPassword {
+float:right;
+width:60%;
+}
+
+label#showPassword-fr {
+float:right;
+width:52%;
+}
+
+
+
+
+
+@media only screen and (min-device-width:320px) and (max-device-width:1024px) and (orientation:portrait){
+	#content{
+		margin-top: 0px;
+	}
+
+	label#showPassword {
+		float:right;
+		width:auto;
+	}
+
+	label#showPassword-fr {
+		float:right;
+		width: auto;
+	}
+
+	.registerFormRow input[type="text"], .registerFormRow input[type="password"] {
+		width:100%;
+	}
+
+	.updateInput {
+		width:100%;
+	}
+
+	#updateBtn {
+		width:100%;
+	}
+
+	.benefitList li{
+		color: #000;
+	}
+	.forgotPwdField{
+		width: 100%;
+	}
+	.myAccountLeftColumn{
+		float: none;
+		width: 70%;
+		padding-left: 0px;
+		margin:0 auto 10px;
+	}
+	.myAccountRightColumn{
+		float: none;
+		width: 70%;
+		padding-right: 0px;
+		margin: 0 auto;
+		border-right: none;
+	}
+
+	.formLeft{
+		float: none;
+		padding-right: 0px;
+		width: 100%;
+		border-left: none;
+		margin-top: 10px;
+	}
+	.formRight{
+		float: none;
+		width: 100%;
+		padding-left: 0px;
+		margin-top: 10px;
+	}
+	.formRight:last-child{
+		margin-bottom: 0px;
+	}
+	.registerFormSubmit, #signin-button{
+		width: 70%;
+		margin: 20px auto 0px;
+		display: block;
+	}
+	.registerFormRow{
+		margin-bottom: 0px;
+	}
+	.formSmallPrint{
+		margin-bottom: -10px;
+		text-align: center;
+	}
+	.myAccountIconGrid{
+		margin-top: 5px;
+	}
+	.registerFormRow:last-child{
+		margin-top: 0px;
+	}
+
+	.showPassword {
+	display:inline-block;
+	margin-left:5.5px;
+	}
+
+	.showPassword2 {
+ 	margin-left:5.5px;
+ 	}
+
+	showPassword3 {
+ 	margin-left:5.5px;
+ 	}
+
+	label#showPassword {
+	margin-left:5.5px;
+	float:right;
+	}
+
+	label#showPassword-fr {
+	margin-left:5.5px;
+	float:right;
+	}
+
+	.signInFormWrapper input[type="text"], .signInFormWrapper input[type="password"]{
+    	width: 100%;
+	}
+}
+@media (max-width: 640px){
+	#content{
+		margin-top: 0px;
+	}
+
+	.updateInput {
+		width:100%;
+	}
+
+	.showPassword {
+	display:inline-block;
+	margin-left:5.5px;
+	}
+
+	label#showPassword {
+		margin-left:5.5px;
+		width:auto;
+	}
+
+	label#showPassword-fr {
+		margin-left:5.5px;
+		width:auto;
+	}
+
+	.registerFormRow input[type="text"], .registerFormRow input[type="password"] {
+		width:100%;
+	}
+
+	#updateBtn {
+		width:100%;
+	}
+
+	.benefitList li{
+		color: #000;
+	}
+	.forgotPwdField{
+		width: 100%;
+	}
+	.myAccountLeftColumn{
+		float: none;
+		width: 100%;
+		padding-left: 0px;
+		margin-bottom: 10px;
+
+	}
+
+	.myAccountRightColumn{
+		float: none;
+		width: 100%;
+		padding-right: 0px;
+		border-right: none;
+	}
+	.formLeft{
+		float: none;
+		padding-right: 0px;
+		width: 100%;
+		border-left: none;
+		margin-top: 10px;
+	}
+	.formRight{
+		float: none;
+		width: 100%;
+		padding-left: 0px;
+		margin-top: 10px;
+	}
+	.formRight:last-child{
+		margin-bottom: 0px;
+	}
+	.registerFormSubmit, #signin-button{
+		width: 100%;
+		margin: 20px auto 0px;
+		display: block;
+	}
+	.registerFormRow{
+		margin-bottom: 0px;
+	}
+	.formSmallPrint{
+		margin-bottom: -10px;
+	}
+	.myAccountIconGrid{
+		margin-top: 5px;
+	}
+	.registerFormRow:last-child{
+		margin-top: 0px;
+	}
+	.signInFormWrapper input[type="text"], .signInFormWrapper input[type="password"]{
+    width: 100%;
+}
+}

@@ -1,0 +1,121 @@
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body #myaccount-info {padding:15px 20px 20px 20px !important; width:auto !important; min-height:200px !important;}
+	body #myaccount-questions {float:none !important; padding:5px !important; width:auto !important; text-align:center !important; font-size:12px !important;}
+}
+
+@media only screen and (max-width: 640px)  {
+	body #myaccount-info {padding:15px 20px 20px 20px !important; width:auto !important; min-height:200px !important;}
+	body #myaccount-questions {float:none !important; padding:5px !important; width:auto !important; text-align:center !important; font-size:12px !important;}
+}
+
+@media only screen and (max-width: 479px) {
+    
+}
+
+#my-acc-rewards {
+	display:none;
+}
+
+#name-logout  {
+	display:block;
+}
+
+#myaccount-area {
+  padding: 0px;
+  display:table;
+  width:100%;
+ }
+ 
+ #myaccount-area a {
+	color: #069;
+}
+
+.selected-tab {
+  background-color: #eee;
+  font-weight: bold;
+  color: #000;
+}
+
+#myaccount-tabs {
+  width: 215px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+
+#myaccount-tabs li {
+  text-align: center;
+  list-style-type: none;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-color: #CCC;
+  border-bottom-color: #CCC;
+  border-left-color: #CCC;
+  font-size: 12px;
+}
+
+#myaccount-tabs li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #333 !important;
+}
+
+#myaccount-tabs li a:hover {
+  color: #F00 !important;
+}
+
+#myaccount-tabs .selected-tab a:hover {
+  color: #000 !important;;
+}
+
+#myaccount-info {
+  float:right;
+  padding:0px;
+  padding-top: 20px;
+  width:640px;
+  min-height:670px;
+  padding-right:10px;
+}
+
+#myaccount-info p {
+  padding: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+#myaccount-info h3 {
+  padding: 0px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+#myaccount-questions {
+	float:right;
+	width:650px;
+}
+
+#myaccount-questions strong {
+	white-space:nowrap;
+}
+
+.hidden-form {
+	visibility:hidden;
+	position:absolute;
+}

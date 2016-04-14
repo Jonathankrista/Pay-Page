@@ -1,0 +1,113 @@
+#promotion {
+	margin-top: 10px;
+	background-image: url(../img/promo-frosh-student-rewards.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 180px;
+	/* [disabled]height: 500px; */
+	width: 890px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#promotion-french {
+	margin-top: 10px;
+	background-image: url(../img/canada-day-promo2013fr.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 500px;
+	width: 890px;
+}
+#offers  {
+	margin-top: 330px;
+	margin-left: 100px;
+	width: 600px;
+	margin-right: auto;
+	margin-bottom: auto;
+	float: left;
+}
+#offers a  {
+	display: block;
+	padding: 8px;
+	background-color: #000;
+	border: 2px solid #333;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 5px;
+	/*-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 8px;*/
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+#offers a:hover {
+	background-color: #F00;
+	border-top-color: #C00;
+	border-right-color: #C00;
+	border-bottom-color: #C00;
+	border-left-color: #C00;
+}
+#promotion #join-txt {
+	font-size: 24px;
+	padding: 20px;
+	color: #1181B9;
+	text-align: center;
+}
+#promotion #join-txt strong {
+	font-size: 36px;
+	color: #1094D8;
+}
+#promotion #rewards-txt {
+	color: #FFF;
+	text-align: center;
+	margin-top: 160px;
+	padding-left: 400px;
+	font-size: 16px;
+	padding-top: 10px;
+}
+#promotion #rewards-txt strong {
+	font-size: 20px;
+	color: #FF0;
+}
+#promotion #join-txt2 {
+	font-size: 14px;
+	padding-right: 300px;
+	padding-top: 40px;
+	background-image: url(../img/frosh-logo.jpg);
+	background-repeat: no-repeat;
+	background-position: 600px 50px;
+	padding-left: 50px;
+}
+#promotion #join-txt2 h2 {
+	color: #1094D8;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+#schedule {
+	margin-bottom: 30px;
+}
+.bluebg-whitetxt {
+	color: #FFF;
+	background-color: #1094D8;
+}
+#schedule td {
+	text-align: left;
+	padding: 10px;
+	font-size: 12px;
+	width: 100px;
+}
+#schedule th {
+	text-align: left;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+#promotion #terms-conditions {
+	font-size: 12px;
+	color: #454545;
+}

@@ -1,0 +1,25 @@
+/*change font size*/
+.z-accordion.white.vertical > .z-section > h3 {
+	font-size: 14px;
+}
+
+/*wrap text long titles, http://zozoui.com/support/faq/zozo-accordion-faq/*/
+.z-accordion.vertical > .z-section > h3 {
+	height: auto !important;
+	line-height: 18px !important;
+	padding: 12px 40px 12px 14px !important;
+}
+#content #accordion h3 {
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+#content #accordion h2  {
+	text-decoration: none;
+	color: #900;
+	padding: 0px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	font-size: 18px;
+}

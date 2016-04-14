@@ -1,0 +1,149 @@
+.storeLeftColumn{
+	float: left;
+	width: 550px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 40px;
+	margin-top: 30px;
+	border-right: 1px solid rgb(192, 192, 192);
+}
+.storeRightColumn{
+	float: right;
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 40px;
+	margin-top: 30px;
+}
+
+.storefrontImage img{
+	border:10px solid #fff;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+	width: 487px;
+	margin: 0 auto;
+	display: block;
+}
+.storefrontImage{
+	margin-bottom: 30px;
+}
+
+.storeHoursTable{
+	width: 100%;
+	line-height: 20px;
+}
+.storeHoursTable td{
+	min-width: 15px;
+}
+
+p.storeHoursTitle{
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 10px;
+}
+
+p.storeHoursSubTitle{
+	margin-top: 0px;
+	padding-bottom: 0px;
+	font-size: 11px;
+	font-style: italic;
+}
+
+
+.storeAddress p{
+	line-height: 5px;
+}
+.storeLinks{
+	margin-bottom: 30px;
+}
+.storeLinks a{
+	display: block;
+	padding-bottom: 10px;
+}
+.storeAddress{
+	margin-bottom: 30px;
+}
+
+.storeAddress p:nth-child(2) {
+    line-height: 17px;
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+p.storeHoursTitle{
+	line-height: 0px;
+	padding-bottom: 10px;
+}
+.storeAddressLinks, .storeHours{
+	float: left;
+	width: 50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.storeAddressLinks{
+	padding-right: 10px;
+}
+.storeHours{
+	padding-right: 10px;
+}
+
+	#content h1{
+		text-align: center
+	}
+	.storeHoursTable{
+		max-width: 250px;
+		margin:0 auto;
+	}
+	.storeHours p{
+		text-align: center;
+	}
+	.storeLeftColumn{
+		float: none;
+		width: 70%;
+		padding: 0px;
+		border-right: none;
+		margin: 30px auto 0px;
+	}
+	.storeRightColumn{
+		float: none;
+		width: 70%;
+		padding: 0px;
+		margin: 0 auto;
+	}
+	.storefrontImage img{
+		max-width: 100%;
+		border: 1px solid #000;
+		box-shadow: none;
+	}
+
+}
+
+@media (max-width: 640px){
+
+	.storeHoursTable{
+		max-width: 250px;
+	}
+	.storefrontImage{
+		margin-bottom: 10px;
+	}
+	.storeLeftColumn{
+		float: none;
+		width: 100%;
+		padding: 0px;
+		border-right: none;
+		margin: 10px auto 0px;
+	}
+	.storeRightColumn{
+		float: none;
+		width: 100%;
+		padding: 0px;
+	}
+	.storefrontImage img{
+		max-width: 100%;
+		border: 1px solid #000;
+		box-shadow: none;
+	}
+
+}

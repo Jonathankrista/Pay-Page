@@ -1,0 +1,88 @@
+
+
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) {
+	body #fbStatement table {display: block !important;}
+	body #fbStatement table tbody {display: block !important;}
+	body #fbStatement table thead {display: block !important;}
+	body #fbStatement table tr {display: block !important; border-bottom:#d1cbb9 1px solid !important; width:100% !important;}
+	body #fbStatement table td {display: block !important; text-align:left !important; height:auto !important;  border: 1px solid #d1cbb9 !important; border-bottom: none !important; position: relative !important; padding:10px !important; padding-left: 130px !important; font-size:12px !important;}
+	
+	body #fbStatement table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	
+	body #fbStatement table td:nth-of-type(1):before { content: "Date"; }
+	body #fbStatement table td:nth-of-type(2):before { content: "Transaction"; }
+	body #fbStatement table td:nth-of-type(3):before { content: "Type"; }
+	body #fbStatement table td:nth-of-type(4):before { content: "# Commande"; }
+	body #fbStatement table td:nth-of-type(5):before { content: "Points Gagn\00E9s"; }
+	body #fbStatement table td:nth-of-type(6):before { content: "Rabais d'Acheteur Fr\00E9quent"; white-space: pre-wrap !important; padding-top: 4px !important; padding-bottom: 4px !important; }
+	body #fbStatement table td:nth-of-type(7):before { content: "Solde"; }
+	
+	body #fbStatement table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 110px !important; padding: 10px !important; white-space: nowrap !important; background-color:#f5f2ea; font-weight:bold; font-size:12px; border-right:1px solid #d1cbb9;}
+	body #fbStatement table td a .fa {font-size:15px !important;}
+}
+
+@media only screen and (max-width: 640px)  {
+	body #fbStatement table {display: block !important;}
+	body #fbStatement table tbody {display: block !important;}
+	body #fbStatement table thead {display: block !important;}
+	body #fbStatement table tr {display: block !important; border-bottom:#d1cbb9 1px solid !important; width:100% !important;}
+	body #fbStatement table td {display: block !important; text-align:left !important; height:auto !important;  border: 1px solid #d1cbb9 !important; border-bottom: none !important; position: relative !important; padding:10px !important; padding-left: 130px !important; font-size:12px !important;}
+	
+	body #fbStatement table .headerRow {position: absolute !important; top: -9999px !important; left: -9999px !important;}
+	
+	body #fbStatement table td:nth-of-type(1):before { content: "Date"; }
+	body #fbStatement table td:nth-of-type(2):before { content: "Transaction"; }
+	body #fbStatement table td:nth-of-type(3):before { content: "Type"; }
+	body #fbStatement table td:nth-of-type(4):before { content: "# Commande"; }
+	body #fbStatement table td:nth-of-type(5):before { content: "Points Gagn\00E9s"; }
+	body #fbStatement table td:nth-of-type(6):before { content: "Rabais d'Acheteur Fr\00E9quent"; white-space: pre-wrap !important; padding-top: 4px !important; padding-bottom: 4px !important; }
+	body #fbStatement table td:nth-of-type(7):before { content: "Solde"; }
+	
+	body #fbStatement table td:before {position: absolute !important; top: 0px !important; left: 0px !important; width: 110px !important; padding: 10px !important; white-space: nowrap !important; background-color:#f5f2ea; font-weight:bold; font-size:12px; border-right:1px solid #d1cbb9;}
+	body #fbStatement table td a .fa {font-size:15px !important;}
+
+}
+
+@media only screen and (max-width: 479px) {
+    
+}
+
+#myaccount-info h4 {
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:14px;
+	text-align:left;
+	font-weight:normal;
+}
+
+#fbnumber {
+	color:#f00;
+	font-weight:bold;
+}
+
+#remember {
+	padding:15px;
+	background-color:#f5f2ea;
+}
+
+#fbStatement table{
+	border-collapse: collapse;
+}
+
+#fbStatement th {
+	text-align: left;
+	padding: 8px;
+	background-color: #f5f2ea;
+	border: 1px solid #d1cbb9;
+}
+
+#fbStatement td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #CCC;
+}
+
+#fbStatement a .fa {
+	color:#000;
+	font-size:12px;
+}
