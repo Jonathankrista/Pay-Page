@@ -713,25 +713,6 @@ function ShowCaptcha()
 	PopUp.innerHTML = "<form name='TheForm' id='TheForm'><h1>SECURITY CHECK</h1><img src='LanapBotDetectHandler.asp?Command=CreateImage&amp;TextStyle=4&amp;ImageWidth=300&amp;imageHeight=50&amp;CodeLength=5&amp;CodeType=0' width='100%' height='auto' id='captchaImg'><p>Please type the above (not case sensitive):</p><input class='textbox' size='10' maxlength='20' name='CaptchaCode' id='CaptchaCode' value='' type='text'><div style='padding-left:18px'><font color='#FF0000' face='Verdana' size='1' id='Msg_Captcha'></font></div><input value='OK' onclick='AskCaptchaBeforeSubmit()' type='button' id='okBtn'><input value='Cancel' onclick='grayOut(false);HidePop(\"\")' type='button' id='cancelBtn'><input name='__ncforminfo' value='uhdgmT2C-xYTRp0h1uhuliQ5fj_wwYyD7kUu3WfJlX5Ph45K5dIvtTERRNCfeAQRFL4XkBoQpHSPmSVjYOXOx1935rLwiXeg' type='hidden'></form>";
 }
 
-
-
-function ShowCaptcha()
-{
-	grayOut(true, false,{'zindex':'50', 'bgcolor':'#FFFFFF', 'opacity':'0'});
-
-	var AgntUsr=navigator.userAgent.toLowerCase();
-	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
-	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
-	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
-	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
-	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
-
-	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
-	PopUp.style.display="block";
-	PopUp.innerHTML = "<form name='TheForm' id='TheForm'><h1>SECURITY CHECK</h1><img src='LanapBotDetectHandler.asp?Command=CreateImage&amp;TextStyle=4&amp;ImageWidth=300&amp;imageHeight=50&amp;CodeLength=5&amp;CodeType=0' width='100%' height='auto' id='captchaImg'><p>Please type the above (not case sensitive):</p><input class='textbox' size='10' maxlength='20' name='CaptchaCode' id='CaptchaCode' value='' type='text'><div style='padding-left:18px'><font color='#FF0000' face='Verdana' size='1' id='Msg_Captcha'></font></div><input value='OK' onclick='AskCaptchaBeforeSubmit()' type='button' id='okBtn'><input value='Cancel' onclick='grayOut(false);HidePop(\"\")' type='button' id='cancelBtn'><input name='__ncforminfo' value='uhdgmT2C-xYTRp0h1uhuliQ5fj_wwYyD7kUu3WfJlX5Ph45K5dIvtTERRNCfeAQRFL4XkBoQpHSPmSVjYOXOx1935rLwiXeg' type='hidden'></form>";
-}
-
-
 function AskCaptchaBeforeSubmit()
 {
 	var FormInputArray=new Array();
@@ -1356,6 +1337,12 @@ function HidePop(Msg)
 		alert(""+Msg);
 }
 
+function HideCardPop {
+
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+}
+
 	var LastCheck_RealGiftCardNumber=new Array();
 	var LastCheck_RealGiftCardPwd=new Array();
 	var LastCheck_RealGiftCard_Credit=new Array();
@@ -1760,6 +1747,38 @@ function ShowSessionExpired()
 	PopUp.style.display="block";
 	PopUp.innerHTML = '<h1>SoftMoc Security Timeout</h1><p>Do you require additional time to check out?</p><input type="button" value="YES" onclick="javascript:GoRefresh()">';
 }
+
+function CardCVVshow(e)
+{
+
+	grayOut(true, false,{'zindex':'50', 'bgcolor':'#FFFFFF', 'opacity':'0'});
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var PopUp=document.getElementById? document.getElementById("CardPop"): document.all.CardPop;
+	PopUp.style.display="block";
+	PopUp.innerHTML  = '<h1>CVV Info</h1><img src="img/ccards-cvv2-illus.gif"><input type="button" value="YES" onclick="javascript:GoRefresh()">';
+	e.preventDefault();
+}
+
+function CardCVVhide
+}
+if 
+
+document.getElementById('CardPop').style.display = "none";
+
+
+
+{
+
+
+
+
 function SessionExpiredAndGoPreviousPage()
 {
 	this.document.CheckoutForm.action="https://www.softmoc.com/ca/Checkout.asp?smpc=1";
@@ -1888,6 +1907,7 @@ function hideItemDetails() {
 </script>
 <div name="TmpD" id="TmpD"></div>
 <div name="PopUpD" id="PopUpD"></div>
+<div name="PopUpD" id="CardPop"></div>
 <div name="BackgroundD" id="BackgroundD"></div>
 <div style="position:absolute">
 <form method="POST" name="TmpCheckoutForm" action="PAY_checkoutnow.asp">
@@ -2412,7 +2432,7 @@ function hideItemDetails() {
 												<tr id="CCCardID_TRArea" style="display:table-row">
 													<td style="padding:1px;">
 														<div style="position: relative;top:-10px;">
-															<h4 id="displayMode"><span>&#x0002A;</span>Security Code</h4><a href="javascript:launchWhatIsCreditCardID()">what's this?</a>
+															<h4 id="displayMode"><span>&#x0002A;</span>Security Code</h4><a href="#" onClick="CardCVVshow();">what's this?</a>
 															<input name="CCCardID" type="text" class="no-mouseflow" id="CCCardID" style="width:25px" maxlength="4">
 														</div>
 													</td>
