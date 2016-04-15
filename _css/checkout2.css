@@ -279,6 +279,7 @@
 	margin-bottom:5px;
 	line-height:15px;
 }
+
 #shipping-details #StorePickupInfo_Area {
 	display:none;
 	width:100px;
@@ -370,7 +371,14 @@
 	display:block;
 	margin-bottom:15px;
 	width:80px;
+	display: inline-block;
+	margin-left:28px;
 }
+
+#displayMode {
+	display:inline;
+}
+
 #GiftCard_AskShow_TRArea a   {
 	text-decoration:none;
 	padding:0px;
@@ -405,6 +413,7 @@
 	border:1px solid #69C;
 	padding:5px;
 	margin-bottom:5px;
+	display:inherit;
 }
 #secure-order form #PaymentMethod {
 	margin:0px;
@@ -426,6 +435,8 @@
 	border-collapse:collapse;
 	margin-bottom:15px;
 }
+
+
 
 #item-invoice-info th {
 	text-align:left;

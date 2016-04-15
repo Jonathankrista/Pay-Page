@@ -26,7 +26,7 @@
 <link href="_css/font-awesome.min.css" rel="stylesheet">
 <link href="_css/checkout2.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="_js/new-text.js"></script>
+<script type="text/javascript" src="http://www.softmoc.com/_js/new-text.js"></script>
 <script type="text/javascript" src="_js/jquery-1.11.2.min.js"></script>
 <script src="http://www.softmoc.com/_js/jquery.ui.core.js"></script>
 <script src="http://www.softmoc.com/_js/jquery.ui.mask.js"></script>
@@ -45,6 +45,20 @@
 <style>
 
 h4 > span {
+	color:red;
+}
+
+#toggleVisibility {
+	display:none;
+	font-size:9.5px;
+	z-index:100;
+	color:red;
+}
+
+#cardTypeVisibility{
+	display:none;
+	font-size:9.5px;
+	z-index:100;
 	color:red;
 }
 
@@ -699,6 +713,25 @@ function ShowCaptcha()
 	PopUp.innerHTML = "<form name='TheForm' id='TheForm'><h1>SECURITY CHECK</h1><img src='LanapBotDetectHandler.asp?Command=CreateImage&amp;TextStyle=4&amp;ImageWidth=300&amp;imageHeight=50&amp;CodeLength=5&amp;CodeType=0' width='100%' height='auto' id='captchaImg'><p>Please type the above (not case sensitive):</p><input class='textbox' size='10' maxlength='20' name='CaptchaCode' id='CaptchaCode' value='' type='text'><div style='padding-left:18px'><font color='#FF0000' face='Verdana' size='1' id='Msg_Captcha'></font></div><input value='OK' onclick='AskCaptchaBeforeSubmit()' type='button' id='okBtn'><input value='Cancel' onclick='grayOut(false);HidePop(\"\")' type='button' id='cancelBtn'><input name='__ncforminfo' value='uhdgmT2C-xYTRp0h1uhuliQ5fj_wwYyD7kUu3WfJlX5Ph45K5dIvtTERRNCfeAQRFL4XkBoQpHSPmSVjYOXOx1935rLwiXeg' type='hidden'></form>";
 }
 
+
+
+function ShowCaptcha()
+{
+	grayOut(true, false,{'zindex':'50', 'bgcolor':'#FFFFFF', 'opacity':'0'});
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	PopUp.style.display="block";
+	PopUp.innerHTML = "<form name='TheForm' id='TheForm'><h1>SECURITY CHECK</h1><img src='LanapBotDetectHandler.asp?Command=CreateImage&amp;TextStyle=4&amp;ImageWidth=300&amp;imageHeight=50&amp;CodeLength=5&amp;CodeType=0' width='100%' height='auto' id='captchaImg'><p>Please type the above (not case sensitive):</p><input class='textbox' size='10' maxlength='20' name='CaptchaCode' id='CaptchaCode' value='' type='text'><div style='padding-left:18px'><font color='#FF0000' face='Verdana' size='1' id='Msg_Captcha'></font></div><input value='OK' onclick='AskCaptchaBeforeSubmit()' type='button' id='okBtn'><input value='Cancel' onclick='grayOut(false);HidePop(\"\")' type='button' id='cancelBtn'><input name='__ncforminfo' value='uhdgmT2C-xYTRp0h1uhuliQ5fj_wwYyD7kUu3WfJlX5Ph45K5dIvtTERRNCfeAQRFL4XkBoQpHSPmSVjYOXOx1935rLwiXeg' type='hidden'></form>";
+}
+
+
 function AskCaptchaBeforeSubmit()
 {
 	var FormInputArray=new Array();
@@ -938,7 +971,7 @@ function RealCheckoutWithCCNow()
 					if ((document.TmpForm.RealGiftCardNumber1.value!="")||(document.TmpForm.RealGiftCardNumber2.value!="")||(document.TmpForm.RealGiftCardNumber3.value!=""))
 						alert("You have insufficient Gift Card credits.");
 					else
-						alert("Please select the Card Type.");
+							document.getElementById("cardTypeVisibility").style.display = "block";
 
 				return;
 			}
@@ -969,9 +1002,12 @@ function RealCheckoutWithCCNow()
 
 					if (!ConfirmGoodCC(document.TmpForm.CC.value,document.TmpForm.CCCardID.value))
 					{
-						alert("Invalid Credit Card # or ID.");
+					// var elemToggleVisbility = document.getElementById('toggleVisibility');
+					// elemToggleVisbility.style.display ='block';
 
+					document.getElementById("toggleVisibility").style.display = "block";
 
+					// alert("Invalid Credit Card Expiry Date.");
 
 
 						return;
@@ -1447,6 +1483,31 @@ function CheckGiftCardBalance()
 	PopUp.innerHTML = "<form name='GiftCardCheckingForm' id='GiftCardCheckingForm'><h1>CHECK GIFT CARD BALANCE</h1> <p>Please key in your gift card number!</p> <input name='GC' size='20' maxlength='20' value='' class='textfield' type='text'> <input value='CHECK' onclick='CheckGiftCardBalanceBeforeSubmit()' type='button'> <div><font color='#FF0000' face='Verdana' size='1' id='Msg_GC'></font></div> <input name='__ncforminfo' value='9kU1Xhj_-LBftZR_X5Jb9ouurpu7nTa6aDoCvatq_AvD5FEW9F1uJw_bHajhW3uOVSKBhCYalvrUbbGiAreH0bQQ1chdzqK6' type='hidden'> <h3>Gift Card Balance:&nbsp;<font id='GCBalance'>$0.00</font></h3> <a href='javascript:HidePop(\"\");javascript:grayOut(false);'>Close</a></form>";
 	return;
 }
+
+// Lightbox for Whats This CVV
+
+
+function CheckGiftCardBalance()
+{
+	grayOut(true, false,{'zindex':'50', 'bgcolor':'#FFFFFF', 'opacity':'0'});
+
+	var AgntUsr=navigator.userAgent.toLowerCase();
+	var ExpYes=AgntUsr.indexOf('msie')!=-1?1:0;
+	Wid=ExpYes?document.body.offsetWidth:window.innerWidth;
+	Hei=ExpYes?document.body.offsetHeight:window.innerHeight;
+	ScrollTop=ExpYes?document.body.scrollTop:window.pageYOffset;
+	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
+
+	var PopUp=document.getElementById? document.getElementById("PopUpD"): document.all.PopUpD;
+	PopUp.style.display="block";
+	PopUp.innerHTML = "<form name='GiftCardCheckingForm' id='GiftCardCheckingForm'><h1>CHECK GIFT CARD BALANCE</h1> <p>Please key in your gift card number!</p> <input name='GC' size='20' maxlength='20' value='' class='textfield' type='text'> <input value='CHECK' onclick='CheckGiftCardBalanceBeforeSubmit()' type='button'> <div><font color='#FF0000' face='Verdana' size='1' id='Msg_GC'></font></div> <input name='__ncforminfo' value='9kU1Xhj_-LBftZR_X5Jb9ouurpu7nTa6aDoCvatq_AvD5FEW9F1uJw_bHajhW3uOVSKBhCYalvrUbbGiAreH0bQQ1chdzqK6' type='hidden'> <h3>Gift Card Balance:&nbsp;<font id='GCBalance'>$0.00</font></h3> <a href='javascript:HidePop(\"\");javascript:grayOut(false);'>Close</a></form>";
+	return;
+}
+
+
+
+
+
 function CheckGiftCardBalanceBeforeSubmit()
 {
 	var FormInputArray=new Array();
@@ -2320,8 +2381,8 @@ function hideItemDetails() {
 
 
 
-
 														</select>
+														<span id="cardTypeVisibility">Please Select A Card</span>
 													</td>
 												</tr>
 												<tr>
@@ -2332,12 +2393,14 @@ function hideItemDetails() {
 																	<td>
 																		<h4><span>&#x0002A;</span>Credit Card Number</h4>
 																		<input type="text" name="CC" id="CC" class="no-mouseflow" maxlength="20" size="21">
+																		<span id="toggleVisibility">Invalid Credit Card Number</span>
 																	</td>
 																</tr>
 																<tr id="ExpiryDate_TRArea" style="display:table-row">
 																	<td>
 																		<h4><span>&#x0002A;</span>Expiration Date:</h4>
 																		<span id="ExpiryDate_Area"><label>MM <select class="option" name="ED_M" size="1" class="option no-mouseflow"><option selected value=""> </option><option value="01">Jan</option><option value="02">Feb</option><option value="03">Mar</option><option value="04">Apr</option><option value="05">May</option><option value="06">Jun</option><option value="07">Jul</option><option value="08">Aug</option><option value="09">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select></label> <label>YYYY <select name="ED_Y" size="1" class="option no-mouseflow"><option selected value=""> </option><option value="16">2016</option><option value="17">2017</option><option value="18">2018</option><option value="19">2019</option><option value="20">2020</option><option value="21">2021</option><option value="22">2022</option><option value="23">2023</option><option value="24">2024</option><option value="25">2025</option></select></label></span>
+																		<span id="expiryVisibility"></span>
 																		<br><br>
 																	</td>
 																</tr>
@@ -2349,8 +2412,8 @@ function hideItemDetails() {
 												<tr id="CCCardID_TRArea" style="display:table-row">
 													<td style="padding:1px;">
 														<div style="position: relative;top:-10px;">
-															<h4><span>&#x0002A;</span>Security Code</h4>
-															<input name="CCCardID" type="text" class="no-mouseflow" id="CCCardID" style="width:25px" maxlength="4"><a href="javascript:launchWhatIsCreditCardID()">what's this?</a>
+															<h4 id="displayMode"><span>&#x0002A;</span>Security Code</h4><a href="javascript:launchWhatIsCreditCardID()">what's this?</a>
+															<input name="CCCardID" type="text" class="no-mouseflow" id="CCCardID" style="width:25px" maxlength="4">
 														</div>
 													</td>
 												</tr>
