@@ -1757,9 +1757,15 @@ function CardCVVshow(e)
 	ScrollLeft=ExpYes?document.body.scrollLeft:window.pageXOffset;
 
 	var PopUp=document.getElementById? document.getElementById("CardPop"): document.all.CardPop;
+  var darkenScreenObject = document.getElementById('darkenScreenObject');
 	PopUp.style.display="block";
-	PopUp.innerHTML  = '<h1>CVV Info</h1><img src="img/ccards-cvv2-illus.gif"><input type="button" value="YES" onclick="javascript:GoRefresh()">';
-	e.preventDefault();
+	PopUp.innerHTML  = '<h1>CVV Info</h1><img src="img/ccards-cvv2-illus.gif"><input id="btnClose" type="button" value="YES">';
+  var btnClose = document.getElementById('btnClose');
+      btnClose.addEventListener('click', function(e){
+         console.log('cliceked!');
+          PopUp.style.display='';
+          darkenScreenObject.style.display='none';
+      });
 }
 //
 // function CardCVVhide
